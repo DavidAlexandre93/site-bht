@@ -1,5 +1,6 @@
 
 import React, { useContext } from 'react'
+import { Typography, Space } from 'antd';
 import { MouseContext } from "../context/mouse-context";
 import '../css/Button.scss';
 
@@ -10,10 +11,12 @@ const Button = (props) => {
         return (
             <button className="btn price-button"
                 onMouseEnter={() => cursorChangeHandler("hovered")}
-                onMouseLeave={() => cursorChangeHandler("")}>
+                onMouseLeave={() => cursorChangeHandler("")} >
                 <a href={url} className={`button ${type}`} target="_blank" rel="noopener noreferrer">
-                <span>{text}</span>
-                <span>{Icon && <Icon />} </span>
+                <Space>
+                <Typography.Text style={{ fontSize: '18px', fontWeight: 'bold' }}>{text}</Typography.Text>
+                <Typography style={{ fontSize: '18px', fontWeight: 'bold' }}>{Icon && <Icon />} </Typography>
+                </Space>
                 </a>
             </button> 
         )

@@ -5,7 +5,7 @@ import '../css/Newsltetter.scss';
 import '../css/GlitchEffect2.scss';
 
 const NewsletterSection = () => {
-    const [inputValue, setInputValue] = useState('fabiobaziota@gmail.com');
+    const [inputValue, setInputValue] = useState('bloodhuntsgaming@outlook.com');
     
     function handleChange(e){
         setInputValue(e.target.value)
@@ -23,19 +23,19 @@ const NewsletterSection = () => {
                 <img src={Newsletter} alt=""/>
             </div>
             <div className="newsletter-section__right">
-                <h4 className="display-2">WANT TO STAY</h4>
+                <h4 className="display-2">RECEBA INFORMAÇÕES</h4>
                 <h1 className="display-1 glitch-overlay" data-content="NEWSLETTER SUBSCRIBE">
                     <span>NEWSLETTER SUBSCRIBE</span>
                 </h1>
 
                 <p>
-                    In order to start receiving our news, all you have to do is enter your email address. Everything else will be taken care of by us. We will send you emails containing information about game. We don’t spam.
+                    Informe seu email para receber informações sobre nossa organização e noticias. 
                 </p>
 
                 <div className="input-group">
                     <div className="input-email">
                         <input type="email" onChange={handleChange} value={inputValue} id="email" placeholder="Your email address"/>
-                        <label htmlFor="email">Your email address</label>
+                        <label htmlFor="email">Seu email</label>
                     </div>
                     <Button {...button_info}/>
                 </div>

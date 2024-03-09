@@ -78,7 +78,7 @@ const Navbar = () => {
                             smooth={true} 
                             duration={500}
                         >
-                        Game Feature</ScrollLink >
+                        Championships</ScrollLink >
                     </li>
                     <li>
                         <ScrollLink 
@@ -90,7 +90,7 @@ const Navbar = () => {
                             smooth={true} 
                             duration={500}
                         >
-                        System Requirements</ScrollLink>
+                        Requirements</ScrollLink>
                     </li>
                     <li>
                         <ScrollLink 
@@ -102,7 +102,7 @@ const Navbar = () => {
                             smooth={true} 
                             duration={1000}
                             >
-                            Quotes</ScrollLink>
+                            Administrative Team</ScrollLink>
                     </li>
 
                     <div className="container-sponsor-inside-nav-menu">

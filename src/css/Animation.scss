@@ -642,7 +642,7 @@ $background_4: '../images/BackgroundHero-4.jpg';
 
 @mixin backgroundSet($background_property){
   background: radial-gradient(189.96% 61.18% at 50% 38.82%,
-  rgba(255, 181, 72, 0) 0%, 
+  rgba(255, 0, 0, 0) 0%, 
   rgba(52, 44, 29, 0.80319) 73.22%, #08090A 99.74%), 
   url($background_property);
   //background: url('../images/BackgroundHero-1.png');

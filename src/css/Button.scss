@@ -1,11 +1,14 @@
 .btn{
-    background: linear-gradient(194.68deg, #FFB548 11.27%, #F3AF34 90.4%);
+    background: 
+    linear-gradient(194.68deg, rgba(255, 0, 0, 0.5) 11.27%, rgba(168, 166, 166, 0.5) 90.4%),  
+        url('./../images/garras.jpg') no-repeat center / cover;
     color: var(--secondary);
     font-size: var(--secondery-font);
     font-size: 1.6rem;
     font-weight: 600;
     border: none;
-    // cursor: pointer;
+    padding: 2.2rem;
+    border-radius: .4rem;
     padding: 2.2rem;
     border-radius: .4rem; 
     
