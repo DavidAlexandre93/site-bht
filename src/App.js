@@ -2,6 +2,7 @@ import { useContext, useEffect } from "react";
 import { MouseContext } from "./context/mouse-context";
 import { BrowserRouter as Router } from "react-router-dom";
 import Aos from "aos";
+import { SpeedInsights } from "@vercel/speed-insights/react";
 import Header from "./components/Header";
 import About from "./components/About";
 import Features from "./components/Features";
@@ -42,6 +43,7 @@ function App() {
           <Quotes />
           <NewsletterSection />
           <Footer />
+          <SpeedInsights/>
         </Router>
       </div>
     </>
