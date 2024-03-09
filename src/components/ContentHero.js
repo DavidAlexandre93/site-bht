@@ -1,50 +1,73 @@
-import React, { useEffect } from "react";
+// ContentHero.js
+import React, { useState, useEffect } from "react";
 import Aos from "aos";
 import "aos/dist/aos.css";
-import { Space, Row, Col } from "antd";
-import { FaDiscord, FaInstagram, FaTiktok, FaWhatsapp } from "react-icons/fa";
+import { Space, Row, Col, Dropdown, Menu } from "antd";
 import Button from "./Button";
+import { FaDiscord, FaInstagram, FaTiktok, FaWhatsapp } from "react-icons/fa";
+import { DownOutlined } from "@ant-design/icons";
 import "../css/ContentHero.scss";
 import "../css/GlitchEffect2.scss";
 
 const ContentHero = () => {
-  const button_discord_server = {
-    text: "Server Discord",
-    icon: FaDiscord,
-    type: "price-button",
-    url: "https://discord.gg/sjGQAHptjX",
-  };
-  const button_instagram = {
-    text: "Instagram",
-    icon: FaInstagram,
-    type: "price-button",
-    url: "https://www.instagram.com/bloodhunts_gaming/",
-  };
-  const button_tiktok = {
-    text: "TikTok",
-    icon: FaTiktok,
-    type: "price-button",
-    url: "https://www.tiktok.com/@bloodhunts_gaming",
-  };
-  const button_group_whatsapp = {
-    text: "Comunidade WhatsApp",
-    icon: FaWhatsapp,
-    type: "price-button",
-    url: "https://chat.whatsapp.com/DFVdvEaNH9zDeXky5MuXQJ",
-  };
-  const button_recruitment_casual = {
-    text: "Recrutamento player casual",
-    icon: FaWhatsapp,
-    type: "price-button",
-    url: "https://wa.me/+555591991703941?text=Ol%C3%A1,%20tudo%20bem?%20Eu%20gostaria%20de%20fazer%20parte%20do%20cl%C3%A3%20secund%C3%A1rio%20e%20ajudar%20na%20guerra%20de%20cl%C3%A3.",
+  const [dropdownVisible, setDropdownVisible] = useState(false);
+
+  const openUrl = (url) => {
+    window.open(url, "_blank");
   };
 
-  const button_recruitment_competitive = {
-    text: "Recrutamento player competitivo",
-    icon: FaWhatsapp,
-    type: "price-button",
-    url: "https://wa.me/+55554284438380?text=Ol%C3%A1,%20tudo%20bem?%20Eu%20gostaria%20de%20realizar%20o%20teste%20para%20line%20competitiva.%20",
+  const handleMenuClick = (e) => {
+    setDropdownVisible(false); // Fecha o menu após o clique
+    switch (e.key) {
+      case "1":
+        openUrl("https://discord.gg/sjGQAHptjX");
+        break;
+      case "2":
+        openUrl("https://www.instagram.com/bloodhunts_gaming/");
+        break;
+      case "3":
+        openUrl("https://www.tiktok.com/@bloodhunts_gaming");
+        break;
+      case "4":
+        openUrl("https://chat.whatsapp.com/DFVdvEaNH9zDeXky5MuXQJ");
+        break;
+      case "5":
+        openUrl(
+          "https://wa.me/+555591991703941?text=Olá, tudo bem? Eu gostaria de fazer parte do clã secundário e ajudar na guerra de clã."
+        );
+        break;
+      case "6":
+        openUrl(
+          "https://wa.me/+55554284438380?text=Olá, tudo bem? Eu gostaria de realizar o teste para line competitiva."
+        );
+        break;
+      default:
+        console.log("No url for this item");
+    }
   };
+
+  const menu = (
+    <Menu onClick={handleMenuClick}>
+      <Menu.Item key="1" icon={<FaDiscord />}>
+        Server Discord
+      </Menu.Item>
+      <Menu.Item key="2" icon={<FaInstagram />}>
+        Instagram
+      </Menu.Item>
+      <Menu.Item key="3" icon={<FaTiktok />}>
+        TikTok
+      </Menu.Item>
+      <Menu.Item key="4" icon={<FaWhatsapp />}>
+        Comunidade WhatsApp
+      </Menu.Item>
+      <Menu.Item key="5" icon={<FaWhatsapp />}>
+        Recrutamento player casual
+      </Menu.Item>
+      <Menu.Item key="6" icon={<FaWhatsapp />}>
+        Recrutamento player competitivo
+      </Menu.Item>
+    </Menu>
+  );
 
   useEffect(() => {
     Aos.init();
@@ -59,27 +82,28 @@ const ContentHero = () => {
         >
           <span>BLOODHUNTS GAMING</span>
         </h1>
-        {/* <h1 className="hero-content__title-1">
-                    SURVIVE AT ALL COSTS
-                </h1> */}
-        <h4 className="hero-content__title-2">
-          Organização de eSports
-        </h4>
+        <h4 className="hero-content__title-2">Organização de eSports</h4>
         <Row gutter={[16, 24]}>
           <Col xs={24} sm={24} md={24} lg={24} xl={24}>
             <Space>
-              <Button {...button_discord_server} />
-              <Button {...button_instagram} />
-              <Button {...button_tiktok} />
-            </Space>
-          </Col>
-          </Row>
-          <Row gutter={[16, 24]}>
-          <Col xs={24} sm={24} md={24} lg={24} xl={24}>
-            <Space>
-              <Button {...button_group_whatsapp} />
-              <Button {...button_recruitment_casual} />
-              <Button {...button_recruitment_competitive} />
+              <Dropdown
+                overlay={menu}
+                trigger={["click"]}
+                visible={dropdownVisible}
+                onVisibleChange={(flag) => setDropdownVisible(flag)}
+              >
+                <div>
+                  <Button
+                    text="Fale conosco"
+                    onClick={() => setDropdownVisible(!dropdownVisible)}
+                    icon={
+                      <DownOutlined
+                        style={{ color: "white", marginLeft: "8px" }}
+                      />
+                    }
+                  />
+                </div>
+              </Dropdown>
             </Space>
           </Col>
         </Row>

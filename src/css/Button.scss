@@ -1,16 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+
 .btn{
     background: 
-    linear-gradient(194.68deg, rgba(255, 0, 0, 0.5) 11.27%, rgba(168, 166, 166, 0.5) 90.4%),  
+    linear-gradient(194.68deg, rgba(255, 0, 0, 0.5) 11.27%, rgba(255, 0, 0, 0.5) 90.4%),  
         url('./../images/garras.jpg') no-repeat center / cover;
     color: var(--secondary);
     font-size: var(--secondery-font);
-    font-size: 1.6rem;
-    font-weight: 600;
+    font-size: 2.0rem;
+    font-weight: bold;
     border: none;
     padding: 2.2rem;
     border-radius: .4rem;
     padding: 2.2rem;
     border-radius: .4rem; 
+    font-family: 'Press Start 2P', cursive;
+    
     
 }
 
