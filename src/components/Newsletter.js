@@ -46,7 +46,7 @@ const NewsletterSection = () => {
             />
             <label htmlFor="email">Seu email</label>
           </div>
-          <Button text="Subscribe now" type="normal-button" />
+          <Button text="Inscreva-se agora" type="normal-button" />
         </div>
       </form>
     </section>
