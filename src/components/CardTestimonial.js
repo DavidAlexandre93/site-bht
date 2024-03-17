@@ -1,38 +1,31 @@
 import React from "react";
 import "../css/CardTestimonial.scss";
 
-const CardTestimonial = (props) => {
+const CardTestimonial = ({ testimonial }) => {
+  const { img_src, img_name, name, code_name, content, date, url } =
+    testimonial;
+
+  // Função para lidar com o redirecionamento
+  const handleRedirect = () => {
+    window.open(url, "_blank", "noopener,noreferrer");
+  };
+
   return (
-    <div className="card-testimonial">
+    <div className="card-testimonial" onClick={handleRedirect}>
       <div className="card-testimonial__head">
         <div className="testimonial-img">
-          <img
-            src={props.testimonial.img_src}
-            alt={props.testimonial.img_name}
-          />
+          <img src={img_src} alt={img_name} />
         </div>
         <div className="testimonial-perfil">
-          <span className="testimonial-perfil__name">
-            {props.testimonial.name}
-          </span>
-          <span className="testimonial-perfil__code_name">
-            {props.testimonial.code_name}
-          </span>
+          <span className="testimonial-perfil__name">{name}</span>
+          <span className="testimonial-perfil__code_name">{code_name}</span>
         </div>
-        <a
-          className="share-twitter-link"
-          href="https://www.instagram.com/bloodhunts_gaming/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <i className="bx bxl-instagram"></i>
-        </a>
       </div>
       <div className="card-testimonial__body">
-        <p>{props.testimonial.content}</p>
+        <p>{content}</p>
       </div>
       <div className="card-testimonial__date">
-        <span>{props.testimonial.date}</span>
+        <span>{date}</span>
       </div>
     </div>
   );

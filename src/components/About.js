@@ -8,28 +8,27 @@ const About = () => {
     <section className="about-section" id="about">
       <div className="about-section__left">
         <h4 className="display-2">Sobre nós</h4>
-        <h1 className="display-1 glitch-overlay" data-content="ALCATEIA">
-          <span>Organização</span>
+        <h1 className="display-1 glitch-overlay" data-content="ALCATEIA DE">
+          <span>BLOODHUNTS</span>
         </h1>
-        <h1 className="display-1 glitch-overlay" data-content="VEM CONOSCO!">
-          <span>BloodHunts Gaming</span>
+        <h1 className="display-1 glitch-overlay" data-content="LOBOS">
+          <span>GAMING</span>
         </h1>
         <hr className="line-separator" />
         <div className="text-container">
           <p className="about-text-info">
-            Fundada em 2023, a BloodHunts Gaming é uma organização dedicada a
-            unir jogadores de Call of Duty, abrangendo Mobile, Warzone
-            PC/Console e Warzone Mobile. Nosso foco é criar uma comunidade
-            inclusiva, valorizando tanto o jogo competitivo quanto o casual.
-            Nascemos com o propósito de ser um ponto de encontro para
-            compartilhar estratégias, experiências e, acima de tudo, a paixão
-            por Call of Duty. Estamos sempre abertos a novos membros que queiram
-            contribuir para nossa crescente família, oferecendo um ambiente
-            acolhedor para todos. Com planos de expandir nossos horizontes para
-            outros jogos no futuro, a BloodHunts Gaming se compromete a ser mais
-            do que uma organização: somos uma comunidade, uma família, unida
-            pelo amor aos games. Junte-se a nós na jornada de fazer da paixão
-            pelo jogo uma experiência compartilhada e sem fim.
+            Fundado em 2 de novembro de 2023, a BloodHunts Gaming é uma
+            organização dedicada a unir jogadores de Call of Duty Mobile,
+            Warzone PC/Console e Warzone Mobile. Nosso foco é criar uma
+            comunidade inclusiva, valorizando tanto o jogo competitivo quanto o
+            casual. Nascemos com o propósito de ser uma comunidade/organização
+            para compartilhar estratégias, experiências e acima de tudo, a
+            paixão por Call of Duty. Estamos sempre disponiveis para novos
+            membros que queiram contribuir para nossa crescente família,
+            oferecendo um ambiente acolhedor para todos. Com planos de expandir
+            nossos horizontes para outros jogos no futuro, a BloodHunts Gaming
+            se compromete a ser mais do que uma organização: somos uma
+            comunidade, uma família, unida pelo amor aos games.
           </p>
         </div>
       </div>

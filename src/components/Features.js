@@ -8,7 +8,7 @@ const Features = () => {
     <section className="features-section" id="gamefeature">
       <div className="features-section__content-margin-right"></div>
       <div className="features-section__content">
-        <h4 className="display-2">Campeonatos que estamos disputando</h4>
+        <h4 className="display-2">Campeonatos que estamos participando</h4>
         <h1 className="display-1 glitch-overlay" data-content="CAMPEONATOS">
           <span>Campeonatos</span>
         </h1>
@@ -38,7 +38,7 @@ const Features = () => {
           <div className="item-2">
             <div className="features-accordion-title">
               <span className="option option-2"></span>
-              <h2>COPA REVOLUTION</h2>
+              <h2>COPA ROG(Playoffs)</h2>
             </div>
             <div className="features-accordion-content">
               <p>

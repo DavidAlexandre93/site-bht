@@ -1,6 +1,7 @@
 import React, { useContext } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faTiktok, faInstagram } from "@fortawesome/free-brands-svg-icons";
 import { MouseContext } from "../context/mouse-context";
-import { Link } from "react-router-dom";
 import Scroll from "react-scroll";
 import { Logo56x56 } from "../utils/Images";
 import "../css/Footer.scss";
@@ -8,10 +9,15 @@ import "../css/Footer.scss";
 const Footer = () => {
   const { cursorChangeHandler } = useContext(MouseContext);
   const ScrollLink = Scroll.Link;
+
   return (
     <footer>
       <div className="content-1">
-        <ScrollLink to="main">
+        <ScrollLink
+          to="main"
+          onMouseEnter={() => cursorChangeHandler("hovered")}
+          onMouseLeave={() => cursorChangeHandler("")}
+        >
           <img src={Logo56x56} alt="logo" />
         </ScrollLink>
 
@@ -26,7 +32,7 @@ const Footer = () => {
                 smooth={true}
                 duration={500}
               >
-                Main
+                Página inicial
               </ScrollLink>
             </li>
             <li>
@@ -38,7 +44,7 @@ const Footer = () => {
                 smooth={true}
                 duration={500}
               >
-                About
+                Sobre nós
               </ScrollLink>
             </li>
             <li>
@@ -50,7 +56,7 @@ const Footer = () => {
                 smooth={true}
                 duration={500}
               >
-                Championships
+                Campeonatos
               </ScrollLink>
             </li>
             <li>
@@ -62,7 +68,7 @@ const Footer = () => {
                 smooth={true}
                 duration={500}
               >
-                Requirements
+                Requisitos
               </ScrollLink>
             </li>
             <li>
@@ -74,45 +80,33 @@ const Footer = () => {
                 smooth={true}
                 duration={500}
               >
-                Administrative team
+                Administração
               </ScrollLink>
             </li>
           </ul>
         </div>
 
         <span className="social-container">
-          <Link
-            to="#"
-            className="facebook-link"
+          <a
+            href="https://www.instagram.com/bloodhunts_gaming"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="social-link instagram-link"
             onMouseEnter={() => cursorChangeHandler("hovered")}
             onMouseLeave={() => cursorChangeHandler("")}
           >
-            <i className="bx bxl-instagram"></i>
-          </Link>
-          <Link
-            to="#"
-            className="twitter-link"
+            <FontAwesomeIcon icon={faInstagram} />
+          </a>
+          <a
+            href="https://www.tiktok.com/@bloodhunts_gaming"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="social-link tiktok-link"
             onMouseEnter={() => cursorChangeHandler("hovered")}
             onMouseLeave={() => cursorChangeHandler("")}
           >
-            <i className="bx bxl-twitter"></i>
-          </Link>
-          <Link
-            to="#"
-            className="youtube-link"
-            onMouseEnter={() => cursorChangeHandler("hovered")}
-            onMouseLeave={() => cursorChangeHandler("")}
-          >
-            <i className="bx bxl-youtube"></i>
-          </Link>
-          <Link
-            to="#"
-            className="twitch-link"
-            onMouseEnter={() => cursorChangeHandler("hovered")}
-            onMouseLeave={() => cursorChangeHandler("")}
-          >
-            <i className="bx bxl-twitch"></i>
-          </Link>
+            <FontAwesomeIcon icon={faTiktok} />
+          </a>
         </span>
       </div>
       <hr />
@@ -121,9 +115,27 @@ const Footer = () => {
           © 2024 BloodHunts Gaming, Inc. All Rights Reserved
         </span>
         <div className="site-info">
-          <Link to="#">Privacy Policy</Link>
-          <Link to="#">| Terms of Services |</Link>
-          <Link to="#">Code of Conduct</Link>
+          <a
+            href="https://www.google.com"
+            onMouseEnter={() => cursorChangeHandler("hovered")}
+            onMouseLeave={() => cursorChangeHandler("")}
+          >
+            Privacy Policy
+          </a>
+          <a
+            href="https://www.google.com"
+            onMouseEnter={() => cursorChangeHandler("hovered")}
+            onMouseLeave={() => cursorChangeHandler("")}
+          >
+            | Terms of Services |
+          </a>
+          <a
+            href="https://www.google.com"
+            onMouseEnter={() => cursorChangeHandler("hovered")}
+            onMouseLeave={() => cursorChangeHandler("")}
+          >
+            Code of Conduct
+          </a>
         </div>
       </div>
     </footer>

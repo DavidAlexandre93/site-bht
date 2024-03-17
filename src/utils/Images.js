@@ -16,6 +16,19 @@ import XboxIcon from '../images/xbox icon.svg';
 import Testimonial_1 from '../images/Testimonial-1.png';
 import Testimonial_2 from '../images/Testimonial-2.png';
 import Testimonial_3 from '../images/Testimonial-3.png';
+import Testimonial_4 from '../images/Testimonial-4.png';
+import Testimonial_5 from '../images/Testimonial-5.png';
+import Testimonial_6 from '../images/Testimonial-6.png';
+import Testimonial_7 from '../images/Testimonial-7.png';
+import Testimonial_8 from '../images/Testimonial-8.png';
+import Testimonial_9 from '../images/Testimonial-9.png';
+
+
+
+
+
+
+
 
 export {
     BackgroundAbout,
@@ -35,5 +48,11 @@ export {
     XboxIcon,
     Testimonial_1,
     Testimonial_2,
-    Testimonial_3
+    Testimonial_3,
+    Testimonial_4,
+    Testimonial_5,
+    Testimonial_6,
+    Testimonial_7,
+    Testimonial_8,
+    Testimonial_9
 }

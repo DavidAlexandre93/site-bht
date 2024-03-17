@@ -1,83 +1,136 @@
-.quotes-section{
+.quotes-section {
     background: radial-gradient(70.52% 37.27% at 24.21% 47.47%, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0) 51.1%, #080A0B 99.74%), url('../images/BackgroundQuotes.png');
-    //background: url('../images/BackgroundHero-1.png');
     background-size: cover;
-    //    background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: 0% 0%;
     padding: 5rem 10rem;
+    display: flex;
+    justify-content: space-between;
+}
 
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+.quotes-section__left, .quotes-section__right {
+    display: flex;
+    flex-direction: column;
+    gap: 32px; /* Espaçamento ajustado entre os cards */
+    width: 48%;
+}
 
-    &__left{
-        .text{
-            font-size: 1.8rem;
-            font-family: var(--secondery-font);
-            color: var(--white);
-            text-align: justify;
-            width: 43.495rem;
-            margin: 4rem 0;
-            p{
-                line-height: 1.2;
-                font-weight: 300;
-            }
-        }
-        button{
-            transition: var(--default-transition);
-            &:hover{
-                transform: scale(1.2);
-            }
-        }
+.quotes-section__left .text {
+    font-size: 1.8rem;
+    font-family: var(--secondery-font);
+    color: var(--white);
+    text-align: justify;
+    width: auto;
+    margin: 4rem 0;
+    p {
+        line-height: 1.2;
+        font-weight: 300;
     }
-    &__right{
+}
+
+.quotes-section__left button {
+    transition: var(--default-transition);
+    &:hover {
+        transform: scale(1.2);
+    }
+}
+
+.quotes-section__right {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 32px;
+}
+
+.card-testimonial {
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    margin: 0 auto;
+    max-width: 90%; /* Ajuste de largura */
+    padding: 16px;
+
+    &:hover {
+        transform: translateY(-5px);
+    }
+
+    .card-testimonial__head {
         display: flex;
-        flex-direction: column;
-        position: relative;
+        align-items: center;
+        padding: 1rem;
+
+        .testimonial-img {
+            img {
+                width: 60px;
+                height: 60px;
+                border-radius: 50%;
+                object-fit: cover;
+                margin-right: 1rem;
+            }
+        }
+
+        .testimonial-perfil {
+            display: flex;
+            flex-direction: column;
+
+            .testimonial-perfil__name, .testimonial-perfil__code_name {
+                margin: 0;
+                font-size: 1rem;
+            }
+
+            .testimonial-perfil__code_name {
+                color: #666;
+            }
+        }
+    }
+
+    .card-testimonial__body {
+        padding: 0 1rem;
+        p {
+            margin: 1rem 0;
+        }
+    }
+
+    .card-testimonial__date {
+        padding: 0.5rem 1rem;
+        text-align: right;
+        font-size: 0.85rem;
+        color: #666;
     }
 }
 
-@media screen and (max-width: 1086px){
-    .quotes-section{}
+@media screen and (max-width: 1086px) {
+    .quotes-section {
+        flex-direction: column;
+        align-items: center;
+    }
+    .quotes-section__left, .quotes-section__right {
+        width: 100%;
+    }
 }
 
-@media screen and (max-width: 963px){
-    .quotes-section{
+@media screen and (max-width: 963px) {
+    .quotes-section {
         grid-template-columns: auto;
-
-        &__right{
+        &__right {
             margin-top: 2rem;
         }
     }
 }
 
-@media screen and (max-width: 800px){
-    .quotes-section{
-        padding: 5rem 5rem;
+@media screen and (max-width: 800px) {
+    .quotes-section {
+        padding: 5rem 2rem;
     }
 }
 
-@media screen and (max-width: 550px){
-    .quotes-section{
-        padding: 5rem 3rem;
-        &__left{
-            .text{
-                font-size: 1.8rem;
-                font-family: var(--secondery-font);
-                color: var(--white);
-                text-align: justify;
+@media screen and (max-width: 550px) {
+    .quotes-section {
+        padding: 5rem 1rem;
+        &__left, &__right {
+            .text, .column {
+                font-size: 1.6rem;
                 width: 100%;
-                margin: 4rem 0;
-                p{
-                    line-height: 1.2;
-                    font-weight: 300;
-                }
-            }
-            button{
-                transition: var(--default-transition);
-                &:hover{
-                    transform: scale(1.2);
-                }
             }
         }
     }
