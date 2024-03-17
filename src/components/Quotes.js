@@ -27,13 +27,9 @@ const Quotes = () => {
   return (
     <section className="quotes-section" id="quotes">
       <Row gutter={32}>
-        {" "}
-        <Col span={12} className="quotes-section__left">
+        <Col xs={24} lg={12} className="quotes-section__left">
           <h4 className="display-2">Quem está por trás da organização?</h4>
-          <h1
-            className="display-1 glitch-overlay"
-            data-content="ADMINISTRATIVO"
-          >
+          <h1 className="display-1 glitch-overlay" data-content="ADMINISTRATIVO">
             <span>EQUIPE</span>
           </h1>
           <div className="text">
@@ -45,10 +41,9 @@ const Quotes = () => {
           </div>
           <Button {...button_info} />
         </Col>
-        <Col span={12} className="quotes-section__right">
+        <Col xs={24} lg={12} className="quotes-section__right">
           <Row gutter={[32, 32]}>
-            {" "}
-            <Col span={8}>
+            <Col xs={24} sm={12} lg={8}>
               <CardTestimonial
                 testimonial={{
                   img_src: Testimonial_1,
@@ -61,7 +56,7 @@ const Quotes = () => {
                 }}
               />
             </Col>
-            <Col span={8}>
+            <Col xs={24} sm={12} lg={8}>
               <CardTestimonial
                 testimonial={{
                   img_src: Testimonial_2,
@@ -74,7 +69,7 @@ const Quotes = () => {
                 }}
               />
             </Col>
-            <Col span={8}>
+            <Col xs={24} sm={12} lg={8}>
               <CardTestimonial
                 testimonial={{
                   img_src: Testimonial_3,
@@ -87,10 +82,7 @@ const Quotes = () => {
                 }}
               />
             </Col>
-          </Row>
-          <Row gutter={[32, 32]}>
-            {" "}
-            <Col span={8}>
+            <Col xs={24} sm={12} lg={8}>
               <CardTestimonial
                 testimonial={{
                   img_src: Testimonial_4,
@@ -103,7 +95,7 @@ const Quotes = () => {
                 }}
               />
             </Col>
-            <Col span={8}>
+            <Col xs={24} sm={12} lg={8}>
               <CardTestimonial
                 testimonial={{
                   img_src: Testimonial_5,
@@ -116,49 +108,46 @@ const Quotes = () => {
                 }}
               />
             </Col>
-            <Col span={8}>
+            <Col xs={24} sm={12} lg={8}>
               <CardTestimonial
                 testimonial={{
                   img_src: Testimonial_6,
                   img_name: "Thamilly Salustiano",
                   name: "Thamilly Salustiano",
                   code_name: "noze",
-                  content:
-                    "Vice líder geral de players casuais Call of Duty Mobile",
+                  content: "Vice líder geral de players casuais Call of Duty Mobile",
                   date: "2024",
                   url: "https://www.instagram.com/thamillysalustiano",
                 }}
               />
             </Col>
-            <Col span={8}>
+            <Col xs={24} sm={12} lg={8}>
               <CardTestimonial
                 testimonial={{
                   img_src: Testimonial_7,
                   img_name: "Gustavo Ferreira",
                   name: "Gustavo Ferreira",
                   code_name: "Rocky",
-                  content:
-                    "Coordenador e analista de competitivo Call of Duty Mobile",
+                  content: "Coordenador e analista de competitivo Call of Duty Mobile",
                   date: "2024",
                   url: "https://www.instagram.com",
                 }}
               />
             </Col>
-            <Col span={8}>
+            <Col xs={24} sm={12} lg={8}>
               <CardTestimonial
                 testimonial={{
                   img_src: Testimonial_8,
                   img_name: "Gustavo Henri",
                   name: "Gustavo Henri",
                   code_name: "Ojisan",
-                  content:
-                    "Coordenador e analista de competitivo Call of Duty Mobile",
+                  content: "Coordenador e analista de competitivo Call of Duty Mobile",
                   date: "2024",
                   url: "https://www.instagram.com/ojisan.7",
                 }}
               />
             </Col>
-            <Col span={8}>
+            <Col xs={24} sm={12} lg={8}>
               <CardTestimonial
                 testimonial={{
                   img_src: Testimonial_9,

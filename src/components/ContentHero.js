@@ -1,4 +1,3 @@
-// ContentHero.js
 import React, { useState, useEffect } from "react";
 import Aos from "aos";
 import "aos/dist/aos.css";
@@ -83,8 +82,8 @@ const ContentHero = () => {
           <span>BLOODHUNTS GAMING</span>
         </h1>
         <h4 className="hero-content__title-2">Organização de eSports</h4>
-        <Row gutter={[16, 24]}>
-          <Col xs={24} sm={24} md={24} lg={24} xl={24}>
+        <Row gutter={[16, 24]} justify="center">
+          <Col xs={24} sm={24} md={20} lg={16} xl={12}>
             <Space>
               <Dropdown
                 overlay={menu}
