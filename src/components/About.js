@@ -38,15 +38,9 @@ const About = () => {
             </div>
           </div>
         </Col>
-        {/* Ajuste do offset para empurrar um pouco para a direita */}
-        <Col
-          xs={{ span: 24, offset: 0 }}
-          sm={{ span: 24, offset: 0 }}
-          md={{ span: 8, offset: 1 }}
-          lg={{ span: 8, offset: 1 }}
-          xl={{ span: 8, offset: 2 }}
-          push={6}
-        >
+      </Row>
+      <Row justify="space-between" align="middle">
+        <Col xs={24} sm={24} md={14} lg={14} xl={14}>
           <div className="about-section__right">
             <SliderAbout />
           </div>

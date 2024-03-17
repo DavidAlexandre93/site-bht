@@ -29,7 +29,10 @@ const Quotes = () => {
       <Row gutter={32}>
         <Col xs={24} lg={12} className="quotes-section__left">
           <h4 className="display-2">Quem está por trás da organização?</h4>
-          <h1 className="display-1 glitch-overlay" data-content="ADMINISTRATIVO">
+          <h1
+            className="display-1 glitch-overlay"
+            data-content="ADMINISTRATIVO"
+          >
             <span>EQUIPE</span>
           </h1>
           <div className="text">
@@ -115,7 +118,8 @@ const Quotes = () => {
                   img_name: "Thamilly Salustiano",
                   name: "Thamilly Salustiano",
                   code_name: "noze",
-                  content: "Vice líder geral de players casuais Call of Duty Mobile",
+                  content:
+                    "Vice líder geral de players casuais Call of Duty Mobile",
                   date: "2024",
                   url: "https://www.instagram.com/thamillysalustiano",
                 }}
@@ -128,7 +132,8 @@ const Quotes = () => {
                   img_name: "Gustavo Ferreira",
                   name: "Gustavo Ferreira",
                   code_name: "Rocky",
-                  content: "Coordenador e analista de competitivo Call of Duty Mobile",
+                  content:
+                    "Coordenador e analista de competitivo Call of Duty Mobile",
                   date: "2024",
                   url: "https://www.instagram.com",
                 }}
@@ -141,7 +146,8 @@ const Quotes = () => {
                   img_name: "Gustavo Henri",
                   name: "Gustavo Henri",
                   code_name: "Ojisan",
-                  content: "Coordenador e analista de competitivo Call of Duty Mobile",
+                  content:
+                    "Coordenador e analista de competitivo Call of Duty Mobile",
                   date: "2024",
                   url: "https://www.instagram.com/ojisan.7",
                 }}

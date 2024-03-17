@@ -1,21 +1,21 @@
-import React, { createContext, useContext, useState, useEffect } from 'react';
+import React, { createContext, useContext, useState, useEffect } from "react";
 
 const LangContext = createContext();
 
 const translations = {
-  'en': {
+  en: {
     greeting: "Hello",
   },
-  'fr': {
+  fr: {
     greeting: "Bonjour",
   },
-  'es': {
+  es: {
     greeting: "Hola",
   },
 };
 
 export const LangProvider = ({ children }) => {
-  const [lang, setLang] = useState('en');
+  const [lang, setLang] = useState("en");
 
   useEffect(() => {
     // Isso força a re-renderização dos componentes consumidores quando o idioma muda

@@ -2,7 +2,8 @@ import React from "react";
 import "../css/CardTestimonial.scss";
 
 const CardTestimonial = ({ testimonial }) => {
-  const { img_src, img_name, name, code_name, content, date, url } = testimonial;
+  const { img_src, img_name, name, code_name, content, date, url } =
+    testimonial;
 
   // Função para lidar com o redirecionamento
   const handleRedirect = () => {

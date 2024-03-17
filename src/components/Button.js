@@ -16,7 +16,7 @@ const Button = (props) => {
   // Estilos inline condicionais para responsividade
   const responsiveStyle = {
     ...textStyle,
-    fontSize: window.innerWidth < 768 ? '14px' : '16px', // Exemplo de ajuste condicional de tamanho de fonte
+    fontSize: window.innerWidth < 768 ? "14px" : "16px", // Exemplo de ajuste condicional de tamanho de fonte
   };
 
   if (type === "price-button") {

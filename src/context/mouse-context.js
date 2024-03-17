@@ -3,7 +3,7 @@ import React, { createContext, useState } from "react";
 export const MouseContext = createContext({
   cursorType: "",
   cursorChangeHandler: () => {},
-  cursorClicked: false
+  cursorClicked: false,
 });
 
 const MouseContextProvider = (props) => {
@@ -15,8 +15,8 @@ const MouseContextProvider = (props) => {
   };
 
   const cursorClickedHandler = (cursorClicked) => {
-      setCursorClicked(cursorClicked);
-  }
+    setCursorClicked(cursorClicked);
+  };
 
   return (
     <MouseContext.Provider
@@ -24,7 +24,7 @@ const MouseContextProvider = (props) => {
         cursorType: cursorType,
         cursorChangeHandler: cursorChangeHandler,
         cursorClicked: cursorClicked,
-        cursorClickedHandler: cursorClickedHandler
+        cursorClickedHandler: cursorClickedHandler,
       }}
     >
       {props.children}

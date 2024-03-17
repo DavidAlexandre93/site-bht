@@ -46,7 +46,9 @@ const Navbar = () => {
         </ScrollLink>
         <div
           className={`menu-toggle ${toggleMenu ? "is-active" : ""} 
-                ${toggleMenuScroll ? "scrolled" : ""} ${toggleSkewMenu ? "active" : ""}`}
+                ${toggleMenuScroll ? "scrolled" : ""} ${
+            toggleSkewMenu ? "active" : ""
+          }`}
           onClick={handleToggleMenu}
         >
           <span className="bar"></span>
@@ -64,7 +66,7 @@ const Navbar = () => {
               smooth={true}
               duration={500}
             >
-              {translate('Página inicial')}
+              {translate("Página inicial")}
             </ScrollLink>
           </li>
           <li>
@@ -77,7 +79,7 @@ const Navbar = () => {
               smooth={true}
               duration={500}
             >
-              {translate('Sobre nós')}
+              {translate("Sobre nós")}
             </ScrollLink>
           </li>
           <li>
@@ -90,7 +92,7 @@ const Navbar = () => {
               smooth={true}
               duration={500}
             >
-              {translate('Campeonatos')}
+              {translate("Campeonatos")}
             </ScrollLink>
           </li>
           <li>
@@ -103,7 +105,7 @@ const Navbar = () => {
               smooth={true}
               duration={500}
             >
-              {translate('Requisitos')}
+              {translate("Requisitos")}
             </ScrollLink>
           </li>
           <li>
@@ -116,7 +118,7 @@ const Navbar = () => {
               smooth={true}
               duration={1000}
             >
-              {translate('Administração')}
+              {translate("Administração")}
             </ScrollLink>
           </li>
         </ul>
@@ -127,17 +129,31 @@ const Navbar = () => {
             <i className="uil uil-angle-down"></i>
           </div>
           <div className={`lang-option ${toggleLang ? "active" : ""}`}>
-            <span className="lang-eng" onClick={() => handleSetLang("en")}>EN</span>
-            <span className="lang-fra" onClick={() => handleSetLang("fr")}>FR</span>
-            <span className="lang-spa" onClick={() => handleSetLang("es")}>ES</span>
+            <span className="lang-eng" onClick={() => handleSetLang("en")}>
+              EN
+            </span>
+            <span className="lang-fra" onClick={() => handleSetLang("fr")}>
+              FR
+            </span>
+            <span className="lang-spa" onClick={() => handleSetLang("es")}>
+              ES
+            </span>
           </div>
         </div>
 
         <div className="container-sponsor">
-          <a href="https://www.callofduty.com/br/pt/mobile" target="_blank" rel="noopener noreferrer">
+          <a
+            href="https://www.callofduty.com/br/pt/mobile"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <img src={XboxIcon} alt="Xbox" />
           </a>
-          <a href="https://www.callofduty.com/br/pt/warzone" target="_blank" rel="noopener noreferrer">
+          <a
+            href="https://www.callofduty.com/br/pt/warzone"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <img src={Steam} alt="Steam" />
           </a>
         </div>
