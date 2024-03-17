@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import { Typography, Space, Row, Col } from "antd"; // Importe Row e Col do Ant Design
+import { Typography, Space, Row, Col } from "antd";
 import { MouseContext } from "../context/mouse-context";
 import "../css/Button.scss";
 
@@ -7,14 +7,18 @@ const Button = (props) => {
   const { text, type, icon: Icon, url, textStyle } = props;
   const { cursorChangeHandler } = useContext(MouseContext);
 
-  // Função para tratar o clique no botão
   const handleClick = () => {
     if (url) {
       window.open(url, "_blank", "noopener,noreferrer");
     }
   };
 
-  // Se o tipo é 'price-button', usa-se um botão que parece um link
+  // Estilos inline condicionais para responsividade
+  const responsiveStyle = {
+    ...textStyle,
+    fontSize: window.innerWidth < 768 ? '14px' : '16px', // Exemplo de ajuste condicional de tamanho de fonte
+  };
+
   if (type === "price-button") {
     return (
       <Row>
@@ -24,7 +28,7 @@ const Button = (props) => {
             onClick={handleClick}
             onMouseEnter={() => cursorChangeHandler("hovered")}
             onMouseLeave={() => cursorChangeHandler("")}
-            style={textStyle}
+            style={responsiveStyle}
           >
             <Space>
               <Typography.Text>{text}</Typography.Text>
@@ -39,7 +43,6 @@ const Button = (props) => {
       </Row>
     );
   } else {
-    // Para outros tipos de botões, mantém-se a lógica anterior
     return (
       <Row>
         <Col xs={24} sm={24} md={12} lg={12} xl={12}>
@@ -48,6 +51,7 @@ const Button = (props) => {
             onClick={handleClick}
             onMouseEnter={() => cursorChangeHandler("hovered")}
             onMouseLeave={() => cursorChangeHandler("")}
+            style={responsiveStyle}
           >
             <span>{text}</span>
           </button>
