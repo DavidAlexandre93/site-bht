@@ -11,11 +11,22 @@ import {
   SliderImage2,
   SliderImage3,
   SliderImage4,
+  SliderImage5,
+  SliderImage6,
+  SliderImage7,
 } from "../utils/Images";
 import "../css/SlideAbout.scss";
 
 // Assuming Images is static and defined outside the component to avoid re-creation on each render
-const Images = [SliderImage1, SliderImage2, SliderImage3, SliderImage4];
+const Images = [
+  SliderImage1,
+  SliderImage2,
+  SliderImage3,
+  SliderImage4,
+  SliderImage5,
+  SliderImage6,
+  SliderImage7,
+];
 
 const SliderAbout = () => {
   const { cursorChangeHandler } = useContext(MouseContext);
@@ -73,7 +84,16 @@ const SliderAbout = () => {
           <img src={SliderImage3} alt="Slide 3" />
         </div>
         <div className="view-slider view-slider-4">
-          <img src={SliderImage4} alt="Slide 4" ref={imageSliderRef} />
+          <img src={SliderImage4} alt="Slide 4" />
+        </div>
+        <div className="view-slider view-slider-5">
+          <img src={SliderImage5} alt="Slide 5" />
+        </div>
+        <div className="view-slider view-slider-6">
+          <img src={SliderImage6} alt="Slide 6" />
+        </div>
+        <div className="view-slider view-slider-7">
+          <img src={SliderImage7} alt="Slide 7" ref={imageSliderRef} />
         </div>
         {/* Slider Control Container */}
         <div className="control-container" ref={controlContainerRef}>
@@ -81,6 +101,9 @@ const SliderAbout = () => {
           <span className="slider-2" data-slider-index="2"></span>
           <span className="slider-3" data-slider-index="3"></span>
           <span className="slider-4" data-slider-index="4"></span>
+          <span className="slider-5" data-slider-index="5"></span>
+          <span className="slider-6" data-slider-index="6"></span>
+          <span className="slider-7" data-slider-index="7"></span>
         </div>
       </div>
       <span

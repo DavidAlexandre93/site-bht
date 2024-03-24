@@ -7,8 +7,8 @@ const Requirement = () => {
     <section className="system-requirement-section" id="systemrequirements">
       <div className="titles">
         <h4 className="display-2">Quer saber os requisitos para participar?</h4>
-        <h1 className="display-1 glitch-overlay" data-content="REQUIREMENTS">
-          <span>PLAYERS REQUIREMENTS</span>
+        <h1 className="display-1 glitch-overlay" data-content="REQUISITOS">
+          <span>PLAYERS REQUISITOS</span>
         </h1>
       </div>
 

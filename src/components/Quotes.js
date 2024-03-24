@@ -133,7 +133,7 @@ const Quotes = () => {
                   name: "Gustavo Ferreira",
                   code_name: "Rocky",
                   content:
-                    "Coordenador e analista de competitivo Call of Duty Mobile",
+                    "Coordenador e analista de players casuais Call of Duty Mobile",
                   date: "2024",
                   url: "https://www.instagram.com",
                 }}

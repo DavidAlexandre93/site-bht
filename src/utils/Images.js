@@ -11,6 +11,9 @@ import SliderImage1 from '../images/SliderImage1.jpg';
 import SliderImage2 from '../images/SliderImage2.jpg';
 import SliderImage3 from '../images/SliderImage3.jpg';
 import SliderImage4 from '../images/SliderImage4.jpg';
+import SliderImage5 from '../images/SliderImage4.jpg';
+import SliderImage6 from '../images/SliderImage4.jpg';
+import SliderImage7 from '../images/SliderImage4.jpg';
 import Steam from '../images/steam icon.svg';
 import XboxIcon from '../images/xbox icon.svg';
 import Testimonial_1 from '../images/Testimonial-1.png';
@@ -44,6 +47,9 @@ export {
     SliderImage2,
     SliderImage3,
     SliderImage4,
+    SliderImage5,
+    SliderImage6,
+    SliderImage7,
     Steam,
     XboxIcon,
     Testimonial_1,
