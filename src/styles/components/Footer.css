@@ -1,0 +1,51 @@
+footer {
+  background-color: var(--secondary-dark);
+  padding: 1.5rem 3rem;
+}
+
+.item-footer {
+  font-size: 14px !important;
+  color: #ffffff !important;
+  transition: var(--default-transition);
+  font-weight: 500;
+  text-transform: uppercase;
+  line-height: 1.8rem;
+  position: relative;
+}
+
+.item-footer:hover {
+  color: var(--hover-primary-color) !important;
+  text-shadow: var(--hover-text-shadow) !important;
+}
+
+.item-footer::before {
+  content: "";
+  position: absolute;
+  bottom: -0.2rem;
+  width: 0%;
+  height: 0.05rem;
+  background-color: var(--hover-primary-color);
+  transition: var(--default-transition);
+}
+
+.item-footer:hover:not(.active-link)::before {
+  content: "";
+  width: 100%;
+}
+
+.active-link {
+  color: var(--hover-color);
+}
+
+.social-link {
+  transition: 0.3s;
+}
+
+.social-link:hover {
+  color: var(--primary-color) !important;
+}
+
+.footer-line-separator {
+  border: 0.01rem solid var(--grey);
+  margin-top: 1rem;
+}

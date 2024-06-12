@@ -1,0 +1,140 @@
+:root {
+  /* Colors */
+  --primary-color: #ff0000cc;
+  --hover-primary-color: #ff0000b4;
+  --active-primary-color: #ff000093;
+
+  --brand-primary: rgb(138, 180, 248);
+  --brand-secondary: rgb(193, 168, 226);
+  --brand-alternative: rgb(136, 186, 191);
+  --background-site: rgb(0, 0, 0);
+  --background-code: rgb(12, 12, 12);
+  --text-body: rgb(222, 222, 222);
+  --text-comment: rgb(170, 170, 170);
+  --text-high-contrast: rgb(230, 230, 230);
+  --text-medium-contrast: rgb(202, 202, 202);
+  --text-low-contrast: rgb(170, 170, 170);
+  --detail-high-contrast: rgb(101, 101, 101);
+  --detail-medium-contrast: rgb(25, 25, 25);
+  --detail-low-contrast: rgb(21, 21, 21);
+  --admonition-note: rgb(138, 180, 248);
+  --admonition-warning: rgb(253, 186, 116);
+  --admonition-danger: rgb(220, 38, 38);
+  --brand-primary-rgb-value: 138, 180, 248;
+  --brand-secondary-rgb-value: 193, 168, 226;
+  --brand-alternative-rgb-value: 136, 186, 191;
+  --background-site-rgb-value: 0, 0, 0;
+  --background-code-rgb-value: 12, 12, 12;
+  --text-body-rgb-value: 222, 222, 222;
+  --text-comment-rgb-value: 170, 170, 170;
+  --text-high-contrast-rgb-value: 230, 230, 230;
+  --text-medium-contrast-rgb-value: 202, 202, 202;
+  --text-low-contrast-rgb-value: 170, 170, 170;
+  --detail-high-contrast-rgb-value: 101, 101, 101;
+  --detail-medium-contrast-rgb-value: 25, 25, 25;
+  --detail-low-contrast-rgb-value: 21, 21, 21;
+  --admonition-note-rgb-value: 138, 180, 248;
+  --admonition-warning-rgb-value: 253, 186, 116;
+  --admonition-danger-rgb-value: 220, 38, 38;
+
+  --secondary-color: #ffffff;
+  --secondary-dark: #080a0b;
+
+  --grey: #333435;
+  --grey-light: #5f6061;
+  --grey-light-2: #8c8d8d;
+  --grey-dark: #1b1d1e;
+
+  /* Font */
+  --primary-font: "Open Sans", sans-serif;
+  --secondary-font: "Bebas Neue", cursive;
+  --default-transition: all 0.3s ease-in-out;
+}
+
+* {
+  font-family: var(--primary-font);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar {
+  width: 10px;
+}
+
+html::-webkit-scrollbar-track {
+  background: rgb(179, 177, 177);
+  background: #333;
+}
+
+html::-webkit-scrollbar-thumb {
+  background: var(--primary-color);
+  border-radius: 10px;
+  border: 0.1rem solid #333;
+}
+
+html::-webkit-scrollbar-thumb:hover {
+  background: var(--hover-primary-color);
+  border-radius: 10px;
+}
+
+html::-webkit-scrollbar-thumb:active {
+  background: var(--active-primary-color);
+  border-radius: 10px;
+}
+
+.wolf-loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  width: 12rem;
+}
+
+.swiper {
+  width: 220px;
+  height: 300px;
+}
+
+.swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 18px;
+  font-size: 22px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.rootCarousel {
+  width: 100% !important;
+}
+
+.carousel-text-container {
+  width: 100%;
+  background-color: rgb(25, 25, 25);
+  padding: 1rem 1.5rem;
+  text-align: justify;
+  border-top: 0.1rem solid var(--primary-color);
+  border-bottom-left-radius: 1.8rem;
+  border-bottom-right-radius: 1.8rem;
+}
+
+@keyframes loading {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@media (min-width: 576px) {
+ .wolf-loading {
+    width: 14rem;
+  }
+}

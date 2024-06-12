@@ -1,0 +1,53 @@
+{
+  "translation": {
+    "header": {
+      "home": "INICIO",
+      "ourStory": "NUESTRA HISTORIA",
+      "importantAnnouncements": "ANUNCIOS",
+      "store": "TIENDA",
+      "staff": "PERSONAL"
+    },
+    "home": {
+      "teamName": "BLOODHUNTS GAMING",
+      "teamMotto": "SOMOS LA MANADA DE LOBOS",
+      "teamDescription": "ORGANIZACIÓN PROFESIONAL DE ESPORTS"
+    },
+    "ourStory": {
+      "title": "NUESTRA HISTORIA",
+      "subtitle": "Conoce nuestra historia",
+      "description": "Fundada el 2 de noviembre de 2023, BloodHunts Gaming es una organización dedicada a reunir a jugadores de Call of Duty Mobile, Warzone PC/Consola y Warzone Mobile. Nuestro enfoque es crear una comunidad inclusiva, valorando tanto el juego competitivo como el casual. Nacimos con el propósito de ser una comunidad/organización para compartir estrategias, experiencias y, sobre todo, la pasión por Call of Duty. Siempre estamos abiertos a nuevos miembros que quieran contribuir a nuestra creciente familia, ofreciendo un ambiente acogedor para todos. Con planes de expandir nuestros horizontes a otros juegos en el futuro, BloodHunts Gaming se compromete a ser más que una organización: somos una comunidad, una familia, unida por el amor a los videojuegos."
+    },
+    "importantAnnouncements": {
+      "title": "DESTACADOS",
+      "subtitle": "Anuncios importantes"
+    },
+    "store": {
+      "title": "NUESTRA TIENDA",
+      "subtitle": "Adquiere nuestros productos exclusivos",
+      "textTShirt1": "CAMISETA BLOODHUNTS",
+      "textTShirt2": "Viste nuestro manto ahora",
+      "btnText": "Visita nuestra tienda"
+    },
+    "staff": {
+      "title": "EQUIPO",
+      "subtitle": "Conoce a nuestro equipo",
+      "description": "Estos son nuestros representantes que permiten que BloodHunts Gaming esté presente en el mundo de los videojuegos.",
+      "btnText": "Más información"
+    },
+    "newsletter": {
+      "title": "INSCRÍBETE EN EL BOLETÍN",
+      "subtitle": "Recibe información",
+      "description": "Ingresa tu correo electrónico para recibir información sobre nuestra organización y notificaciones.",
+      "btnText": "Inscríbete ahora"
+    },
+    "footer": {
+      "home": "INICIO",
+      "ourStory": "NUESTRA HISTORIA",
+      "importantAnnouncements": "ANUNCIOS",
+      "store": "TIENDA",
+      "staff": "PERSONAL",
+      "textCopyright": "© 2024 BloodHunts Gaming, Inc. Todos los derechos reservados",
+      "textDevelopedBy": "Desarrollado por"
+    }
+  }
+}

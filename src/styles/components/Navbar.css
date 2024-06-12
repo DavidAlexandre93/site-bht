@@ -1,0 +1,129 @@
+.navbar-container {
+  width: 100%;
+  padding: 0.5rem 0;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  width: 100%;
+  gap: 5rem;
+}
+
+.item-navbar {
+  text-wrap: nowrap;
+  font-size: 14px !important;
+  color: #ffffff !important;
+  transition: var(--default-transition);
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-right: 5rem;
+  line-height: 1.8rem !important;
+  position: relative;
+}
+
+.item-navbar:hover {
+  color: var(--hover-color) !important;
+  text-shadow: var(--hover-text-shadow) !important;
+}
+
+.item-navbar::before {
+  content: "";
+  position: absolute;
+  bottom: -0.2rem;
+  width: 0%;
+  height: 0.05rem;
+  background-color: var(--hover-color);
+  transition: var(--default-transition);
+}
+
+.item-navbar:hover:not(.active-link)::before {
+  content: "";
+  width: 100%;
+}
+
+.active-link {
+  color: var(--hover-color);
+}
+
+.line {
+  width: 2px;
+  height: 2rem;
+  background-color: #ffffff;
+  opacity: 0.5;
+}
+
+.container-sponsor {
+  display: flex;
+  align-items: center;
+  a {
+    transition: var(--default-transition);
+    &:hover {
+      transform: scale(1.3);
+    }
+  }
+}
+
+.item-menu-mobile {
+  font-size: 16px !important;
+  color: #ffffff !important;
+  transition: var(--default-transition);
+  font-weight: 500;
+  text-transform: uppercase;
+  line-height: 1.8rem;
+  position: relative;
+}
+
+.item-menu-mobile:hover {
+  color: var(--hover-primary-color) !important;
+  text-shadow: var(--hover-text-shadow) !important;
+}
+
+.item-menu-mobile::before {
+  content: "";
+  position: absolute;
+  bottom: -0.2rem;
+  width: 0%;
+  height: 0.05rem;
+  background-color: var(--hover-primary-color);
+  transition: var(--default-transition);
+}
+
+.item-menu-mobile:hover:not(.active-link)::before {
+  content: "";
+  width: 100%;
+}
+
+.menu-mobile-close-btn {
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.menu-mobile-close-btn:hover {
+  background-color: rgba(255, 255, 255, 0.194);
+}
+
+.social-media-navbar {
+  cursor: pointer;
+  display: flex;
+  background-color: #d10000;
+  padding: 8px;
+  border-radius: 20px;
+  transition: 0.2s;
+}
+
+.social-media-navbar:hover {
+  filter: brightness(0.8);
+}
+
+.social-media-navbar:active {
+  filter: brightness(0.6);
+}
+
+@media (min-width: 1024px) {
+  .navbar {
+    justify-content: center;
+  }
+}

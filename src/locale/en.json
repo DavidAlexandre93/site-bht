@@ -1,0 +1,53 @@
+{
+  "translation": {
+    "header": {
+      "home": "HOME",
+      "ourStory": "OUR STORY",
+      "importantAnnouncements": "Announcements",
+      "store": "STORE",
+      "staff": "STAFF"
+    },
+    "home": {
+      "teamName": "BLOODHUNTS GAMING",
+      "teamMotto": "WE ARE THE WOLF PACK",
+      "teamDescription": "PROFESSIONAL E-SPORTS ORGANIZATION"
+    },
+    "ourStory": {
+      "title": "OUR STORY",
+      "subtitle": "Get to know our story",
+      "description": "Founded on November 2, 2023, BloodHunts Gaming is an organization dedicated to bringing together players of Call of Duty Mobile, Warzone PC/Console, and Warzone Mobile. Our focus is on creating an inclusive community, valuing both competitive and casual gaming. We were born with the purpose of being a community/organization to share strategies, experiences, and above all, the passion for Call of Duty. We are always open to new members who want to contribute to our growing family, offering a welcoming environment for everyone. With plans to expand our horizons to other games in the future, BloodHunts Gaming is committed to being more than an organization: we are a community, a family, united by our love for games."
+    },
+    "importantAnnouncements": {
+      "title": "HIGHLIGHTS",
+      "subtitle": "Important Announcements"
+    },
+    "store": {
+      "title": "OUR STORE",
+      "subtitle": "Get our exclusive products",
+      "textTShirt1": "BLOODHUNTS T-SHIRT",
+      "textTShirt2": "Wear our mantle now",
+      "btnText": "Visit our store"
+    },
+    "staff": {
+      "title": "STAFF",
+      "subtitle": "Meet our staff",
+      "description": "These are our representatives who enable BloodHunts Gaming to be present in the gaming world scene.",
+      "btnText": "Learn more"
+    },
+    "newsletter": {
+      "title": "SUBSCRIBE TO THE NEWSLETTER",
+      "subtitle": "Receive information",
+      "description": "Enter your email to receive information about our organization and notifications.",
+      "btnText": "Subscribe now"
+    },
+    "footer": {
+      "home": "HOME",
+      "ourStory": "OUR STORY",
+      "importantAnnouncements": "Announcements",
+      "store": "STORE",
+      "staff": "STAFF",
+      "textCopyright": "© 2024 BloodHunts Gaming, Inc. All Rights Reserved",
+      "textDevelopedBy": "Developed by"
+    }
+  }
+}

@@ -1,0 +1,35 @@
+@font-face {
+  font-family: "Cutmark-NrHeavyItalic";
+  src: url("../../assets/fonts/Cutmark-NrHeavyItalic.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Cutmark-Italic";
+  src: url("../../assets/fonts/Cutmark-Italic.ttf") format("truetype");
+}
+
+.home-section {
+  width: 100%;
+  height: 100dvh;
+  background: url("../../../public/teste2.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 0% 50%;
+  position: relative;
+}
+
+@media (min-width: 1500px) {
+  .home-section {
+    padding-left: 18rem !important;
+  }
+
+  .home-carousel-container {
+    transform: scale(0.9);
+  }
+}
+
+@media (min-width: 1900px) {
+  .home-highlighted-text {
+    display: initial !important;
+  }
+}

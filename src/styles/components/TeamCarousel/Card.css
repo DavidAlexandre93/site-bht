@@ -1,0 +1,30 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 18rem;
+  border-radius: 10px;
+}
+
+.team-carousel-card-img {
+  width: 100%;
+  border-radius: 20px;
+  object-fit: cover !important;
+}
+
+.card h2 {
+  margin: 0;
+  margin-top: 1rem;
+}
+
+.card p {
+  margin: 0;
+  margin-top: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+@media (min-width: 1400px) {
+  .card {
+    width: 28rem;
+  }
+}

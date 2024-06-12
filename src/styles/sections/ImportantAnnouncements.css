@@ -1,0 +1,35 @@
+.important-announcements-section {
+  background: radial-gradient(
+      51.1% 80.48% at 30.85% 53.65%,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(0, 0, 0, 0) 19.2%,
+      rgba(4, 5, 6, 0.520671) 47.48%,
+      #080a0b 99.74%
+    ),
+    url("../../../public/7.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  gap: 3rem;
+  border-bottom: 0.1rem solid var(--primary-color);
+}
+
+.title-important-announcements {
+  width: 100% !important;
+}
+
+.important-announcements-carousel {
+  width: 35rem;
+}
+
+@media (min-width: 1024px) {
+  .title-important-announcements {
+    width: 48rem !important;
+  }
+}
+
+@media (min-width: 1700px) {
+  .important-announcements-section-items {
+    align-items: flex-end;
+    width: auto;
+  }
+}

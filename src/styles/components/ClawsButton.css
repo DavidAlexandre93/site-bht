@@ -1,0 +1,40 @@
+.claws-button {
+  cursor: pointer;
+  background-color: #d10000;
+  transition: 0.2s;
+}
+
+.claws-button:hover {
+  background-color: #b80000;
+}
+
+.claws {
+  top: 0;
+  right: 0;
+  position: absolute;
+  background: url("../../assets/img/claws-without-bg.png");
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  clip-path: inset(0 0 100% 0);
+  transition: clip-path 0.2s ease-out;
+}
+
+.claws-button:hover .claws {
+  clip-path: inset(0 0 0 0);
+}
+
+
+@keyframes pulse-btn {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
