@@ -254,15 +254,17 @@ const SocialMedia = (props: SocialMediaProps) => {
           <FaTwitter className="social-media" color={"white"} />
         </CustomLink>
       </Box>
-      <Box
+      <CustomLink
+        target="_blank"
         display={{ xs: "initial", xl: "none" }}
         justifyContent={"center"}
         style={{ cursor: "pointer" }}
         mt={3.5}
         width={150}
+        href={"https://www.patreon.com/BloodHuntsGaming"}
       >
         <img width={"100%"} src={logoPatreon} />
-      </Box>
+      </CustomLink>
     </Box>
   );
 };
