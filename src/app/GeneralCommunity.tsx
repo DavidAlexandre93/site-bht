@@ -103,8 +103,8 @@ const GeneralCommunity = () => {
             rotationDuration={80}
             tilt={true}
             freeRoam={true}
-            freeRoamUpperBounds={180}
-            freeRoamLowerBounds={-180}
+            freeRoamUpperBounds={0}
+            freeRoamLowerBounds={0}
             onTitleClickHandler={onTitleClickHandler}
             startingAnimation={true}
             rotateOnScroll={true}
