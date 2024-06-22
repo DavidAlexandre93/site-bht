@@ -106,3 +106,13 @@ body {
   gap: 0.6rem;
   align-items: center;
 }
+
+.rootCarousel {
+  scale: 1;
+}
+
+@media (min-width: 1024px) {
+  .rootCarousel {
+    scale: 0.8;
+  }
+}

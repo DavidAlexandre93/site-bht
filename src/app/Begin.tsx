@@ -13,13 +13,13 @@ import {
   // ListItemText,
   Typography,
 } from "@mui/material";
-import {
-  FaDiscord,
-  FaInstagram,
-  FaTiktok,
-  FaTwitter,
-  FaWhatsapp,
-} from "react-icons/fa";
+// import {
+//   FaDiscord,
+//   FaInstagram,
+//   FaTiktok,
+//   FaTwitter,
+//   FaWhatsapp,
+// } from "react-icons/fa";
 import CustomLink from "../components/CustomLink";
 import { Carousel } from "react-3dm-carousel";
 
@@ -142,7 +142,7 @@ const Begin = () => {
             {translate("begin.btnText")}
           </ClawsButton>
         </Box>
-        <SocialMedia openSocialMedia={() => setOpenSocialMedia(true)} />
+        {/* <SocialMedia openSocialMedia={() => setOpenSocialMedia(true)} /> */}
       </Box>
 
       {openSocialMedia && (
@@ -174,7 +174,7 @@ const Begin = () => {
             onClick={() => setOpenSocialMedia(false)}
             sx={{
               position: "absolute",
-              bottom: "2%",
+              bottom: "1%",
               border: "1px solid #fff",
               transition: "0.2s",
               backgroundColor: "transparent",
@@ -195,79 +195,79 @@ const Begin = () => {
   );
 };
 
-type SocialMediaProps = {
-  openSocialMedia: () => void;
-};
-const SocialMedia = (props: SocialMediaProps) => {
-  const { openSocialMedia } = props;
+// type SocialMediaProps = {
+//   openSocialMedia: () => void;
+// };
+// const SocialMedia = (props: SocialMediaProps) => {
+//   const { openSocialMedia } = props;
 
-  return (
-    <Box
-      display={"flex"}
-      flexDirection={"column"}
-      position={"absolute"}
-      alignItems={"center"}
-      justifyContent={{ xs: "center", xl: "initial" }}
-      bottom={{ xs: "10%", xl: "15%" }}
-    >
-      <Box
-        display={"flex"}
-        alignItems={"center"}
-        justifyContent={{ xs: "center", xl: "initial" }}
-        mt={2}
-        gap={2}
-      >
-        <CustomLink
-          onClick={() => openSocialMedia()}
-          className="social-media-container"
-        >
-          <FaWhatsapp className="social-media" color={"white"} />
-        </CustomLink>
-        <CustomLink
-          target={"_blank"}
-          href={"https://www.instagram.com/bloodhunts_gaming"}
-          className="social-media-container"
-        >
-          <FaInstagram className="social-media" color={"white"} />
-        </CustomLink>
-        <CustomLink
-          target={"_blank"}
-          href={"https://discord.gg/sjGQAHptjX"}
-          className="social-media-container"
-        >
-          <FaDiscord className="social-media" color={"white"} />
-        </CustomLink>
-        <CustomLink
-          target={"_blank"}
-          href={"https://www.tiktok.com/@bloodhunts_gaming"}
-          className="social-media-container"
-        >
-          <FaTiktok className="social-media" color={"white"} />
-        </CustomLink>
-        <CustomLink
-          target={"_blank"}
-          href={
-            "https://x.com/i/flow/login?redirect_after_login=%2Fbloodhuntsgg"
-          }
-          className="social-media-container"
-        >
-          <FaTwitter className="social-media" color={"white"} />
-        </CustomLink>
-      </Box>
-      <CustomLink
-        target="_blank"
-        display={{ xs: "initial", xl: "none" }}
-        justifyContent={"center"}
-        style={{ cursor: "pointer" }}
-        mt={3.5}
-        width={150}
-        href={"https://www.patreon.com/BloodHuntsGaming"}
-      >
-        <img width={"100%"} src={logoPatreon} />
-      </CustomLink>
-    </Box>
-  );
-};
+//   return (
+//     <Box
+//       display={"flex"}
+//       flexDirection={"column"}
+//       position={"absolute"}
+//       alignItems={"center"}
+//       justifyContent={{ xs: "center", xl: "initial" }}
+//       bottom={{ xs: "10%", xl: "15%" }}
+//     >
+//       <Box
+//         display={"flex"}
+//         alignItems={"center"}
+//         justifyContent={{ xs: "center", xl: "initial" }}
+//         mt={2}
+//         gap={2}
+//       >
+//         <CustomLink
+//           onClick={() => openSocialMedia()}
+//           className="social-media-container"
+//         >
+//           <FaWhatsapp className="social-media" color={"white"} />
+//         </CustomLink>
+//         <CustomLink
+//           target={"_blank"}
+//           href={"https://www.instagram.com/bloodhunts_gaming"}
+//           className="social-media-container"
+//         >
+//           <FaInstagram className="social-media" color={"white"} />
+//         </CustomLink>
+//         <CustomLink
+//           target={"_blank"}
+//           href={"https://discord.gg/sjGQAHptjX"}
+//           className="social-media-container"
+//         >
+//           <FaDiscord className="social-media" color={"white"} />
+//         </CustomLink>
+//         <CustomLink
+//           target={"_blank"}
+//           href={"https://www.tiktok.com/@bloodhunts_gaming"}
+//           className="social-media-container"
+//         >
+//           <FaTiktok className="social-media" color={"white"} />
+//         </CustomLink>
+//         <CustomLink
+//           target={"_blank"}
+//           href={
+//             "https://x.com/i/flow/login?redirect_after_login=%2Fbloodhuntsgg"
+//           }
+//           className="social-media-container"
+//         >
+//           <FaTwitter className="social-media" color={"white"} />
+//         </CustomLink>
+//       </Box>
+//       <CustomLink
+//         target="_blank"
+//         display={{ xs: "initial", xl: "none" }}
+//         justifyContent={"center"}
+//         style={{ cursor: "pointer" }}
+//         mt={3.5}
+//         width={150}
+//         href={"https://www.patreon.com/BloodHuntsGaming"}
+//       >
+//         <img width={"100%"} src={logoPatreon} />
+//       </CustomLink>
+//     </Box>
+//   );
+// };
 
 // type CommunitiesProps = {
 //   open: boolean;
