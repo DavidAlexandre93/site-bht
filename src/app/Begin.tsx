@@ -82,7 +82,6 @@ const Begin = () => {
           display={"flex"}
           flexDirection={"column"}
           alignItems={{ xs: "center", xl: "start" }}
-          mt={{ xs: 7, xl: 0 }}
           mb={{ xs: 5, xl: 0 }}
         >
           <Typography
@@ -208,7 +207,7 @@ const SocialMedia = (props: SocialMediaProps) => {
       position={"absolute"}
       alignItems={"center"}
       justifyContent={{ xs: "center", xl: "initial" }}
-      bottom={{ xs: "10%", xl: "15%" }}
+      bottom={'15%'}
     >
       <Box
         display={"flex"}
