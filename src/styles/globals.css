@@ -1,0 +1,108 @@
+:root {
+  /* Colors */
+  --primary-color: #ff0000cc;
+  --hover-primary-color: #ff0000b4;
+  --active-primary-color: #ff000093;
+
+  --text-body: rgb(222, 222, 222);
+  --text-high-contrast: rgb(230, 230, 230);
+  --detail-high-contrast: rgb(101, 101, 101);
+  --detail-medium-contrast: rgb(25, 25, 25);
+
+  --secondary-color: #ffffff;
+  --secondary-dark: #080a0b;
+  --hover-secondary-dark: #191e20;
+
+  --grey: #333435;
+  --grey-light: #5f6061;
+  --grey-light-2: #8c8d8d;
+
+  /* Font */
+  --primary-font: "Open Sans", sans-serif;
+  --secondary-font: "Bebas Neue", cursive;
+  --default-transition: all 0.3s ease-in-out;
+}
+
+* {
+  font-family: var(--primary-font);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar {
+  width: 10px;
+}
+
+html::-webkit-scrollbar-track {
+  background: rgb(179, 177, 177);
+  background: #333;
+}
+
+html::-webkit-scrollbar-thumb {
+  background: var(--primary-color);
+  border-radius: 10px;
+  border: 0.1rem solid #333;
+}
+
+html::-webkit-scrollbar-thumb:hover {
+  background: var(--hover-primary-color);
+  border-radius: 10px;
+}
+
+html::-webkit-scrollbar-thumb:active {
+  background: #080a0b;
+  border-radius: 10px;
+}
+
+body {
+  padding-right: 0 !important;
+}
+
+.swiper {
+  width: 17rem;
+  height: 17rem;
+}
+
+.swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 18px;
+  font-size: 22px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.rootCarousel {
+  width: 100% !important;
+}
+
+.images {
+  background-position-x: 50%;
+}
+
+.carousel-text-container {
+  width: 100%;
+  background-color: rgb(25, 25, 25);
+  padding: 1rem 1.5rem;
+  text-align: justify;
+  border-top: 0.1rem solid var(--primary-color);
+  border-bottom-left-radius: 1.8rem;
+  border-bottom-right-radius: 1.8rem;
+}
+
+.images > .content > .bigTitle {
+  text-decoration-color: var(--primary-color) !important;
+}
+
+.players-carousel-buttons {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.6rem;
+  align-items: center;
+}

@@ -5,8 +5,6 @@ import CustomLink from "./CustomLink";
 import { CSSProperties, ReactNode } from "react";
 
 type ClawsButtonProps = LinkProps & {
-  width?: string | number;
-  height?: string | number;
   style?: CSSProperties;
   pulseAnimation?: boolean;
   children: ReactNode;
@@ -19,6 +17,8 @@ const ClawsButton = (props: ClawsButtonProps) => {
     width,
     fontSize,
     fontWeight,
+    px,
+    py,
     style,
     pulseAnimation = false,
     ...rest
@@ -37,20 +37,20 @@ const ClawsButton = (props: ClawsButtonProps) => {
       display={"flex"}
       alignItems={"center"}
       justifyContent={"center"}
-      width={width ? width : "115px"}
-      height={height ? height : "40px"}
-      px={2}
-      py={1}
+      width={width ? width : "auto"}
+      height={height ? height : "auto"}
+      px={px ? px : 3}
+      py={py ? py : 2}
       borderRadius={1}
       className="claws-button"
       target={"_blank"}
     >
       <Typography
         fontFamily={"var(--primary-font)"}
+        textAlign={"center"}
         zIndex={2}
-        fontSize={fontSize ? fontSize : "auto"}
+        fontSize={fontSize ? fontSize : 16}
         fontWeight={fontWeight ? fontWeight : "auto"}
-        position={"absolute"}
         display={"flex"}
       >
         {children}

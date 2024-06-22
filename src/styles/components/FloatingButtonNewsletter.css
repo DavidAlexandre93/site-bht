@@ -1,5 +1,6 @@
 .floating-button-newsletter {
   animation: pulse 1.5s infinite;
+  box-shadow: 0 0 0 0 #d1000080;
 }
 
 @keyframes pulse {

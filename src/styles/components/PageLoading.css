@@ -1,0 +1,33 @@
+.wolf-loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 0;
+  width: 12rem;
+}
+
+.animation-exit-circle {
+  animation: exit-circle 1.5s ease-in-out forwards;
+}
+
+@keyframes exit-circle {
+  0% {
+    clip-path: circle(100% at 50% 50%);
+  }
+  100% {
+    clip-path: circle(0%);
+  }
+}
+
+.animation-entry-circle {
+  animation: entry-circle 1s ease-in forwards;
+}
+
+@keyframes entry-circle {
+  0% {
+    clip-path: circle(0% at 50% 50%);
+  }
+  100% {
+    clip-path: circle(100%);
+  }
+}

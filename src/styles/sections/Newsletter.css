@@ -6,7 +6,7 @@
       rgba(0, 0, 0, 0.78) 0%,
       rgba(8, 10, 11, 0.9) 67.7%
     ),
-    url("../../../public/10.png");
+    url("../../assets/img/sectionsBackground/10.webp");
   background-size: cover;
   border-bottom: 0.1rem solid #fff;
 }

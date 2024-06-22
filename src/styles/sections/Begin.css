@@ -1,0 +1,71 @@
+@font-face {
+  font-family: "Cutmark-NrHeavyItalic";
+  src: url("../../assets/fonts/Cutmark-NrHeavyItalic.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Cutmark-Italic";
+  src: url("../../assets/fonts/Cutmark-Italic.ttf") format("truetype");
+}
+
+.begin-section {
+  width: 100%;
+  height: 100dvh;
+  background: url("../../assets/img/sectionsBackground/beginBackground.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 0% 50%;
+  position: relative;
+}
+
+.social-media-container {
+  cursor: pointer;
+  display: flex;
+  background-color: #d10000;
+  padding: 8px;
+  border-radius: 20px;
+  transition: 0.2s;
+}
+
+.social-media-container:hover {
+  filter: brightness(0.8);
+}
+
+.social-media-container:active {
+  filter: brightness(0.6);
+}
+
+.social-media {
+  font-size: 20px;
+}
+
+.brightness-animation {
+  animation: brightnessAnimation 1s ease-in forwards;
+}
+
+@keyframes brightnessAnimation {
+  0% {
+    filter: brightness(1);
+  }
+
+  100% {
+    filter: brightness(0.3);
+  }
+}
+
+
+@media (min-width: 1500px) {
+  .begin-section {
+    padding-left: 18rem !important;
+  }
+
+  .begin-carousel-container {
+    transform: scale(0.9);
+  }
+}
+
+@media (min-width: 1900px) {
+  .begin-highlighted-text {
+    display: initial !important;
+  }
+}

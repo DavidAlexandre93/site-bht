@@ -1,0 +1,62 @@
+.lineup-section {
+  background: radial-gradient(
+      136.03% 54.57% at 50% 48.04%,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(0, 0, 0, 0.78) 0%,
+      rgba(8, 10, 11, 0.9) 67.7%
+    ),
+    url("../../assets/img/sectionsBackground/11.webp");
+  background-size: cover;
+  background-position-y: 50%;
+  border-bottom: 0.1rem solid #fff;
+}
+
+.segmented-buttons .btn-first {
+  background-color: var(--secondary-dark);
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 5px;
+padding: 0.5rem 2.5rem;
+  /* border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border-right-width: 0; */
+  transition: 0.2s;
+}
+
+.segmented-buttons .btn-last {
+  background-color: var(--secondary-dark);
+  color: #fff;
+  border: 1px solid #fff;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  border-left-width: 1;
+  transition: 0.2s;
+}
+
+.btn-last:hover {
+  background-color: var(--hover-secondary-dark) !important;
+}
+
+.selected-button {
+  background-color: var(--primary-color) !important;
+  color: #fff;
+  transition: 0.2s;
+}
+
+.selected-button:hover {
+  background-color: var(--hover-primary-color) !important;
+}
+
+.opacity-animation {
+  animation: opacityAnimation 0.3s ease-out forwards;
+}
+
+@keyframes opacityAnimation {
+  0% {
+    filter: brightness(1);
+  }
+
+  100% {
+    filter: brightness(0);
+  }
+}

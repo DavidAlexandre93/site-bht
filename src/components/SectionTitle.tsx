@@ -52,13 +52,13 @@ const SectionTitle = (props: SectionTitleProps) => {
         fontWeight={600}
         marginBottom={0}
         color={"#fff"}
+        textTransform={"uppercase"}
       >
         {title}
       </Typography>
       {withDivider && (
         <Divider
           style={{
-            // width: '650px',
             width: "100%",
             marginTop: "0.5rem",
             marginBottom: "40px",

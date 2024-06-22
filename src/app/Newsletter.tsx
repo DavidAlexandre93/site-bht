@@ -1,13 +1,13 @@
 import "../styles/sections/Newsletter.css";
 
-import { ChangeEvent, FormEvent, useState } from "react";
-import { LogoBHT } from "../assets/img";
-import CustomLink from "../components/CustomLink";
-import { Box, Divider, TextField, Typography } from "@mui/material";
+import { ChangeEvent, useState } from "react";
+import { logoBHT2 } from "../assets/img";
+import { Box, TextField } from "@mui/material";
 import { useTranslation } from "react-i18next";
 import validateFields from "../utils/validateFields";
 import toast from "react-hot-toast";
 import ClawsButton from "../components/ClawsButton";
+import SectionTitle from "../components/SectionTitle";
 
 const Newsletter = () => {
   const { t: translate } = useTranslation();
@@ -19,9 +19,7 @@ const Newsletter = () => {
     },
   });
 
-  const onSubmit = async (e: FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-
+  const onSubmit = async () => {
     const { existError, message } = validateFields("email", email.value);
 
     if (existError) {
@@ -79,8 +77,8 @@ const Newsletter = () => {
       className="newsletter-section"
       py={{ xs: "3rem", lg: "5rem" }}
       rowGap={4}
-      columnGap={8}
-      px={{ xs: 3, md: 10, xl: 20 }}
+      columnGap={{ xs: 3, xl: 3 }}
+      px={{ xs: 3, md: 10, lg: 10, xl: 20 }}
       id="newsletter"
     >
       <Box
@@ -89,57 +87,22 @@ const Newsletter = () => {
         alignItems={"center"}
         width={{ xs: "100%" }}
       >
-        <Box width={{ xs: "100%", md: "80%", lg: "100%", xl: "80%" }}>
-          <img width={"100%"} src={LogoBHT} alt="logo" />
+        <Box width={{ xs: "80%", md: "50%", lg: "100%", xl: "70%" }}>
+          <img width={"100%"} src={logoBHT2} alt="logo" />
         </Box>
       </Box>
       <Box
         component={"form"}
-        onSubmit={(e) => onSubmit(e)}
         display={"flex"}
         flexDirection={"column"}
         justifyContent={"center"}
         width={"100%"}
       >
-        <Typography
-          variant="h4"
-          fontFamily={"var(--primary-font)"}
-          fontSize={{ xs: "28px", md: "34px" }}
-          fontWeight={300}
-          gutterBottom
-          color={"#fff"}
-        >
-          {translate("newsletter.subtitle")}
-        </Typography>
-        <Typography
-          variant="h2"
-          className="glitch-overlay"
-          fontSize={{ xs: "42px", md: "60px" }}
-          fontFamily={"var(--primary-font)"}
-          fontWeight={600}
-          marginBottom={0}
-          color={"#fff"}
-        >
-          {translate("newsletter.title")}
-        </Typography>
-        <Divider
-          style={{
-            marginTop: "0.5rem",
-            border: "2px solid var(--primary-color)",
-            borderRadius: "5rem",
-            transition: "var(--default-transition)",
-          }}
+        <SectionTitle
+          title={translate("newsletter.title")}
+          subtitle={translate("newsletter.subtitle")}
+          description={translate("newsletter.description")}
         />
-        <Typography
-          mt={5}
-          fontFamily={"var(--primary-font)"}
-          variant="body1"
-          fontSize={{ xs: 18, md: 20 }}
-          color={"#fff"}
-          textAlign="justify"
-        >
-          {translate("newsletter.description")}
-        </Typography>
         <Box
           display={"flex"}
           flexDirection={{ xs: "column", md: "row" }}
@@ -182,22 +145,9 @@ const Newsletter = () => {
             onChange={(e) => handleChangeEmail(e)}
             fullWidth={true}
           />
-            <ClawsButton textAlign={'center'} height={"56px"} width={{ xs: "100%", md: "25%" }}>
-              {translate("newsletter.btnText")}
-            </ClawsButton>
-          {/* <Box
-            component={"button"}
-            type="submit"
-            className="subscribe-now-btn"
-            height={"56px"}
-            width={{ xs: "100%", md: "25%" }}
-            py={{ xs: 1.8, md: "auto" }}
-            px={1}
-          >
-            <CustomLink noWrap={true}>
-              {translate("newsletter.btnText")}
-            </CustomLink>
-          </Box> */}
+          <ClawsButton whiteSpace={'nowrap'} height={"56px"} onClick={() => onSubmit()}>
+            {translate("newsletter.btnText")}
+          </ClawsButton>
         </Box>
       </Box>
     </Box>

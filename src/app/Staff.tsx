@@ -1,17 +1,18 @@
 import "../styles/sections/Staff.css";
 
-import { useEffect, useState } from "react";
-import { Box, Divider, Typography } from "@mui/material";
+import { Box } from "@mui/material";
 import TeamCarousel from "../components/TeamCarousel";
 import ClawsButton from "../components/ClawsButton";
 
 import { useTranslation } from "react-i18next";
 import cards from "../data/staffCarouselCards";
+import useScreenWidthSize from "../hooks/useScreenWindowSize";
+import SectionTitle from "../components/SectionTitle";
 
 const Staff = () => {
   const { t: translate } = useTranslation();
 
-  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+  const windowWidth = useScreenWidthSize();
 
   const carouselResponsive =
     windowWidth <= 768
@@ -21,18 +22,6 @@ const Staff = () => {
       : windowWidth < 1400
       ? 1
       : 3;
-
-  useEffect(() => {
-    const handleResize = () => {
-      setWindowWidth(window.innerWidth);
-    };
-
-    window.addEventListener("resize", handleResize);
-
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  }, []);
 
   return (
     <Box
@@ -50,51 +39,21 @@ const Staff = () => {
       className="staff-section"
       id="staff"
     >
-      <Box className="staff-section-left">
-        <Typography
-          variant="h4"
-          fontSize={{ xs: "28px", md: "34px" }}
-          fontFamily={"var(--primary-font)"}
-          fontWeight={300}
-          gutterBottom
-          color={"#fff"}
-        >
-          {translate("staff.subtitle")}
-        </Typography>
-        <Typography
-          variant="h2"
-          className="glitch-overlay"
-          fontFamily={"var(--primary-font)"}
-          fontSize={{ xs: "42px", md: "60px" }}
-          fontWeight={600}
-          marginBottom={0}
-          color={"#fff"}
-        >
-          {translate("staff.title")}
-        </Typography>
-        <Divider
-          style={{
-            marginTop: "0.5rem",
-            border: "2px solid var(--primary-color)",
-            borderRadius: "5rem",
-            transition: "var(--default-transition)",
-          }}
+      <Box
+        display={"flex"}
+        flexDirection={"column"}
+        alignItems={["center", "start"]}
+      >
+        <SectionTitle
+          title={translate("staff.title")}
+          subtitle={translate("staff.subtitle")}
+          description={translate("staff.description")}
         />
-        <Box mt={5}>
-          <Typography
-            fontFamily={"var(--primary-font)"}
-            variant="body1"
-            color={"#fff"}
-            textAlign="justify"
-          >
-            {translate("staff.description")}
-          </Typography>
-        </Box>
         <ClawsButton
           mt={4}
-          width={"145px"}
+          px={5}
+          width={["100%", "auto"]}
           height={"50px"}
-          fontSize={"18px"}
           href="https://www.instagram.com/bloodhunts_gaming"
         >
           {translate("staff.btnText")}

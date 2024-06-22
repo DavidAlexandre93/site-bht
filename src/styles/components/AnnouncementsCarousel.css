@@ -1,7 +1,7 @@
 .announcements-carousel {
   max-width: 20rem;
   margin: auto;
-  --slide-height: 20rem;
+  --slide-height: auto;
   --slide-spacing: 1rem;
   --slide-size: 100%;
   transform: scale(0.9);
@@ -44,7 +44,7 @@
   height: 0.6rem;
   justify-self: flex-end;
   align-self: center;
-  width: 10rem;
+  width: 100%;
   max-width: 90%;
   overflow: hidden;
 }
@@ -81,8 +81,8 @@
 
 @media (min-width: 768px) {
   .announcements-carousel {
-    max-width: 42rem;
-    --slide-height: 24rem;
+    max-width: 450px;
+    --slide-height: 450px;
   }
 
   .announcements-carousel-progress {
@@ -97,7 +97,7 @@
 
 @media (min-width: 1024px) {
   .announcements-carousel {
-    max-width: 48rem;
-    --slide-height: 30rem;
+    max-width: 540px;
+    --slide-height: 540px;
   }
 }

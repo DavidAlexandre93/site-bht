@@ -1,0 +1,19 @@
+.community-casual-recruitment-page {
+  width: 100%;
+  height: 100dvh;
+  background: url("../../assets/img/sectionsBackground/beginBackground.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 0% 50%;
+  position: relative;
+}
+
+.back-button {
+  cursor: pointer;
+  background-color: #f8f8f8;
+  transition: 0.2s;
+}
+
+.back-button:hover {
+  background-color: #d7d7d7;
+}

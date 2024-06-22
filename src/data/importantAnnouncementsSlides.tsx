@@ -1,13 +1,26 @@
-import { SliderImage1, SliderImage2, SliderImage3 } from "../assets/img";  
+import {
+  avaliandoPlayerBloodStrike,
+  avaliandoPlayerCS2,
+  avaliandoPlayerValorant,
+  avaliandoPlayerPUBGMobile,
+  avaliandoPlayerWarzone,
+  copaDKHunts,
+  lupineLeague,
+  recrutandoMulheresCompetitivoFPS,
+  advogada,
+} from "../assets/img";
+import { AnnouncementsCarouselProps } from "../components/AnnouncementsCarousel";
 
-const importantAnnouncementsSlides = [
-    {
-      img: SliderImage1,
-      description:
-        "Esses são nossos representantes que fazem a organização BloodHunts Gaming conseguir estar presente em todo cenário no mundo dos games.",
-    },
-    { img: SliderImage2, description: "" },
-    { img: SliderImage3, description: "" },
-  ];
+const importantAnnouncementsSlides: AnnouncementsCarouselProps["slides"] = [
+  { img: advogada },
+  { img: avaliandoPlayerBloodStrike },
+  { img: avaliandoPlayerCS2 },
+  { img: avaliandoPlayerValorant },
+  { img: avaliandoPlayerPUBGMobile },
+  { img: avaliandoPlayerWarzone },
+  { img: copaDKHunts },
+  { img: lupineLeague },
+  { img: recrutandoMulheresCompetitivoFPS },
+];
 
-export default importantAnnouncementsSlides
+export default importantAnnouncementsSlides;

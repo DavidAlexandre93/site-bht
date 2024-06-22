@@ -1,16 +1,30 @@
 {
   "translation": {
     "header": {
-      "home": "HOME",
+      "begin": "HOME",
       "ourStory": "OUR STORY",
       "importantAnnouncements": "Announcements",
       "store": "STORE",
-      "staff": "STAFF"
+      "lineup": "LINEUP",
+      "staff": "STAFF",
+      "blog": "BLOG"
     },
-    "home": {
+    "begin": {
       "teamName": "BLOODHUNTS GAMING",
       "teamMotto": "WE ARE THE WOLF PACK",
-      "teamDescription": "PROFESSIONAL E-SPORTS ORGANIZATION"
+      "teamDescription": "Professional E-Sports Organization",
+      "btnText": "Check out our artwork",
+      "communities": {
+        "general": "General",
+        "casualRecruitment": "Casual Recruitment",
+        "competitiveRecruitment": "Competitive Recruitment",
+        "callOfDutyMobileAcademy": "Call of Duty Mobile Academy",
+        "cs2CounterStrike": "CS2 Counter Strike",
+        "pubgMobile": "PUBG Mobile",
+        "warzone": "Warzone",
+        "bloodStrike": "BloodStrike",
+        "callOfDutyMobileBR": "Call of Duty Mobile BR"
+      }
     },
     "ourStory": {
       "title": "OUR STORY",
@@ -41,12 +55,27 @@
       "btnText": "Subscribe now"
     },
     "footer": {
-      "home": "HOME",
-      "ourStory": "OUR STORY",
-      "importantAnnouncements": "Announcements",
-      "store": "STORE",
-      "staff": "STAFF",
-      "textCopyright": "© 2024 BloodHunts Gaming, Inc. All Rights Reserved",
+      "sitemap": {
+        "title": "Sitemap",
+        "begin": "Home",
+        "ourStory": "Our story",
+        "importantAnnouncements": "Announcements",
+        "store": "Store",
+        "lineup": "Lineup",
+        "staff": "Staff",
+        "blog": "Blog"
+      },
+      "communities": {
+        "title": "Communities",
+        "general": "General",
+        "casualRecruitment": "Casual recruitment",
+        "competitiveRecruitment": "Competitive recruitment"
+      },
+      "store": {
+        "title": "Store",
+        "visitOurStore": "Visit our store"
+      },
+      "textCopyright": "© 2024 Bloodhunts Gaming, Inc. All rights reserved",
       "textDevelopedBy": "Developed by"
     }
   }

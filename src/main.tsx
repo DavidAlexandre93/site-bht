@@ -1,11 +1,18 @@
-import './globals.css'
+import "./styles/globals.css";
 
-import React from 'react'
-import ReactDOM from 'react-dom/client'
-import App from './App.tsx'
+import React from "react";
+import ReactDOM from "react-dom/client";
+import { RouterProvider } from "react-router-dom";
+import router from "./router";
+import AppContainer from "./components/AppContainer";
+import { LoadingContextProvider } from "./contexts/LoadingContext";
 
-ReactDOM.createRoot(document.getElementById('root')!).render(
+ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-)
+    <LoadingContextProvider>
+      <AppContainer>
+        <RouterProvider router={router} />
+      </AppContainer>
+    </LoadingContextProvider>
+  </React.StrictMode>
+);

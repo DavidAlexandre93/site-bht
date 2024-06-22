@@ -9,10 +9,9 @@
 }
 
 .claws {
-  top: 0;
   right: 0;
   position: absolute;
-  background: url("../../assets/img/claws-without-bg.png");
+  background: url("../../assets/img/elements/claws.webp");
   background-position: center;
   width: 100%;
   height: 100%;
@@ -25,7 +24,6 @@
 .claws-button:hover .claws {
   clip-path: inset(0 0 0 0);
 }
-
 
 @keyframes pulse-btn {
   0% {

@@ -1,6 +1,6 @@
 import "../styles/components/Navbar.css";
 
-import React, { Dispatch, SetStateAction, useMemo } from "react";
+import { Dispatch, SetStateAction, useMemo } from "react";
 import {
   AppBar,
   Box,
@@ -16,33 +16,42 @@ import {
   Toolbar,
 } from "@mui/material";
 import { CSSProperties, useEffect, useRef, useState } from "react";
-import { LogoBHT, XboxIcon, SteamIcon } from "../assets/img";
+import { logoBHT, codMobileIcon, codWarzoneIcon } from "../assets/img";
 import { MdOutlineKeyboardArrowDown } from "react-icons/md";
 import { useTranslation } from "react-i18next";
 import CustomLink from "./CustomLink";
-import scrollToSection from "../utils/scrollToSection";
 import { IoMdMenu } from "react-icons/io";
 import { TfiClose } from "react-icons/tfi";
+import scrollToSection from "../utils/scrollToSection";
+import { defaultLanguage } from "../lib/i18n";
 
 const Navbar = () => {
+  const options = useMemo(
+    () => [
+      { caption: "PT-BR", lang: "pt_br" },
+      { caption: "EN", lang: "en" },
+      { caption: "FR", lang: "fr" },
+      { caption: "ES", lang: "es" },
+    ],
+    []
+  );
+
   const [scrollHeight, setScrollHeight] = useState(0);
   const [open, setOpen] = useState(false);
   const [openMenuMobile, setOpenMenuMobile] = useState(false);
   const anchorRef = useRef(null);
-  const [selectedIndex, setSelectedIndex] = useState(0);
+  const [selectedIndex, setSelectedIndex] = useState(
+    options.findIndex((opt) => opt.lang === defaultLanguage)
+  );
 
   const {
     t: translate,
     i18n: { changeLanguage },
   } = useTranslation();
 
-  const handleClickOpenMenuMobile = () => {
-    setOpenMenuMobile(true);
-  };
+  const handleClickOpenMenuMobile = () => setOpenMenuMobile(true);
 
-  const handleCloseMenuMobile = () => {
-    setOpenMenuMobile(false);
-  };
+  const handleCloseMenuMobile = () => setOpenMenuMobile(false);
 
   const handleMenuItemClick = (index: number) => {
     changeLanguage(options[index].lang);
@@ -69,16 +78,6 @@ const Navbar = () => {
 
     setOpen(false);
   };
-
-  const options = useMemo(
-    () => [
-      { caption: "PT-BR", lang: "pt_br" },
-      { caption: "EN", lang: "en" },
-      { caption: "FR", lang: "fr" },
-      { caption: "ES", lang: "es" },
-    ],
-    []
-  );
 
   useEffect(() => {
     const handleScroll = () => {
@@ -143,17 +142,17 @@ const Navbar = () => {
       <Toolbar className="navbar">
         <CustomLink
           style={{ cursor: "pointer" }}
-          onClick={() => scrollToSection("home")}
+          onClick={() => scrollToSection("begin")}
         >
-          <img width={56} height={56} src={LogoBHT} alt="logo" />
+          <img width={56} height={56} src={logoBHT} alt="logo" />
         </CustomLink>
-        <Box alignItems={"center"} gap={6} display={{ xs: "none", lg: "flex" }}>
+        <Box alignItems={"center"} gap={6} display={{ xs: "none", md: "flex" }}>
           <CustomLink
             style={changeColorWhenScrolling as CSSProperties}
             className="item-navbar"
-            onClick={() => scrollToSection("home")}
+            onClick={() => scrollToSection("begin")}
           >
-            {translate("header.home")}
+            {translate("header.begin")}
           </CustomLink>
           <CustomLink
             style={changeColorWhenScrolling as CSSProperties}
@@ -170,43 +169,58 @@ const Navbar = () => {
             {translate("header.importantAnnouncements")}
           </CustomLink>
           <CustomLink
+            display={{ md: "none", lg: "initial" }}
             style={changeColorWhenScrolling as CSSProperties}
             className="item-navbar"
             onClick={() => scrollToSection("store")}
           >
             {translate("header.store")}
           </CustomLink>
+          {/* <CustomLink
+            display={{ md: "none", xl: "initial" }}
+            style={changeColorWhenScrolling as CSSProperties}
+            className="item-navbar"
+            onClick={() => scrollToSection("lineup")}
+          >
+            {translate("header.lineup")}
+          </CustomLink> */}
           <CustomLink
+            display={{ md: "none", lg: "initial" }}
             style={changeColorWhenScrolling as CSSProperties}
             className="item-navbar"
             onClick={() => scrollToSection("staff")}
           >
             {translate("header.staff")}
           </CustomLink>
+          {/* <CustomLink
+            display={{ md: "none", xl: "initial" }}
+            style={changeColorWhenScrolling as CSSProperties}
+            className="item-navbar"
+            onClick={() => scrollToSection("blog")}
+          >
+            {translate("header.blog")}
+          </CustomLink> */}
         </Box>
-        <Box display={{ xs: "flex", lg: "none" }} alignItems={"center"} gap={4}>
+        <Box display={{ xs: "flex", xl: "none" }} alignItems={"center"} gap={4}>
           <Box display={"flex"}>
             <Button
               ref={anchorRef}
               style={{
                 backgroundColor: "transparent",
-                color: scrollHeight > 10 ? "#000" : "#ff0000cc",
+                color: "#fff",
                 fontSize: 14,
+                fontFamily: "var(--primary-font)",
               }}
               size="small"
               onClick={handleToggle}
-              endIcon={
-                <MdOutlineKeyboardArrowDown
-                  size={14}
-                  color={scrollHeight > 10 ? "#000" : "#ff0000cc"}
-                />
-              }
+              endIcon={<MdOutlineKeyboardArrowDown size={14} color={"#fff"} />}
             >
               {options[selectedIndex].caption}
             </Button>
             <Popper
               sx={{
                 zIndex: 1,
+                inset: "55px auto auto auto !important",
               }}
               open={open}
               anchorEl={anchorRef.current}
@@ -222,11 +236,20 @@ const Navbar = () => {
                       placement === "bottom" ? "center top" : "center bottom",
                   }}
                 >
-                  <Paper>
+                  <Paper
+                    style={{ backgroundColor: "var(--grey)", color: "#fff" }}
+                  >
                     <ClickAwayListener onClickAway={handleClose}>
                       <MenuList>
                         {options.map((option, index) => (
                           <MenuItem
+                            style={{
+                              backgroundColor:
+                                index === selectedIndex
+                                  ? "var(--primary-color)"
+                                  : "var(--grey)",
+                              // fontFamily:
+                            }}
                             key={index}
                             selected={index === selectedIndex}
                             onClick={() => handleMenuItemClick(index)}
@@ -251,22 +274,19 @@ const Navbar = () => {
             <IoMdMenu />
           </IconButton>
         </Box>
-        <Box display={{ xs: "none", lg: "flex" }} alignItems={"center"}>
+        <Box display={{ xs: "none", xl: "flex" }} alignItems={"center"}>
           <Button
             ref={anchorRef}
             style={{
               backgroundColor: "transparent",
-              color: scrollHeight > 10 ? "#000" : "#ff0000cc",
+              color: "#fff",
               fontSize: 14,
+              fontWeight: 500,
+              fontFamily: "var(--primary-font)",
             }}
             size="small"
             onClick={handleToggle}
-            endIcon={
-              <MdOutlineKeyboardArrowDown
-                size={14}
-                color={scrollHeight > 10 ? "#000" : "#ff0000cc"}
-              />
-            }
+            endIcon={<MdOutlineKeyboardArrowDown size={14} color={"#fff"} />}
           >
             {options[selectedIndex].caption}
           </Button>
@@ -288,11 +308,20 @@ const Navbar = () => {
                     placement === "bottom" ? "center top" : "center bottom",
                 }}
               >
-                <Paper>
+                <Paper
+                  style={{ backgroundColor: "var(--grey)", color: "#fff" }}
+                >
                   <ClickAwayListener onClickAway={handleClose}>
                     <MenuList>
                       {options.map((option, index) => (
                         <MenuItem
+                          style={{
+                            backgroundColor:
+                              index === selectedIndex
+                                ? "var(--primary-color)"
+                                : "var(--grey)",
+                            padding: "0.6rem 1rem",
+                          }}
                           key={index}
                           selected={index === selectedIndex}
                           onClick={() => handleMenuItemClick(index)}
@@ -317,13 +346,13 @@ const Navbar = () => {
               target={"_blank"}
               href="https://www.callofduty.com/br/pt/mobile"
             >
-              <img src={XboxIcon} alt="xbox_icon" />
+              <img src={codMobileIcon} alt="cod_mobile_icon" />
             </CustomLink>
             <CustomLink
               target={"_blank"}
               href="https://www.callofduty.com/br/pt/warzone"
             >
-              <img src={SteamIcon} alt="steam_icon" />
+              <img src={codWarzoneIcon} alt="cod_warzone_icon" />
             </CustomLink>
           </Box>
         </Box>
@@ -354,13 +383,12 @@ const MenuMobile = (props: MenuMobileProps) => {
         height={"100%"}
         width={"100%"}
         rowGap={5}
-        paddingBottom={5}
       >
         <CustomLink
           style={{ cursor: "pointer" }}
-          onClick={() => scrollToSection("home")}
+          onClick={() => scrollToSection("begin")}
         >
-          <img width={200} height={200} src={LogoBHT} alt="logo" />
+          <img width={200} height={200} src={logoBHT} alt="logo" />
         </CustomLink>
         <Box
           alignItems={"center"}
@@ -371,11 +399,11 @@ const MenuMobile = (props: MenuMobileProps) => {
           <CustomLink
             className="item-menu-mobile"
             onClick={() => {
-              scrollToSection("home");
+              scrollToSection("begin");
               onOpen(false);
             }}
           >
-            {translate("header.home")}
+            {translate("header.begin")}
           </CustomLink>
           <CustomLink
             className="item-menu-mobile"
@@ -404,6 +432,15 @@ const MenuMobile = (props: MenuMobileProps) => {
           >
             {translate("header.store")}
           </CustomLink>
+          {/* <CustomLink
+            className="item-menu-mobile"
+            onClick={() => {
+              scrollToSection("lineup");
+              onOpen(false);
+            }}
+          >
+            {translate("header.lineup")}
+          </CustomLink> */}
           <CustomLink
             className="item-menu-mobile"
             onClick={() => {
@@ -413,6 +450,15 @@ const MenuMobile = (props: MenuMobileProps) => {
           >
             {translate("header.staff")}
           </CustomLink>
+          {/* <CustomLink
+            className="item-menu-mobile"
+            onClick={() => {
+              scrollToSection("blog");
+              onOpen(false);
+            }}
+          >
+            {translate("header.blog")}
+          </CustomLink> */}
         </Box>
         <Box
           className={"menu-mobile-close-btn"}

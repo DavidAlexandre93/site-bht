@@ -1,0 +1,1 @@
+export const timerLoadingRoute = 1500;

@@ -17,24 +17,25 @@ const ImportantAnnouncements = () => {
       component={"section"}
       className="important-announcements-section"
       id="important-announcements"
-      px={{ xs: 3, xl: 22 }}
+      px={{ xs: 3, md: 10, xl: 20 }}
       py={"4rem"}
       width={"100%"}
     >
       <Box
-        width={"100%"}
         display={"flex"}
         flexDirection={"column"}
-        alignItems={{ xs: "center", lg: "flex-end" }}
+        alignItems={{ xs: "center", xl: "flex-end" }}
         justifyContent={"center"}
       >
-        <SectionTitle
-          className="title-important-announcements"
-          width={{ xs: "100%", lg: "48rem" }}
-          title={translate("importantAnnouncements.title")}
-          subtitle={translate("importantAnnouncements.subtitle")}
-        />
-        <AnnouncementsCarousel slides={slides} options={options} />
+        <Box>
+          <SectionTitle
+            className="title-important-announcements"
+            width={{ xs: "100%", lg: "48rem" }}
+            title={translate("importantAnnouncements.title")}
+            subtitle={translate("importantAnnouncements.subtitle")}
+          />
+          <AnnouncementsCarousel slides={slides} options={options} />
+        </Box>
       </Box>
     </Box>
   );

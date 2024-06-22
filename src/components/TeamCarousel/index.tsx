@@ -5,14 +5,20 @@ import { Box } from "@mui/material";
 import { NextButton, PrevButton } from "../ArrowButtons";
 
 type TeamCarouselProps = CSSProperties & {
-  cards: object[];
+  cards: { key: number; content: JSX.Element; url?: string }[];
   offset: number;
   showArrows?: boolean;
 };
 
 const TeamCarousel = (props: TeamCarouselProps) => {
   const table = props.cards.map((element, index) => {
-    return { ...element, onClick: () => setGoToSlide(index) };
+    return {
+      ...element,
+      onClick: () => {
+        if (element.url) window.open(element.url);
+        setGoToSlide(index);
+      },
+    };
   });
 
   const [offsetRadius, setOffsetRadius] = useState(2);
@@ -45,7 +51,7 @@ const TeamCarousel = (props: TeamCarouselProps) => {
         animationConfig={config.gentle}
       />
       <Box display={"flex"} alignItems={"center"} justifyContent={"center"}>
-        <Box className="announcements-carousel-buttons">
+        <Box className="players-carousel-buttons">
           <PrevButton onClick={onPrevButtonClick} />
           <NextButton onClick={onNextButtonClick} />
         </Box>

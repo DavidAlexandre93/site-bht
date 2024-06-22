@@ -1,52 +1,82 @@
 {
   "translation": {
     "header": {
-      "home": "INÍCIO",
-      "ourStory": "NOSSA HISTÓRIA",
-      "importantAnnouncements": "ANÚNCIOS",
-      "store": "LOJA",
-      "staff": "STAFF"
+      "begin": "Início",
+      "ourStory": "Nossa história",
+      "importantAnnouncements": "Anúncios",
+      "store": "Loja",
+      "lineup": "Lineup",
+      "staff": "Staff",
+      "blog": "Blog"
     },
-    "home": {
-      "teamName": "BLOODHUNTS GAMING",
-      "teamMotto": "SOMOS A ALCATEIA",
-      "teamDescription": "ORGANIZAÇÃO PROFISSIONAL DE E-SPORTS"
+    "begin": {
+      "teamName": "Bloodhunts Gaming",
+      "teamMotto": "Somos a Alcateia",
+      "teamDescription": "Organização Profissional de E-Sports",
+      "btnText": "Confira nossas artes",
+      "communities": {
+        "title": "Comunidades",
+        "general": "Geral",
+        "casualRecruitment": "Recrutamento casual",
+        "competitiveRecruitment": "Recrutamento competitivo",
+        "callOfDutyMobileAcademy": "Call of Duty Mobile Academy",
+        "cs2CounterStrike": "CS2 Counter Strike",
+        "pubgMobile": "PUBG Mobile",
+        "warzone": "Warzone",
+        "bloodStrike": "BloodStrike",
+        "callOfDutyMobileBR": "Call of Duty Mobile BR"
+      }
     },
     "ourStory": {
-      "title": "NOSSA HISTÓRIA",
+      "title": "Nossa história",
       "subtitle": "Conheça nossa história",
-      "description": "Fundado em 2 de novembro de 2023, a BloodHunts Gaming é uma organização dedicada a unir jogadores de Call of Duty Mobile, Warzone PC/Console e Warzone Mobile. Nosso foco é criar uma comunidade inclusiva, valorizando tanto o jogo competitivo quanto o casual. Nascemos com o propósito de ser uma comunidade/organização para compartilhar estratégias, experiências e acima de tudo, a paixão por Call of Duty. Estamos sempre disponíveis para novos membros que queiram contribuir para nossa crescente família, oferecendo um ambiente acolhedor para todos. Com planos de expandir nossos horizontes para outros jogos no futuro, a BloodHunts Gaming se compromete a ser mais do que uma organização: somos uma comunidade, uma família, unida pelo amor aos games."
+      "description": "Fundado em 2 de novembro de 2023, a Bloodhunts Gaming é uma organização dedicada a unir jogadores de Call of Duty Mobile, Warzone PC/Console e Warzone Mobile. Nosso foco é criar uma comunidade inclusiva, valorizando tanto o jogo competitivo quanto o casual. Nascemos com o propósito de ser uma comunidade/organização para compartilhar estratégias, experiências e acima de tudo, a paixão por Call of Duty. Estamos sempre disponíveis para novos membros que queiram contribuir para nossa crescente família, oferecendo um ambiente acolhedor para todos. Com planos de expandir nossos horizontes para outros jogos no futuro, a Bloodhunts Gaming se compromete a ser mais do que uma organização: somos uma comunidade, uma família, unida pelo amor aos games."
     },
     "importantAnnouncements": {
-      "title": "DESTAQUES",
+      "title": "Destaques",
       "subtitle": "Anúncios importantes"
     },
     "store": {
-      "title": "NOSSA LOJA",
+      "title": "Nossa loja",
       "subtitle": "Adquira nossos produtos exclusivos",
-      "textTShirt1": "CAMISETA BLOODHUNTS",
+      "textTShirt1": "Camiseta Bloodhunts",
       "textTShirt2": "Vista agora o nosso manto",
       "btnText": "Visite nossa loja"
     },
     "staff": {
-      "title": "STAFF",
+      "title": "Staff",
       "subtitle": "Conheça nossa staff",
-      "description": "Esses são nossos representantes que fazem a organização BloodHunts Gaming conseguir estar presente em todo cenário no mundo dos games.",
+      "description": "Esses são nossos representantes que fazem a organização Bloodhunts Gaming conseguir estar presente em todo cenário no mundo dos games.",
       "btnText": "Saiba mais"
     },
     "newsletter": {
-      "title": "INSCREVA-SE NA NEWSLETTER",
+      "title": "Inscreva-se na newsletter",
       "subtitle": "Receba informações",
       "description": "Informe seu email para receber informações sobre nossa organização e notificações.",
       "btnText": "Inscreva-se agora"
     },
     "footer": {
-      "home": "INÍCIO",
-      "ourStory": "NOSSA HISTÓRIA",
-      "importantAnnouncements": "ANÚNCIOS",
-      "store": "LOJA",
-      "staff": "STAFF",
-      "textCopyright": "© 2024 BloodHunts Gaming, Inc. Todos os Direitos Reservados",
+      "sitemap": {
+        "title": "Sitemap",
+        "begin": "Início",
+        "ourStory": "Nossa história",
+        "importantAnnouncements": "Anúncios",
+        "store": "Loja",
+        "lineup": "Lineup",
+        "staff": "Staff",
+        "blog": "Blog"
+      },
+      "communities": {
+        "title": "Comunidades",
+        "general": "Geral",
+        "casualRecruitment": "Recrutamento casual",
+        "competitiveRecruitment": "Recrutamento competitivo"
+      },
+      "store": {
+        "title": "Loja",
+        "visitOurStore": "Visite nossa loja"
+      },
+      "textCopyright": "© 2024 Bloodhunts Gaming, Inc. Todos os direitos reservados",
       "textDevelopedBy": "Desenvolvido por"
     }
   }

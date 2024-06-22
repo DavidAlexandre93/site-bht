@@ -1,16 +1,30 @@
 {
   "translation": {
     "header": {
-      "home": "ACCUEIL",
+      "begin": "ACCUEIL",
       "ourStory": "NOTRE HISTOIRE",
       "importantAnnouncements": "ANNONCES",
       "store": "MAGASIN",
-      "staff": "PERSONNEL"
+      "lineup": "COMPOSITION",
+      "staff": "PERSONNEL",
+      "blog": "BLOG"
     },
-    "home": {
+    "begin": {
       "teamName": "BLOODHUNTS GAMING",
       "teamMotto": "NOUS SOMMES LA MEUTE DE LOUPS",
-      "teamDescription": "ORGANISATION PROFESSIONNELLE D'ESPORTS"
+      "teamDescription": "Organisation Professionnelle D'esports",
+      "btnText": "Découvrez nos œuvres d'art",
+      "communities": {
+        "general": "Général",
+        "casualRecruitment": "Recrutement occasionnel",
+        "competitiveRecruitment": "Recrutement compétitif",
+        "callOfDutyMobileAcademy": "Académie Call of Duty Mobile",
+        "cs2CounterStrike": "CS2 Counter Strike",
+        "pubgMobile": "PUBG Mobile",
+        "warzone": "Warzone",
+        "bloodStrike": "BloodStrike",
+        "callOfDutyMobileBR": "Call of Duty Mobile BR"
+      }
     },
     "ourStory": {
       "title": "NOTRE HISTOIRE",
@@ -41,12 +55,27 @@
       "btnText": "Abonnez-vous maintenant"
     },
     "footer": {
-      "home": "ACCUEIL",
-      "ourStory": "NOTRE HISTOIRE",
-      "importantAnnouncements": "ANNONCES",
-      "store": "MAGASIN",
-      "staff": "PERSONNEL",
-      "textCopyright": "© 2024 BloodHunts Gaming, Inc. Tous droits réservés",
+      "sitemap": {
+        "title": "Plan du site",
+        "begin": "Accueil",
+        "ourStory": "Notre histoire",
+        "importantAnnouncements": "Annonces",
+        "store": "Boutique",
+        "lineup": "Lineup",
+        "staff": "Personnel",
+        "blog": "Blog"
+      },
+      "communities": {
+        "title": "Communautés",
+        "general": "Général",
+        "casualRecruitment": "Recrutement occasionnel",
+        "competitiveRecruitment": "Recrutement compétitif"
+      },
+      "store": {
+        "title": "Boutique",
+        "visitOurStore": "Visitez notre boutique"
+      },
+      "textCopyright": "© 2024 Bloodhunts Gaming, Inc. Tous droits réservés",
       "textDevelopedBy": "Développé par"
     }
   }

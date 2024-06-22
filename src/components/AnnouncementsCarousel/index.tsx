@@ -7,10 +7,10 @@ import Autoplay from "embla-carousel-autoplay";
 import { NextButton, PrevButton, usePrevNextButtons } from "../ArrowButtons";
 import { Box, Typography } from "@mui/material";
 
-type AnnouncementsCarouselProps = {
+export type AnnouncementsCarouselProps = {
   slides: {
     img: string;
-    description: string;
+    description?: string;
   }[];
   options?: EmblaOptionsType;
 };
@@ -18,7 +18,7 @@ type AnnouncementsCarouselProps = {
 const AnnouncementsCarousel = (props: AnnouncementsCarouselProps) => {
   const { slides, options } = props;
   const [emblaRef, emblaApi] = useEmblaCarousel(options, [
-    Autoplay({ playOnInit: true, delay: 5000 }),
+    Autoplay({ playOnInit: true, delay: 8000 }),
   ]);
   const [scrollProgress, setScrollProgress] = useState(0);
 
@@ -45,7 +45,6 @@ const AnnouncementsCarousel = (props: AnnouncementsCarouselProps) => {
   }, [emblaApi, onScroll]);
 
   return (
-    <Box>
       <Box className="announcements-carousel">
         <Box className="announcements-carousel-viewport" ref={emblaRef}>
           <Box className="announcements-carousel-container">
@@ -58,7 +57,7 @@ const AnnouncementsCarousel = (props: AnnouncementsCarouselProps) => {
                   }}
                   className="announcements-carousel-slide-number"
                 >
-                  <img src={slide.img} />
+                  <img width={'100%'} height={'100%'} src={slide.img} />
                 </Box>
                 {slide.description && (
                   <Box className={"carousel-text-container"}>
@@ -96,7 +95,6 @@ const AnnouncementsCarousel = (props: AnnouncementsCarouselProps) => {
           </Box>
         </Box>
       </Box>
-    </Box>
   );
 };
 
