@@ -30,17 +30,20 @@ const Newsletter = () => {
     }
 
     try {
-      const data = { email: email.value };
+      const formData = new FormData();
+      formData.append("email", email.value);
+
       const url = `https://bloodhuntsgaming.us18.list-manage.com/subscribe/post?u=${
         import.meta.env.VITE_TOKEN_NEWSLETTER_U
       }&id=${import.meta.env.VITE_TOKEN_NEWSLETTER_ID}`;
 
       const response = await fetch(url, {
-        method: "POST",
+        mode: "no-cors",
+        method: "post",
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify(data),
+        body: formData,
       });
 
       if (!response.ok) {
