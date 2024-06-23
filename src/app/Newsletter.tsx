@@ -5,7 +5,6 @@ import { logoBHT2 } from "../assets/img";
 import { Box, TextField } from "@mui/material";
 import { useTranslation } from "react-i18next";
 import validateFields from "../utils/validateFields";
-import toast from "react-hot-toast";
 import ClawsButton from "../components/ClawsButton";
 import SectionTitle from "../components/SectionTitle";
 
@@ -18,43 +17,6 @@ const Newsletter = () => {
       message: "",
     },
   });
-
-  const onSubmit = async () => {
-    const { existError, message } = validateFields("email", email.value);
-
-    if (existError) {
-      return setEmail((prevState) => ({
-        ...prevState,
-        error: { on: existError, message },
-      }));
-    }
-
-    try {
-      const formData = new FormData();
-      formData.append("email", email.value);
-
-      const url = `https://bloodhuntsgaming.us18.list-manage.com/subscribe/post?u=${
-        import.meta.env.VITE_TOKEN_NEWSLETTER_U
-      }&id=${import.meta.env.VITE_TOKEN_NEWSLETTER_ID}`;
-
-      const response = await fetch(url, {
-        mode: "no-cors",
-        method: "post",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: formData,
-      });
-
-      if (!response.ok) {
-        throw new Error(`Erro HTTP! Status: ${response.status}`);
-      }
-
-      toast.success("E-mail enviado com sucesso!");
-    } catch {
-      toast.error("Erro ao enviar e-mail.");
-    }
-  };
 
   const handleChangeEmail = (
     e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
@@ -71,6 +33,13 @@ const Newsletter = () => {
         message,
       },
     });
+  };
+
+  const handleSubmit = () => {
+    const form = document.getElementById("newsletterForm") as HTMLFormElement;
+    if (form) {
+      form.submit();
+    }
   };
 
   return (
@@ -98,8 +67,14 @@ const Newsletter = () => {
         </Box>
       </Box>
       <Box
+        id="newsletterForm"
+        action={`https://bloodhuntsgaming.us18.list-manage.com/subscribe/post?u=${
+          import.meta.env.VITE_TOKEN_NEWSLETTER_U
+        }&id=${import.meta.env.VITE_TOKEN_NEWSLETTER_ID}`}
         component={"form"}
+        method="POST"
         display={"flex"}
+        noValidate
         flexDirection={"column"}
         justifyContent={"center"}
         width={"100%"}
@@ -154,7 +129,7 @@ const Newsletter = () => {
           <ClawsButton
             whiteSpace={"nowrap"}
             height={"56px"}
-            onClick={() => onSubmit()}
+            onClick={() => handleSubmit()}
           >
             {translate("newsletter.btnText")}
           </ClawsButton>

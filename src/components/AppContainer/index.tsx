@@ -1,7 +1,6 @@
 import { ReactNode, useContext } from "react";
 import { Box } from "@mui/material";
 import ThemeProvider from "./ThemeProvider";
-import { Toaster } from "react-hot-toast";
 import { LoadingContext } from "../../contexts/LoadingContext";
 
 type AppContainerProps = {
@@ -20,13 +19,6 @@ const AppContainer = (props: AppContainerProps) => {
         position={isLoading ? "fixed" : "initial"}
         overflow={isLoading ? "hidden" : "initial"}
       >
-        <Toaster
-          position="bottom-right"
-          reverseOrder={false}
-          toastOptions={{
-            style: { borderRadius: "10px", background: "#333", color: "#fff" },
-          }}
-        />
         {children}
       </Box>
     </ThemeProvider>
