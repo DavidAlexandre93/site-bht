@@ -36,6 +36,15 @@ const Newsletter = () => {
   };
 
   const handleSubmit = () => {
+    const { existError, message } = validateFields("email", email.value);
+
+    if (existError) {
+      return setEmail((prevState) => ({
+        ...prevState,
+        error: { on: existError, message },
+      }));
+    }
+
     const form = document.getElementById("newsletterForm") as HTMLFormElement;
     if (form) {
       form.submit();
@@ -68,13 +77,13 @@ const Newsletter = () => {
       </Box>
       <Box
         id="newsletterForm"
+        component={"form"}
         action={`https://bloodhuntsgaming.us18.list-manage.com/subscribe/post?u=${
           import.meta.env.VITE_TOKEN_NEWSLETTER_U
         }&id=${import.meta.env.VITE_TOKEN_NEWSLETTER_ID}`}
-        component={"form"}
         method="POST"
-        display={"flex"}
         noValidate
+        display={"flex"}
         flexDirection={"column"}
         justifyContent={"center"}
         width={"100%"}
@@ -91,6 +100,9 @@ const Newsletter = () => {
           gap={1}
         >
           <TextField
+            type="email"
+            name="EMAIL"
+            id="email"
             error={email.error.on}
             helperText={email.error.message}
             sx={{
