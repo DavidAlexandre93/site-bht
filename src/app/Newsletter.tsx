@@ -30,19 +30,22 @@ const Newsletter = () => {
     }
 
     try {
-      // const data = { email };
-      // const url =  "https://bloodhuntsgaming.us18.list-manage.com/subscribe/post?u=d6a36bd136079ed9f553d652e&id=2bc7833269"
+      const data = { email: email.value };
+      const url = `https://bloodhuntsgaming.us18.list-manage.com/subscribe/post?u=${
+        import.meta.env.VITE_TOKEN_NEWSLETTER_U
+      }&id=${import.meta.env.VITE_TOKEN_NEWSLETTER_ID}`;
 
-      // await fetch(
-      //   url,
-      //   {
-      //     method: "POST",
-      //     headers: {
-      //       "Content-Type": "application/json",
-      //     },const data =
-      //     body: JSON.stringify(data),
-      //   }
-      // );
+      const response = await fetch(url, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(data),
+      });
+
+      if (!response.ok) {
+        throw new Error(`Erro HTTP! Status: ${response.status}`);
+      }
 
       toast.success("E-mail enviado com sucesso!");
     } catch {
@@ -145,7 +148,11 @@ const Newsletter = () => {
             onChange={(e) => handleChangeEmail(e)}
             fullWidth={true}
           />
-          <ClawsButton whiteSpace={'nowrap'} height={"56px"} onClick={() => onSubmit()}>
+          <ClawsButton
+            whiteSpace={"nowrap"}
+            height={"56px"}
+            onClick={() => onSubmit()}
+          >
             {translate("newsletter.btnText")}
           </ClawsButton>
         </Box>
