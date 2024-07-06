@@ -33,7 +33,6 @@ import coachMight from "./carousels/lineup/coachMight.webp";
 import competitivoAdmAlves from "./carousels/lineup/competitivoAdmAlves.webp";
 import competitivoCaveira from "./carousels/lineup/competitivoCaveira.webp";
 import competitivoCoachLuke from "./carousels/lineup/competitivoCoachLuke.webp";
-import competitivoKNG from "./carousels/lineup/competitivoKNG.webp";
 import competitivoOsijan from "./carousels/lineup/competitivoOsijan.webp";
 import competitivoReazy from "./carousels/lineup/competitivoReazy.webp";
 import competitivoSteve from "./carousels/lineup/competitivoSteve.webp";
@@ -102,7 +101,6 @@ export {
   competitivoAdmAlves,
   competitivoCaveira,
   competitivoCoachLuke,
-  competitivoKNG,
   competitivoOsijan,
   competitivoReazy,
   competitivoSteve,

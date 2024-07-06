@@ -192,14 +192,14 @@ const Navbar = () => {
           >
             {translate("header.staff")}
           </CustomLink>
-          <CustomLink
+          {/* <CustomLink
             display={{ md: "none", xl: "initial" }}
             style={changeColorWhenScrolling as CSSProperties}
             className="item-navbar"
             onClick={() => scrollToSection("blog")}
           >
             {translate("header.blog")}
-          </CustomLink>
+          </CustomLink> */}
         </Box>
         <Box display={{ xs: "flex", xl: "none" }} alignItems={"center"} gap={4}>
           <Box display={"flex"}>
@@ -452,7 +452,7 @@ const MenuMobile = (props: MenuMobileProps) => {
           >
             {translate("header.staff")}
           </CustomLink>
-          <CustomLink
+          {/* <CustomLink
             className="item-menu-mobile"
             onClick={() => {
               scrollToSection("blog");
@@ -460,7 +460,7 @@ const MenuMobile = (props: MenuMobileProps) => {
             }}
           >
             {translate("header.blog")}
-          </CustomLink>
+          </CustomLink> */}
         </Box>
         <Box
           className={"menu-mobile-close-btn"}

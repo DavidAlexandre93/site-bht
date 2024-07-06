@@ -4,7 +4,6 @@ import {
   competitivoAdmAlves,
   competitivoCaveira,
   competitivoCoachLuke,
-  competitivoKNG,
   competitivoOsijan,
   competitivoReazy,
   competitivoSteve,
@@ -40,26 +39,22 @@ const lineupCarouselCards = [
       },
       {
         key: 5,
-        content: <TeamCarouselCard img={competitivoKNG} />,
-      },
-      {
-        key: 6,
         content: <TeamCarouselCard img={competitivoOsijan} />,
       },
       {
-        key: 7,
+        key: 6,
         content: <TeamCarouselCard img={competitivoReazy} />,
       },
       {
-        key: 8,
+        key: 7,
         content: <TeamCarouselCard img={competitivoSteve} />,
       },
       {
-        key: 9,
+        key: 8,
         content: <TeamCarouselCard img={competitivoVinnie} />,
       },
       {
-        key: 10,
+        key: 9,
         content: <TeamCarouselCard img={psicologoDenner} />,
       },
     ],
