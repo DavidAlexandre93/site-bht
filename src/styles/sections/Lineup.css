@@ -11,26 +11,24 @@
   border-bottom: 0.1rem solid #fff;
 }
 
+.segmented-buttons {
+  color: #fff !important;
+  padding: 0.5rem 2.5rem !important;
+}
+
 .segmented-buttons .btn-first {
-  background-color: var(--secondary-dark);
-  color: #fff;
   border: 1px solid #fff;
   border-radius: 5px;
-padding: 0.5rem 2.5rem;
-  /* border-top-right-radius: 0;
+  border-top-right-radius: 0;
   border-bottom-right-radius: 0;
-  border-right-width: 0; */
-  transition: 0.2s;
+  border-right-width: 0;
 }
 
 .segmented-buttons .btn-last {
-  background-color: var(--secondary-dark);
-  color: #fff;
   border: 1px solid #fff;
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
   border-left-width: 1;
-  transition: 0.2s;
 }
 
 .btn-last:hover {

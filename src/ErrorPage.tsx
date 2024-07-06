@@ -3,10 +3,13 @@ import "./styles/sections/ErrorPage.css";
 import { Box } from "@mui/material";
 import SectionTitle from "./components/SectionTitle";
 import { logoBHT } from "./assets/img";
-
 import BackButton from "./components/BackButton";
 
+import { useTranslation } from "react-i18next";
+
 const ErrorPage = () => {
+  const { t: translate } = useTranslation();
+
   return (
     <Box
       component={"section"}
@@ -23,8 +26,8 @@ const ErrorPage = () => {
       </Box>
       <SectionTitle
         textAlign={"center"}
-        title="404"
-        subtitle="A PÁGINA QUE VOCÊ TENTOU ACESSAR NÃO FOI ENCONTRADA"
+        title={translate("errorPage.title")}
+        subtitle={translate("errorPage.subtitle")}
       />
       <BackButton />
     </Box>

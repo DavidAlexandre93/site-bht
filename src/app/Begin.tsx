@@ -1,18 +1,6 @@
 import "../styles/sections/Begin.css";
 
-import {
-  // Avatar,
-  Box,
-  // Dialog,
-  // DialogTitle,
-  IconButton,
-  // List,
-  // ListItem,
-  // ListItemAvatar,
-  // ListItemButton,
-  // ListItemText,
-  Typography,
-} from "@mui/material";
+import { Box, IconButton, Typography } from "@mui/material";
 import {
   FaDiscord,
   FaInstagram,
@@ -30,7 +18,6 @@ import InstagramDialog from "../components/InstagramDialog";
 import { useContext, useRef, useState } from "react";
 import { LoadingContext } from "../contexts/LoadingContext";
 import { IoCloseOutline } from "react-icons/io5";
-// import communities from "../data/beginCommunities";
 import beginCommunities from "../data/beginCommunities";
 
 const Begin = () => {
@@ -39,7 +26,6 @@ const Begin = () => {
   const [openSocialMedia, setOpenSocialMedia] = useState(false);
 
   const carouselRef = useRef(null);
-  // const { t: translate } = useTranslation();
 
   const onTitleClickHandler = (card: {
     id: string;
@@ -207,7 +193,7 @@ const SocialMedia = (props: SocialMediaProps) => {
       position={"absolute"}
       alignItems={"center"}
       justifyContent={{ xs: "center", xl: "initial" }}
-      bottom={'15%'}
+      bottom={"15%"}
     >
       <Box
         display={"flex"}
@@ -267,69 +253,5 @@ const SocialMedia = (props: SocialMediaProps) => {
     </Box>
   );
 };
-
-// type CommunitiesProps = {
-//   open: boolean;
-//   onClose: () => void;
-// };
-// const Communities = (props: CommunitiesProps) => {
-//   const { open, onClose } = props;
-//   const { t: translate } = useTranslation();
-
-//   const handleClickOpen = (url: string) => window.open(url);
-
-//   return (
-//     <Dialog
-//       sx={{
-//         "& .MuiPaper-root": {
-//           backgroundColor: "var(--grey)",
-//           color: "#fff",
-//         },
-//       }}
-//       onClose={onClose}
-//       open={open}
-//     >
-//       <DialogTitle sx={{ color: "#fff", paddingRight: 1.5 }}>
-//         <Box
-//           display={"flex"}
-//           justifyContent={"space-between"}
-//           alignItems={"center"}
-//         >
-//           Comunidades
-//           <IconButton onClick={() => onClose()}>
-//             <IoCloseOutline color="#fff" />
-//           </IconButton>
-//         </Box>
-//       </DialogTitle>
-//       <List sx={{ pt: 0 }}>
-//         {communities.map((com, index) => (
-//           <ListItem disableGutters key={index}>
-//             <ListItemButton onClick={() => handleClickOpen(com.url)}>
-//               <ListItemAvatar>
-//                 <Avatar
-//                   sx={{
-//                     bgcolor: com.highlight ? "var(--primary-color)" : "#fff",
-//                   }}
-//                 >
-//                   <FaWhatsapp color={com.highlight ? "#fff" : "#000"} />
-//                 </Avatar>
-//               </ListItemAvatar>
-//               <ListItemText
-//                 sx={{
-//                   color: "#fff",
-//                   "& span": {
-//                     fontFamily: "var(--primary-font) !important",
-//                     fontWeight: com.highlight ? 600 : 400,
-//                   },
-//                 }}
-//                 primary={translate(com.name)}
-//               />
-//             </ListItemButton>
-//           </ListItem>
-//         ))}
-//       </List>
-//     </Dialog>
-//   );
-// };
 
 export default Begin;

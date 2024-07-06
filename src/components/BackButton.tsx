@@ -1,9 +1,11 @@
-import { MdOutlineArrowBack } from "react-icons/md";
 import CustomLink from "./CustomLink";
+import { MdOutlineArrowBack } from "react-icons/md";
+
 import { useNavigate } from "react-router-dom";
 import { useContext } from "react";
 import { timerLoadingRoute } from "../constants/timer";
 import { LoadingContext } from "../contexts/LoadingContext";
+import { useTranslation } from "react-i18next";
 
 type BackButtonProps = {
   title?: string;
@@ -12,6 +14,7 @@ type BackButtonProps = {
 const BackButton = (props: BackButtonProps) => {
   const { title } = props;
 
+  const { t: translate } = useTranslation();
   const navigate = useNavigate();
   const { setIsLoading } = useContext(LoadingContext);
 
@@ -38,7 +41,7 @@ const BackButton = (props: BackButtonProps) => {
       onClick={handleBackButton}
     >
       <MdOutlineArrowBack />
-      {title ? title : "Voltar ao início"}
+      {title ? title : translate("backButton")}
     </CustomLink>
   );
 };

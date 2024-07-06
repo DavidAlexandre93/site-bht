@@ -5,7 +5,12 @@ import { Box } from "@mui/material";
 import { NextButton, PrevButton } from "../ArrowButtons";
 
 type TeamCarouselProps = CSSProperties & {
-  cards: { key: number; content: JSX.Element; url?: string }[];
+  cards: {
+    key: number;
+    content: JSX.Element;
+    game?: string;
+    url?: string;
+  }[];
   offset: number;
   showArrows?: boolean;
 };
@@ -52,8 +57,14 @@ const TeamCarousel = (props: TeamCarouselProps) => {
       />
       <Box display={"flex"} alignItems={"center"} justifyContent={"center"}>
         <Box className="players-carousel-buttons">
-          <PrevButton onClick={onPrevButtonClick} />
-          <NextButton onClick={onNextButtonClick} />
+          <PrevButton
+            onClick={onPrevButtonClick}
+            disabled={cards.length === 1}
+          />
+          <NextButton
+            onClick={onNextButtonClick}
+            disabled={cards.length === 1}
+          />
         </Box>
       </Box>
     </Box>

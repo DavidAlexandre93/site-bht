@@ -16,7 +16,8 @@ import sigaNossoInstagram from "./carousels/ourStory/sigaNossoInstagram.webp";
 import perfilParaRedesSociais from "./carousels/ourStory/perfilParaRedesSociais.webp";
 
 // Section Important Announcements - Carousel
-import advogada from "./carousels/importantAnnouncements/advogada.webp";
+import advogadaSorayaPerfil from "./carousels/importantAnnouncements/advogadaSorayaPerfil.webp";
+import developerVitorPerfil from "./carousels/importantAnnouncements/developerVitorPerfil.webp";
 import avaliandoPlayerBloodStrike from "./carousels/importantAnnouncements/avaliandoPlayerBloodStrike.webp";
 import avaliandoPlayerCS2 from "./carousels/importantAnnouncements/avaliandoPlayerCS2.webp";
 import avaliandoPlayerValorant from "./carousels/importantAnnouncements/avaliandoPlayerValorant.webp";
@@ -84,7 +85,8 @@ export {
   perfilParaRedesSociais,
 
   // Section Important Announcements - Carousel
-  advogada,
+  advogadaSorayaPerfil,
+  developerVitorPerfil,
   avaliandoPlayerBloodStrike,
   avaliandoPlayerCS2,
   avaliandoPlayerValorant,

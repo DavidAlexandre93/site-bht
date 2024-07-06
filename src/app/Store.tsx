@@ -11,7 +11,18 @@ const Store = () => {
   const { t: translate } = useTranslation();
 
   return (
-    <Box component={"section"} className="store-section" id="store">
+    <Box
+      component={"section"}
+      className="store-section"
+      id="store"
+      width={"100%"}
+      py={"4rem"}
+      display={"flex"}
+      flexDirection={"column"}
+      justifyContent={"center"}
+      alignItems={"center"}
+      position={"relative"}
+    >
       <Box textAlign={"center"}>
         <SectionTitle
           className="title-important-announcements"

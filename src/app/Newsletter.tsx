@@ -78,9 +78,7 @@ const Newsletter = () => {
       <Box
         id="newsletterForm"
         component={"form"}
-        action={`https://bloodhuntsgaming.us18.list-manage.com/subscribe/post?u=${
-          import.meta.env.VITE_TOKEN_NEWSLETTER_U
-        }&id=${import.meta.env.VITE_TOKEN_NEWSLETTER_ID}`}
+        action={`https://bloodhuntsgaming.us18.list-manage.com/subscribe/post?u=d6a36bd136079ed9f553d652e&id=2bc7833269`}
         method="POST"
         noValidate
         display={"flex"}

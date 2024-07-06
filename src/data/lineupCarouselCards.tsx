@@ -10,6 +10,7 @@ import {
   competitivoSteve,
   competitivoVinnie,
   psicologoDenner,
+  admRafael
 } from "../assets/img";
 import TeamCarouselCard from "../components/TeamCarousel/Card";
 
@@ -66,13 +67,9 @@ const lineupCarouselCards = [
   {
     game: "COD WARZONE",
     img: [
-      { key: 11, content: <TeamCarouselCard img={analistaCompetitivoGodan} /> },
-      {
-        key: 12,
-        content: <TeamCarouselCard img={coachMight} />,
-      },
+      { key: 0, content: <TeamCarouselCard img={admRafael} /> },
     ],
-  },
+  }
 ];
 
 export default lineupCarouselCards;

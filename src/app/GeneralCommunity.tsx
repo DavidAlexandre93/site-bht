@@ -18,14 +18,14 @@ import {
   youtube,
 } from "../assets/img";
 
-// import { useTranslation } from "react-i18next";
+import { useTranslation } from "react-i18next";
 import BackButton from "../components/BackButton";
 
 const GeneralCommunity = () => {
   const [openSocialMedia, setOpenSocialMedia] = useState(false);
 
   const carouselRef = useRef(null);
-  // const { t: translate } = useTranslation();
+  const { t: translate } = useTranslation();
 
   const onTitleClickHandler = (card: {
     id: string;
@@ -60,8 +60,8 @@ const GeneralCommunity = () => {
         </Box>
         <SectionTitle
           textAlign={"center"}
-          title="COMUNIDADE GERAL"
-          subtitle="Faça parte da alcateia"
+          title={translate("generalCommunity.title")}
+          subtitle={translate("generalCommunity.subtitle")}
         />
         <ClawsButton
           width={{ xs: "100%", md: "430px" }}
@@ -73,7 +73,7 @@ const GeneralCommunity = () => {
             window.open("https://chat.whatsapp.com/K9Yd9UuCdi9LraCpCIvAzu")
           }
         >
-          Clique aqui para entrar na comunidade
+          {translate("generalCommunity.joinCommunityButton")}
         </ClawsButton>
         <ClawsButton
           width={{ xs: "100%", md: "430px" }}
@@ -82,9 +82,9 @@ const GeneralCommunity = () => {
           py={2}
           onClick={() => setOpenSocialMedia(true)}
         >
-          Visualizar outras redes sociais
+          {translate("generalCommunity.viewSocialNetworksButton")}
         </ClawsButton>
-        <BackButton title="Visualizar o site" />
+        <BackButton title={translate("generalCommunity.viewWebsiteButton")} />
       </Box>
       {openSocialMedia && (
         <Box

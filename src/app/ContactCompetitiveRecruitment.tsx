@@ -18,14 +18,14 @@ import {
   youtube,
 } from "../assets/img";
 
-// import { useTranslation } from "react-i18next";
+import { useTranslation } from "react-i18next";
 import BackButton from "../components/BackButton";
 
 const ContactCompetitiveRecruitment = () => {
   const [openSocialMedia, setOpenSocialMedia] = useState(false);
 
   const carouselRef = useRef(null);
-  // const { t: translate } = useTranslation();
+  const { t: translate } = useTranslation();
 
   const onTitleClickHandler = (card: {
     id: string;
@@ -60,8 +60,8 @@ const ContactCompetitiveRecruitment = () => {
         </Box>
         <SectionTitle
           textAlign={"center"}
-          title="RECRUTAMENTO COMPETITIVO"
-          subtitle="Faça parte da alcateia"
+          title={translate("contactCompetitiveRecruitment.title")}
+          subtitle={translate("contactCompetitiveRecruitment.subtitle")}
         />
         <ClawsButton
           width={{ xs: "100%", md: "430px" }}
@@ -75,7 +75,7 @@ const ContactCompetitiveRecruitment = () => {
             )
           }
         >
-          Clique aqui para entrar na comunidade
+          {translate("contactCompetitiveRecruitment.contactButton")}
         </ClawsButton>
         <ClawsButton
           width={{ xs: "100%", md: "430px" }}
@@ -84,9 +84,11 @@ const ContactCompetitiveRecruitment = () => {
           py={2}
           onClick={() => setOpenSocialMedia(true)}
         >
-          Visualizar outras redes sociais
+          {translate("contactCompetitiveRecruitment.viewSocialNetworksButton")}
         </ClawsButton>
-        <BackButton title="Visualizar o site" />
+        <BackButton
+          title={translate("contactCompetitiveRecruitment.viewWebsiteButton")}
+        />
       </Box>
       {openSocialMedia && (
         <Box

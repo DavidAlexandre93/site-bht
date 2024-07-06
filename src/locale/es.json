@@ -42,6 +42,10 @@
       "textTShirt2": "Viste nuestro manto ahora",
       "btnText": "Visita nuestra tienda"
     },
+    "lineup": {
+      "title": "Lineup",
+      "subtitle": "Estos son nuestros atletas"
+    },
     "staff": {
       "title": "EQUIPO",
       "subtitle": "Conoce a nuestro equipo",
@@ -54,6 +58,9 @@
       "description": "Ingresa tu correo electrónico para recibir información sobre nuestra organización y notificaciones.",
       "btnText": "Inscríbete ahora"
     },
+    "blog": {
+      "noData": "No se pudo cargar el feed de Instagram."
+    },
     "footer": {
       "sitemap": {
         "title": "Mapa del sitio",
@@ -65,8 +72,8 @@
         "staff": "Personal",
         "blog": "Blog"
       },
-      "communities": {
-        "title": "Comunidades",
+      "contactUs": {
+        "title": "Contáctenos",
         "general": "General",
         "casualRecruitment": "Reclutamiento casual",
         "competitiveRecruitment": "Reclutamiento competitivo"
@@ -77,6 +84,32 @@
       },
       "textCopyright": "© 2024 Bloodhunts Gaming, Inc. Todos los derechos reservados",
       "textDevelopedBy": "Desarrollado por"
-    }
+    },
+    "generalCommunity": {
+      "title": "COMUNIDAD GENERAL",
+      "subtitle": "Únete a la manada",
+      "joinCommunityButton": "Haga clic aquí para unirse a la comunidad",
+      "viewSocialNetworksButton": "Ver otras redes sociales",
+      "viewWebsiteButton": "Ver el sitio web"
+    },
+    "contactCasualRecruitment": {
+      "title": "RECLUTAMIENTO CASUAL",
+      "subtitle": "Únete a la manada",
+      "contactButton": "Haga clic aquí para contactar",
+      "viewSocialNetworksButton": "Ver otras redes sociales",
+      "viewWebsiteButton": "Ver el sitio web"
+    },
+    "contactCompetitiveRecruitment": {
+      "title": "RECLUTAMIENTO COMPETITIVO",
+      "subtitle": "Únete a la manada",
+      "contactButton": "Haga clic aquí para contactar",
+      "viewSocialNetworksButton": "Ver otras redes sociales",
+      "viewWebsiteButton": "Ver el sitio web"
+    },
+    "errorPage": {
+      "title": "404",
+      "subtitle": "LA PÁGINA QUE INTENTASTE ACCEDER NO FUE ENCONTRADA"
+    },
+    "backButton": "Volver a la página principal"
   }
 }

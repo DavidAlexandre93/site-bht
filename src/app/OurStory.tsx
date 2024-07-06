@@ -10,23 +10,26 @@ import stories from "../data/ourStoryCarouselCards";
 import { useTranslation } from "react-i18next";
 import { Swiper, SwiperClass, SwiperSlide } from "swiper/react";
 import { NextButton, PrevButton } from "../components/ArrowButtons";
-import { useRef } from "react";
+import { useRef, useState } from "react";
 
 const OurStory = () => {
   const { t: translate } = useTranslation();
-
   const swiperRef = useRef<SwiperClass | null>(null);
 
-  const onPrevButtonClick = () => {
-    if (swiperRef.current) {
-      swiperRef.current.slidePrev();
-    }
+  const [isFirstButton, setIsFirstButton] = useState(true);
+  const [isLastButton, setIsLastButton] = useState(false);
+
+  const handleClickPrevButton = () => {
+    if (swiperRef.current) swiperRef.current.slidePrev();
   };
 
-  const onNextButtonClick = () => {
-    if (swiperRef.current) {
-      swiperRef.current.slideNext();
-    }
+  const handleClickNextButton = () => {
+    if (swiperRef.current) swiperRef.current.slideNext();
+  };
+
+  const onSlideChangeSwiper = (swiper: SwiperClass) => {
+    swiper.isBeginning ? setIsFirstButton(true) : setIsFirstButton(false);
+    swiper.isEnd ? setIsLastButton(true) : setIsLastButton(false);
   };
 
   return (
@@ -62,6 +65,7 @@ const OurStory = () => {
           modules={[EffectCards]}
           className="mySwiper"
           onSwiper={(swiper) => (swiperRef.current = swiper)}
+          onSlideChange={onSlideChangeSwiper}
         >
           {stories.map((img, index) => (
             <SwiperSlide
@@ -75,8 +79,14 @@ const OurStory = () => {
           ))}
         </Swiper>
         <Box mt={5} className="announcements-carousel-buttons">
-          <PrevButton onClick={onPrevButtonClick} />
-          <NextButton onClick={onNextButtonClick} />
+          <PrevButton
+            onClick={() => handleClickPrevButton()}
+            disabled={isFirstButton}
+          />
+          <NextButton
+            onClick={() => handleClickNextButton()}
+            disabled={isLastButton}
+          />
         </Box>
       </Box>
     </Box>

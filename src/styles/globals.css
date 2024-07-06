@@ -84,6 +84,8 @@ body {
 
 .images {
   background-position-x: 50%;
+  cursor: pointer;
+  position: relative;
 }
 
 .carousel-text-container {

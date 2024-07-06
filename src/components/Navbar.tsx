@@ -176,14 +176,14 @@ const Navbar = () => {
           >
             {translate("header.store")}
           </CustomLink>
-          {/* <CustomLink
+          <CustomLink
             display={{ md: "none", xl: "initial" }}
             style={changeColorWhenScrolling as CSSProperties}
             className="item-navbar"
             onClick={() => scrollToSection("lineup")}
           >
             {translate("header.lineup")}
-          </CustomLink> */}
+          </CustomLink>
           <CustomLink
             display={{ md: "none", lg: "initial" }}
             style={changeColorWhenScrolling as CSSProperties}
@@ -192,14 +192,14 @@ const Navbar = () => {
           >
             {translate("header.staff")}
           </CustomLink>
-          {/* <CustomLink
+          <CustomLink
             display={{ md: "none", xl: "initial" }}
             style={changeColorWhenScrolling as CSSProperties}
             className="item-navbar"
             onClick={() => scrollToSection("blog")}
           >
             {translate("header.blog")}
-          </CustomLink> */}
+          </CustomLink>
         </Box>
         <Box display={{ xs: "flex", xl: "none" }} alignItems={"center"} gap={4}>
           <Box display={"flex"}>
@@ -248,7 +248,8 @@ const Navbar = () => {
                                 index === selectedIndex
                                   ? "var(--primary-color)"
                                   : "var(--grey)",
-                              // fontFamily:
+                              padding: "0.6rem 1rem",
+                              fontFamily: "var(--primary-font)",
                             }}
                             key={index}
                             selected={index === selectedIndex}
@@ -321,6 +322,7 @@ const Navbar = () => {
                                 ? "var(--primary-color)"
                                 : "var(--grey)",
                             padding: "0.6rem 1rem",
+                            fontFamily: "var(--primary-font)",
                           }}
                           key={index}
                           selected={index === selectedIndex}
@@ -432,7 +434,7 @@ const MenuMobile = (props: MenuMobileProps) => {
           >
             {translate("header.store")}
           </CustomLink>
-          {/* <CustomLink
+          <CustomLink
             className="item-menu-mobile"
             onClick={() => {
               scrollToSection("lineup");
@@ -440,7 +442,7 @@ const MenuMobile = (props: MenuMobileProps) => {
             }}
           >
             {translate("header.lineup")}
-          </CustomLink> */}
+          </CustomLink>
           <CustomLink
             className="item-menu-mobile"
             onClick={() => {
@@ -450,7 +452,7 @@ const MenuMobile = (props: MenuMobileProps) => {
           >
             {translate("header.staff")}
           </CustomLink>
-          {/* <CustomLink
+          <CustomLink
             className="item-menu-mobile"
             onClick={() => {
               scrollToSection("blog");
@@ -458,7 +460,7 @@ const MenuMobile = (props: MenuMobileProps) => {
             }}
           >
             {translate("header.blog")}
-          </CustomLink> */}
+          </CustomLink>
         </Box>
         <Box
           className={"menu-mobile-close-btn"}

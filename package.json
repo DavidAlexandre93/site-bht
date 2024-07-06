@@ -19,6 +19,7 @@
     "framer-motion": "^11.1.9",
     "i18next": "^23.11.4",
     "npm": "^10.8.1",
+    "photoswipe": "^5.4.4",
     "react": "^18.2.0",
     "react-3dm-carousel": "^1.4.1",
     "react-dom": "^18.2.0",

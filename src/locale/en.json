@@ -42,6 +42,10 @@
       "textTShirt2": "Wear our mantle now",
       "btnText": "Visit our store"
     },
+    "lineup": {
+      "title": "Lineup",
+      "subtitle": "These are our athletes"
+    },
     "staff": {
       "title": "STAFF",
       "subtitle": "Meet our staff",
@@ -54,6 +58,9 @@
       "description": "Enter your email to receive information about our organization and notifications.",
       "btnText": "Subscribe now"
     },
+    "blog": {
+      "noData": "Unable to load Instagram feed."
+    },
     "footer": {
       "sitemap": {
         "title": "Sitemap",
@@ -65,11 +72,11 @@
         "staff": "Staff",
         "blog": "Blog"
       },
-      "communities": {
-        "title": "Communities",
+      "contactUs": {
+        "title": "Contact Us",
         "general": "General",
-        "casualRecruitment": "Casual recruitment",
-        "competitiveRecruitment": "Competitive recruitment"
+        "casualRecruitment": "Casual Recruitment",
+        "competitiveRecruitment": "Competitive Recruitment"
       },
       "store": {
         "title": "Store",
@@ -77,6 +84,32 @@
       },
       "textCopyright": "© 2024 Bloodhunts Gaming, Inc. All rights reserved",
       "textDevelopedBy": "Developed by"
-    }
+    },
+    "generalCommunity": {
+      "title": "GENERAL COMMUNITY",
+      "subtitle": "Join the pack",
+      "joinCommunityButton": "Click here to join the community",
+      "viewSocialNetworksButton": "View other social networks",
+      "viewWebsiteButton": "View the website"
+    },
+    "contactCasualRecruitment": {
+      "title": "CASUAL RECRUITMENT",
+      "subtitle": "Join the pack",
+      "contactButton": "Click here to contact",
+      "viewSocialNetworksButton": "View other social networks",
+      "viewWebsiteButton": "View the website"
+    },
+    "contactCompetitiveRecruitment": {
+      "title": "COMPETITIVE RECRUITMENT",
+      "subtitle": "Join the pack",
+      "contactButton": "Click here to contact",
+      "viewSocialNetworksButton": "View other social networks",
+      "viewWebsiteButton": "View the website"
+    },
+    "errorPage": {
+      "title": "404",
+      "subtitle": "THE PAGE YOU TRIED TO ACCESS WAS NOT FOUND"
+    },
+    "backButton": "Back to homepage"
   }
 }

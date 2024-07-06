@@ -100,7 +100,7 @@ const Footer = () => {
                 {translate("footer.sitemap.store")}
               </CustomLink>
             </Box>
-            {/* <Box>
+            <Box>
               <CustomLink
                 style={{ cursor: "pointer" }}
                 className="item-footer"
@@ -108,7 +108,7 @@ const Footer = () => {
               >
                 {translate("footer.sitemap.lineup")}
               </CustomLink>
-            </Box> */}
+            </Box>
             <Box>
               <CustomLink
                 style={{ cursor: "pointer" }}
@@ -118,7 +118,7 @@ const Footer = () => {
                 {translate("footer.sitemap.staff")}
               </CustomLink>
             </Box>
-            {/* <Box>
+            <Box>
               <CustomLink
                 style={{ cursor: "pointer" }}
                 className="item-footer"
@@ -126,7 +126,7 @@ const Footer = () => {
               >
                 {translate("footer.sitemap.blog")}
               </CustomLink>
-            </Box> */}
+            </Box>
           </Box>
           <Box display={"flex"} flexDirection={"column"} gap={1}>
             <Typography
@@ -135,7 +135,7 @@ const Footer = () => {
               color={"#fff"}
               fontWeight={600}
             >
-              {translate("footer.communities.title")}
+              {translate("footer.contactUs.title")}
             </Typography>
             <Box>
               <CustomLink
@@ -144,7 +144,7 @@ const Footer = () => {
                 className="item-footer"
                 href="https://chat.whatsapp.com/K9Yd9UuCdi9LraCpCIvAzu"
               >
-                {translate("footer.communities.general")}
+                {translate("footer.contactUs.general")}
               </CustomLink>
             </Box>
             <Box>
@@ -154,7 +154,7 @@ const Footer = () => {
                 className="item-footer"
                 href="https://wa.me/+559191703941?text=Ol%C3%A1,%20Tudo%20bem?%20Eu%20gostaria%20de%20fazer%20parte%20da%20alcateia%20BloodHunts%20Gaming.%20"
               >
-                {translate("footer.communities.casualRecruitment")}
+                {translate("footer.contactUs.casualRecruitment")}
               </CustomLink>
             </Box>
             <Box>
@@ -164,7 +164,7 @@ const Footer = () => {
                 className="item-footer"
                 href="https://wa.me/+5521972772718?text=Ol%C3%A1,%20Tudo%20bem?%20Eu%20gostaria%20de%20realizar%20o%20teste%20para%20o%20competitivo%20e%20quero%20me%20juntar%20a%20alcateia%20BloodHunts%20Gaming"
               >
-                {translate("footer.communities.competitiveRecruitment")}
+                {translate("footer.contactUs.competitiveRecruitment")}
               </CustomLink>
             </Box>
           </Box>

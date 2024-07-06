@@ -17,14 +17,14 @@ import {
   youtube,
 } from "../assets/img";
 
-// import { useTranslation } from "react-i18next";
+import { useTranslation } from "react-i18next";
 import BackButton from "../components/BackButton";
 
 const ContactCasualRecruitment = () => {
   const [openSocialMedia, setOpenSocialMedia] = useState(false);
 
   const carouselRef = useRef(null);
-  // const { t: translate } = useTranslation();
+  const { t: translate } = useTranslation();
 
   const onTitleClickHandler = (card: {
     id: string;
@@ -59,8 +59,8 @@ const ContactCasualRecruitment = () => {
         </Box>
         <SectionTitle
           textAlign={"center"}
-          title="RECRUTAMENTO CASUAL"
-          subtitle="Faça parte da alcateia"
+          title={translate("contactCasualRecruitment.title")}
+          subtitle={translate("contactCasualRecruitment.subtitle")}
         />
         <ClawsButton
           width={{ xs: "100%", md: "430px" }}
@@ -74,7 +74,7 @@ const ContactCasualRecruitment = () => {
             )
           }
         >
-          Clique aqui para entrar na comunidade
+          {translate("contactCasualRecruitment.contactButton")}
         </ClawsButton>
         <ClawsButton
           width={{ xs: "100%", md: "430px" }}
@@ -83,9 +83,11 @@ const ContactCasualRecruitment = () => {
           py={2}
           onClick={() => setOpenSocialMedia(true)}
         >
-          Visualizar outras redes sociais
+          {translate("contactCasualRecruitment.viewSocialNetworksButton")}
         </ClawsButton>
-        <BackButton title="Visualizar o site" />
+        <BackButton
+          title={translate("contactCasualRecruitment.viewWebsiteButton")}
+        />
       </Box>
       {openSocialMedia && (
         <Box
