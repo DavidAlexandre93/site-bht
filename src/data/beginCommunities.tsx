@@ -19,42 +19,42 @@ const beginCommunities = [
     image: whatsCommunity,
     description: "",
   },
-  {
-    id: "https://chat.whatsapp.com/JxzxEfqYlk828DZcQHxstj",
-    title: "CODM Academy",
-    image: whatsCommunity,
-    description: "",
-  },
-  {
-    id: "https://chat.whatsapp.com/DccDNcNCtkQITL283RRudV",
-    title: "CS2",
-    image: whatsCommunity,
-    description: "",
-  },
-  {
-    id: "https://chat.whatsapp.com/GoiEyZNdliX4aShumhP8Jw",
-    title: "PUBG Mobile",
-    image: whatsCommunity,
-    description: "",
-  },
-  {
-    id: "https://chat.whatsapp.com/D5oVOsziPf0JwAYNTmQCjT",
-    title: "Warzone",
-    image: whatsCommunity,
-    description: "",
-  },
-  {
-    id: "https://chat.whatsapp.com/LNMJIhWOVPX092ER9O8xf3",
-    title: "BloodStrike",
-    image: whatsCommunity,
-    description: "",
-  },
-  {
-    id: "https://chat.whatsapp.com/H7IghIj6A2T9uxULyMyDcj",
-    title: "CODM: Battle Royale",
-    image: whatsCommunity,
-    description: "",
-  },
+  // {
+  //   id: "https://chat.whatsapp.com/JxzxEfqYlk828DZcQHxstj",
+  //   title: "CODM Academy",
+  //   image: whatsCommunity,
+  //   description: "",
+  // },
+  // {
+  //   id: "https://chat.whatsapp.com/DccDNcNCtkQITL283RRudV",
+  //   title: "CS2",
+  //   image: whatsCommunity,
+  //   description: "",
+  // },
+  // {
+  //   id: "https://chat.whatsapp.com/GoiEyZNdliX4aShumhP8Jw",
+  //   title: "PUBG Mobile",
+  //   image: whatsCommunity,
+  //   description: "",
+  // },
+  // {
+  //   id: "https://chat.whatsapp.com/D5oVOsziPf0JwAYNTmQCjT",
+  //   title: "Warzone",
+  //   image: whatsCommunity,
+  //   description: "",
+  // },
+  // {
+  //   id: "https://chat.whatsapp.com/LNMJIhWOVPX092ER9O8xf3",
+  //   title: "BloodStrike",
+  //   image: whatsCommunity,
+  //   description: "",
+  // },
+  // {
+  //   id: "https://chat.whatsapp.com/H7IghIj6A2T9uxULyMyDcj",
+  //   title: "CODM: Battle Royale",
+  //   image: whatsCommunity,
+  //   description: "",
+  // },
 ];
 
 export default beginCommunities;

@@ -59,7 +59,8 @@
       "btnText": "Inscríbete ahora"
     },
     "blog": {
-      "noData": "No se pudo cargar el feed de Instagram."
+      "noData": "No se pudo cargar el feed de Instagram.",
+      "seeMore": "Ver más"
     },
     "footer": {
       "sitemap": {

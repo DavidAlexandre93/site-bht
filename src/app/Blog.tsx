@@ -30,7 +30,7 @@ const Blog = () => {
     const fetchDataFromAPI = async (fields: string, limit: number) => {
       try {
         const response = await fetch(
-          "http://localhost:3000/api/instagram-media",
+          "https://api-instagram-bht.vercel.app/instagram-media",
           {
             method: "POST",
             headers: {
@@ -61,7 +61,7 @@ const Blog = () => {
     <Box
       component={"section"}
       className="blog-section"
-      id="lineup"
+      id="blog"
       width="100%"
       paddingTop="4rem"
       paddingBottom={{ xs: "4rem", xl: "5rem" }}
@@ -92,6 +92,9 @@ const Blog = () => {
               width={{ xs: "260px", sm: "320px", xl: "420px" }}
               position={"relative"}
               style={{ cursor: "pointer" }}
+              border={"2px solid #fff"}
+              borderRadius={5}
+              overflow={"hidden"}
             >
               <img width={"100%"} src={post.media_url} alt={"post_instagram"} />
               <Box
@@ -114,7 +117,7 @@ const Blog = () => {
         )}
       </Box>
       <ClawsButton mt={5} px={8} pulseAnimation onClick={handleClickButton}>
-        Ver mais
+        {translate("blog.seeMore")}
       </ClawsButton>
     </Box>
   );

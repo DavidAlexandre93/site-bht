@@ -132,6 +132,7 @@ const Begin = () => {
 
       {openSocialMedia && (
         <Box
+          className="small-3d-carousel"
           position={"absolute"}
           display={"flex"}
           flexDirection={"column"}

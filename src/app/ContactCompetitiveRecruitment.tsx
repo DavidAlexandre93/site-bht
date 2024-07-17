@@ -92,6 +92,7 @@ const ContactCompetitiveRecruitment = () => {
       </Box>
       {openSocialMedia && (
         <Box
+          className="big-3d-carousel"
           position={"absolute"}
           display={"flex"}
           flexDirection={"column"}
@@ -154,7 +155,7 @@ const socialMediaCarouselData = () => [
   },
   {
     id: "https://api.whatsapp.com/send/?phone=%2B559191703941&text=Olá%2C+Tudo+bem%3F+Eu+gostaria+de+fazer+parte+da+alcateia+BloodHunts+Gaming.+&type=phone_number&app_absent=0",
-    title: "Recrutamento Casual",
+    title: "Contato Casual",
     image: whatsCODMobile,
     description: "",
   },

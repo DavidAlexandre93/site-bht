@@ -9,7 +9,7 @@ import Store from "./app/Store";
 import Lineup from "./app/Lineup";
 import Staff from "./app/Staff";
 import Newsletter from "./app/Newsletter";
-// import Blog from "./app/Blog";
+import Blog from "./app/Blog";
 import Footer from "./components/Footer";
 
 const Home = () => {
@@ -24,7 +24,7 @@ const Home = () => {
       <Lineup />
       <Staff />
       <Newsletter />
-      {/* <Blog /> */}
+      <Blog />
       <Footer />
     </>
   );

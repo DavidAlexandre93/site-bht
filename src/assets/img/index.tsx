@@ -2,9 +2,6 @@
 import codMobileIcon from "./icons/codMobileIcon.svg";
 import codWarzoneIcon from "./icons/codWarzoneIcon.svg";
 
-// Elements
-import tShirts from "./elements/tShirts.webp";
-
 // Logos
 import logoBHTWithBg from "./logos/logo56x56.webp";
 import logoBHT from "./logos/logoBHT.webp";
@@ -26,6 +23,13 @@ import avaliandoPlayerWarzone from "./carousels/importantAnnouncements/avaliando
 import copaDKHunts from "./carousels/importantAnnouncements/copaDKHunts.webp";
 import lupineLeague from "./carousels/importantAnnouncements/lupineLeague.webp";
 import recrutandoMulheresCompetitivoFPS from "./carousels/importantAnnouncements/recrutandoMulheresCompetitivoFPS.webp";
+
+// Section Store - Carousel
+import frenteCostasManequim from "./carousels/store/frenteCostasManequim.webp";
+import frenteManequim from "./carousels/store/frenteManequim.webp";
+import costasManequim from "./carousels/store/costasManequim.webp";
+import frenteCabide from "./carousels/store/frenteManequim.webp";
+import costasCabide from "./carousels/store/costasManequim.webp";
 
 // Section Staff - Lineup
 import analistaCompetitivoGodan from "./carousels/lineup/analistaCompetitivoGodan.webp";
@@ -70,9 +74,6 @@ export {
   codMobileIcon,
   codWarzoneIcon,
 
-  // Elements
-  tShirts,
-
   // Logos
   logoBHTWithBg,
   logoBHT,
@@ -106,6 +107,13 @@ export {
   competitivoSteve,
   competitivoVinnie,
   psicologoDenner,
+
+  // Section Store - Carousel
+  frenteCostasManequim,
+  frenteManequim,
+  costasManequim,
+  frenteCabide,
+  costasCabide,
 
   // Section Staff - Carousel
   ceoDavid,

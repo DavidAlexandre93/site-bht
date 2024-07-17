@@ -59,7 +59,8 @@
       "btnText": "Subscribe now"
     },
     "blog": {
-      "noData": "Unable to load Instagram feed."
+      "noData": "Unable to load Instagram feed.",
+      "seeMore": "See more"
     },
     "footer": {
       "sitemap": {

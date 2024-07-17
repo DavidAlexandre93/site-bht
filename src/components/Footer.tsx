@@ -118,7 +118,7 @@ const Footer = () => {
                 {translate("footer.sitemap.staff")}
               </CustomLink>
             </Box>
-            {/* <Box>
+            <Box>
               <CustomLink
                 style={{ cursor: "pointer" }}
                 className="item-footer"
@@ -126,7 +126,7 @@ const Footer = () => {
               >
                 {translate("footer.sitemap.blog")}
               </CustomLink>
-            </Box> */}
+            </Box>
           </Box>
           <Box display={"flex"} flexDirection={"column"} gap={1}>
             <Typography

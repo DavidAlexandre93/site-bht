@@ -1,14 +1,44 @@
 import "../styles/sections/Store.css";
+import "react-image-gallery/styles/css/image-gallery.css";
 
 import { Box, Typography } from "@mui/material";
 import { useTranslation } from "react-i18next";
-import { tShirts } from "../assets/img";
-import CustomLink from "../components/CustomLink";
+import {
+  frenteCostasManequim,
+  frenteManequim,
+  costasManequim,
+  frenteCabide,
+  costasCabide,
+} from "../assets/img";
 import ClawsButton from "../components/ClawsButton";
 import SectionTitle from "../components/SectionTitle";
+import ImageGallery from "react-image-gallery";
 
 const Store = () => {
   const { t: translate } = useTranslation();
+
+  const images = [
+    {
+      original: frenteCostasManequim,
+      thumbnail: frenteCostasManequim,
+    },
+    {
+      original: frenteManequim,
+      thumbnail: frenteManequim,
+    },
+    {
+      original: costasManequim,
+      thumbnail: costasManequim,
+    },
+    {
+      original: frenteCabide,
+      thumbnail: frenteCabide,
+    },
+    {
+      original: costasCabide,
+      thumbnail: costasCabide,
+    },
+  ];
 
   return (
     <Box
@@ -17,6 +47,7 @@ const Store = () => {
       id="store"
       width={"100%"}
       py={"4rem"}
+      px={{ xs: 3, md: 10, xl: 20 }}
       display={"flex"}
       flexDirection={"column"}
       justifyContent={"center"}
@@ -32,17 +63,16 @@ const Store = () => {
           withDivider={false}
         />
       </Box>
-      <Box display={"flex"} flexDirection={"column"} alignItems={"center"}>
-        <Box display={"flex"} alignItems={"center"}>
-          <CustomLink
-            target={"_blank"}
-            href="https://bloodhuntsgaming.mercadoshops.com.br/"
-            width={{ xs: "300px", xl: "400px" }}
-          >
-            <img src={tShirts} alt="mantle" width={"100%"} />
-          </CustomLink>
-        </Box>
+      <Box
+        width={{ xs: "100%", sm: "20%" }}
+        display={"flex"}
+        flexDirection={"column"}
+        alignItems={"center"}
+        textAlign={"center"}
+      >
+        <ImageGallery autoPlay items={images} />
         <Typography
+          mt={5}
           fontWeight={800}
           fontFamily={"var(--primary-font)"}
           color={"#fff"}
@@ -55,7 +85,7 @@ const Store = () => {
         </Typography>
       </Box>
       <ClawsButton
-        mt={5}
+        mt={3}
         px={5}
         height={"56px"}
         className="claws-button"

@@ -59,7 +59,8 @@
       "btnText": "Abonnez-vous maintenant"
     },
     "blog": {
-      "noData": "Impossible de charger le flux Instagram."
+      "noData": "Impossible de charger le flux Instagram.",
+      "seeMore": "Voir plus"
     },
     "footer": {
       "sitemap": {
