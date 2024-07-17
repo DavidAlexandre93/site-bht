@@ -54,7 +54,6 @@ import admRafael from "./carousels/staff/admRafael.webp";
 import FelipeNovaes from "./carousels/staff/managerIanVeloso.webp";
 import marketingMilly from "./carousels/staff/marketingMilly.webp";
 import techVitor from "./carousels/staff/techVitor.webp";
-import managerIanVeloso from "./carousels/staff/managerIanVeloso.webp";
 import LuckasCaio from "./carousels/staff/adminLuckasCaio.webp";
 import FelipeAlves from "./carousels/staff/competitivoAdmAlves.webp";
 
@@ -126,7 +125,6 @@ export {
   FelipeNovaes,
   marketingMilly,
   techVitor,
-  managerIanVeloso,
   LuckasCaio,
   FelipeAlves,
 

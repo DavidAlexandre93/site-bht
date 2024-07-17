@@ -9,7 +9,6 @@ import {
   // FelipeNovaes,
   marketingMilly,
   techVitor,
-  managerIanVeloso,
   LuckasCaio,
   FelipeAlves,
 } from "../assets/img";
@@ -68,16 +67,11 @@ const teamCarouselCards = [
   },
   {
     key: 10,
-    content: <TeamCarouselCard img={managerIanVeloso} />,
-    url: "https://www.instagram.com/ianrveloso/",
-  },
-  {
-    key: 11,
     content: <TeamCarouselCard img={LuckasCaio} />,
     url: "https://www.instagram.com/luckascaio7/",
   },
   {
-    key: 12,
+    key: 11,
     content: <TeamCarouselCard img={FelipeAlves} />,
     url: "https://www.instagram.com/lz.alvess_gaming/",
   },
