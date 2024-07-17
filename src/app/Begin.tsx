@@ -7,6 +7,7 @@ import {
   FaTiktok,
   FaTwitter,
   FaWhatsapp,
+  FaYoutube,
 } from "react-icons/fa";
 import CustomLink from "../components/CustomLink";
 import { Carousel } from "react-3dm-carousel";
@@ -238,6 +239,15 @@ const SocialMedia = (props: SocialMediaProps) => {
           className="social-media-container"
         >
           <FaTwitter className="social-media" color={"white"} />
+        </CustomLink>
+        <CustomLink
+          target={"_blank"}
+          href={
+            "https://www.youtube.com/@BloodHuntsGaming"
+          }
+          className="social-media-container"
+        >
+          <FaYoutube className="social-media" color={"white"} />
         </CustomLink>
       </Box>
       <CustomLink
