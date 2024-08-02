@@ -70,7 +70,7 @@ const GeneralCommunity = () => {
           py={2}
           pulseAnimation={true}
           onClick={() =>
-            window.open("https://chat.whatsapp.com/K9Yd9UuCdi9LraCpCIvAzu")
+            window.open("https://chat.whatsapp.com/ElO1CZH7r4tFueKqj5fj1U")
           }
         >
           {translate("generalCommunity.joinCommunityButton")}

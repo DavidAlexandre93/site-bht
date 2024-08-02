@@ -2,7 +2,7 @@ import { whatsCommunity } from "../assets/img";
 
 const beginCommunities = [
   {
-    id: "https://chat.whatsapp.com/K9Yd9UuCdi9LraCpCIvAzu",
+    id: "https://chat.whatsapp.com/ElO1CZH7r4tFueKqj5fj1U",
     title: "Comunidade Geral",
     image: whatsCommunity,
     description: "",

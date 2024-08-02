@@ -142,7 +142,7 @@ const Footer = () => {
                 target="_blank"
                 style={{ cursor: "pointer" }}
                 className="item-footer"
-                href="https://chat.whatsapp.com/K9Yd9UuCdi9LraCpCIvAzu"
+                href="https://chat.whatsapp.com/ElO1CZH7r4tFueKqj5fj1U"
               >
                 {translate("footer.contactUs.community")}
               </CustomLink>
