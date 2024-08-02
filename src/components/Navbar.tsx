@@ -16,7 +16,15 @@ import {
   Toolbar,
 } from "@mui/material";
 import { CSSProperties, useEffect, useRef, useState } from "react";
-import { logoBHT, codMobileIcon, codWarzoneIcon } from "../assets/img";
+import {
+  logoBHT,
+  codMobileIcon,
+  codWarzoneIcon,
+  cs2Icon,
+  hokIcon,
+  pubgMobileIcon,
+  bloodstrikeIcon,
+} from "../assets/img";
 import { MdOutlineKeyboardArrowDown } from "react-icons/md";
 import { useTranslation } from "react-i18next";
 import CustomLink from "./CustomLink";
@@ -345,16 +353,50 @@ const Navbar = () => {
             marginLeft={2}
           >
             <CustomLink
+              width={"45px"}
               target={"_blank"}
               href="https://www.callofduty.com/br/pt/mobile"
             >
-              <img src={codMobileIcon} alt="cod_mobile_icon" />
+              <img width={"100%"} src={codMobileIcon} alt="cod_mobile_icon" />
             </CustomLink>
             <CustomLink
               target={"_blank"}
               href="https://www.callofduty.com/br/pt/warzone"
             >
-              <img src={codWarzoneIcon} alt="cod_warzone_icon" />
+              <img width={"100%"} src={codWarzoneIcon} alt="cod_warzone_icon" />
+            </CustomLink>
+            <CustomLink
+              mx={0.3}
+              width={"110px"}
+              target={"_blank"}
+              href="https://www.blood-strike.com/"
+            >
+              <img
+                width={"100%"}
+                src={bloodstrikeIcon}
+                alt="bloodstrike_icon"
+              />
+            </CustomLink>
+            <CustomLink
+              width={"35px"}
+              target={"_blank"}
+              href="https://www.honorofkings.com/"
+            >
+              <img width={"100%"} src={hokIcon} alt="hok_icon" />
+            </CustomLink>
+            <CustomLink
+              width={"40px"}
+              target={"_blank"}
+              href="https://www.pubgmobile.com/pt/home.shtml"
+            >
+              <img src={pubgMobileIcon} alt="pubg_icon" />
+            </CustomLink>
+            <CustomLink
+              width={"35px"}
+              target={"_blank"}
+              href="https://www.counter-strike.net/cs2"
+            >
+              <img src={cs2Icon} width={"100%"} alt="cs2_icon" />
             </CustomLink>
           </Box>
         </Box>

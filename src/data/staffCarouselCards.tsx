@@ -4,13 +4,10 @@ import {
   coachLuke,
   admTata,
   advogadaSoraya,
-  competitiveVinnie,
-  admRafael,
   // FelipeNovaes,
   marketingMilly,
   techVitor,
   LuckasCaio,
-  FelipeAlves,
 } from "../assets/img";
 import TeamCarouselCard from "../components/TeamCarousel/Card";
 
@@ -40,40 +37,25 @@ const teamCarouselCards = [
     content: <TeamCarouselCard img={advogadaSoraya} />,
     url: "https://www.instagram.com/soraya.advgamer",
   },
-  {
-    key: 5,
-    content: <TeamCarouselCard img={competitiveVinnie} />,
-    url: "https://www.instagram.com/vinnie_dk_oficial",
-  },
-  {
-    key: 6,
-    content: <TeamCarouselCard img={admRafael} />,
-    url: "https://www.instagram.com/rafaelmaddog",
-  },
   // {
-  //   key: 7,
+  //   key: 5,
   //   content: <TeamCarouselCard img={FelipeNovaes} />,
   //   url: "https://www.instagram.com/fednovaes/",
   // },
   {
-    key: 8,
+    key: 6,
     content: <TeamCarouselCard img={marketingMilly} />,
     url: "https://www.instagram.com/noze_codm/",
   },
   {
-    key: 9,
+    key: 7,
     content: <TeamCarouselCard img={techVitor} />,
     url: "https://www.instagram.com/vitordesenvolvedor/",
   },
   {
-    key: 10,
+    key: 8,
     content: <TeamCarouselCard img={LuckasCaio} />,
     url: "https://www.instagram.com/luckascaio7/",
-  },
-  {
-    key: 11,
-    content: <TeamCarouselCard img={FelipeAlves} />,
-    url: "https://www.instagram.com/lz.alvess_gaming/",
   },
 ];
 

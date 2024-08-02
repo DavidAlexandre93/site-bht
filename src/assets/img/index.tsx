@@ -1,6 +1,10 @@
 // Icons
 import codMobileIcon from "./icons/codMobileIcon.svg";
 import codWarzoneIcon from "./icons/codWarzoneIcon.svg";
+import bloodstrikeIcon from "./icons/bloodstrikeIcon.webp";
+import hokIcon from "./icons/hokIcon.svg";
+import pubgMobileIcon from "./icons/pubgMobileIcon.webp";
+import cs2Icon from "./icons/cs2Icon.svg";
 
 // Logos
 import logoBHTWithBg from "./logos/logo56x56.webp";
@@ -17,11 +21,8 @@ import advogadaSorayaPerfil from "./carousels/importantAnnouncements/advogadaSor
 import developerVitorPerfil from "./carousels/importantAnnouncements/developerVitorPerfil.webp";
 import avaliandoPlayerBloodStrike from "./carousels/importantAnnouncements/avaliandoPlayerBloodStrike.webp";
 import avaliandoPlayerCS2 from "./carousels/importantAnnouncements/avaliandoPlayerCS2.webp";
-import avaliandoPlayerValorant from "./carousels/importantAnnouncements/avaliandoPlayerValorant.webp";
 import avaliandoPlayerPUBGMobile from "./carousels/importantAnnouncements/avaliandoPlayerPUBGMobile.webp";
 import avaliandoPlayerWarzone from "./carousels/importantAnnouncements/avaliandoPlayerWarzone.webp";
-import copaDKHunts from "./carousels/importantAnnouncements/copaDKHunts.webp";
-import lupineLeague from "./carousels/importantAnnouncements/lupineLeague.webp";
 import recrutandoMulheresCompetitivoFPS from "./carousels/importantAnnouncements/recrutandoMulheresCompetitivoFPS.webp";
 
 // Section Store - Carousel
@@ -31,17 +32,20 @@ import costasManequim from "./carousels/store/costasManequim.webp";
 import frenteCabide from "./carousels/store/frenteManequim.webp";
 import costasCabide from "./carousels/store/costasManequim.webp";
 
-// Section Staff - Lineup
-import analistaCompetitivoGodan from "./carousels/lineup/analistaCompetitivoGodan.webp";
-import coachMight from "./carousels/lineup/coachMight.webp";
-import competitivoAdmAlves from "./carousels/lineup/competitivoAdmAlves.webp";
-import competitivoCaveira from "./carousels/lineup/competitivoCaveira.webp";
-import competitivoCoachLuke from "./carousels/lineup/competitivoCoachLuke.webp";
-import competitivoOsijan from "./carousels/lineup/competitivoOsijan.webp";
-import competitivoReazy from "./carousels/lineup/competitivoReazy.webp";
-import competitivoSteve from "./carousels/lineup/competitivoSteve.webp";
-import competitivoVinnie from "./carousels/lineup/competitivoVinnie.webp";
-import psicologoDenner from "./carousels/lineup/psicologoDenner.webp";
+// Section Lineup - CODM
+import coachMight from "./carousels/lineup/codm/coachMight.webp";
+import competitivoAdmAlves from "./carousels/lineup/codm/competitivoAdmAlves.webp";
+import competitivoCaveira from "./carousels/lineup/codm/competitivoCaveira.webp";
+import competitivoCoachLuke from "./carousels/lineup/codm/competitivoCoachLuke.webp";
+import competitivoOsijan from "./carousels/lineup/codm/competitivoOsijan.webp";
+import competitivoReazy from "./carousels/lineup/codm/competitivoReazy.webp";
+import competitivoSteve from "./carousels/lineup/codm/competitivoSteve.webp";
+import psicologoDenner from "./carousels/lineup/codm/psicologoDenner.webp";
+
+// Section Lineup - CODM Feminino
+import analistaCompetitivoGodan from "./carousels/lineup/codmFeminino/analistaCompetitivoGodan.webp";
+import marketingMilly from "./carousels/lineup/codmFeminino/marketingMilly.webp";
+import competitivoVinnie from "./carousels/lineup/codmFeminino/competitivoVinnie.webp";
 
 // Section Staff - Carousel
 import ceoDavid from "./carousels/staff/ceoDavid.webp";
@@ -49,13 +53,9 @@ import managerYori from "./carousels/staff/managerYori.webp";
 import coachLuke from "./carousels/staff/coachLuke.webp";
 import admTata from "./carousels/staff/admTata.webp";
 import advogadaSoraya from "./carousels/staff/advogadaSoraya.webp";
-import competitiveVinnie from "./carousels/staff/competitiveVinnie.webp";
-import admRafael from "./carousels/staff/admRafael.webp";
-import FelipeNovaes from "./carousels/staff/managerIanVeloso.webp";
-import marketingMilly from "./carousels/staff/marketingMilly.webp";
+// import FelipeNovaes from "./carousels/staff/managerFelipeNovaes.webp";
 import techVitor from "./carousels/staff/techVitor.webp";
 import LuckasCaio from "./carousels/staff/adminLuckasCaio.webp";
-import FelipeAlves from "./carousels/staff/competitivoAdmAlves.webp";
 
 // Cards - Social Media
 import instagram from "./socialMedia/instagram.webp";
@@ -72,6 +72,10 @@ export {
   // Icons
   codMobileIcon,
   codWarzoneIcon,
+  bloodstrikeIcon,
+  hokIcon,
+  pubgMobileIcon,
+  cs2Icon,
 
   // Logos
   logoBHTWithBg,
@@ -88,15 +92,11 @@ export {
   developerVitorPerfil,
   avaliandoPlayerBloodStrike,
   avaliandoPlayerCS2,
-  avaliandoPlayerValorant,
   avaliandoPlayerPUBGMobile,
   avaliandoPlayerWarzone,
-  copaDKHunts,
-  lupineLeague,
   recrutandoMulheresCompetitivoFPS,
 
-  // Section Lineup - Carousel
-  analistaCompetitivoGodan,
+  // Section Lineup CODM - Carousel
   coachMight,
   competitivoAdmAlves,
   competitivoCaveira,
@@ -104,8 +104,12 @@ export {
   competitivoOsijan,
   competitivoReazy,
   competitivoSteve,
-  competitivoVinnie,
   psicologoDenner,
+
+  // Section Lineup CODM Feminino - Carousel
+  analistaCompetitivoGodan,
+  marketingMilly,
+  competitivoVinnie,
 
   // Section Store - Carousel
   frenteCostasManequim,
@@ -120,13 +124,9 @@ export {
   coachLuke,
   admTata,
   advogadaSoraya,
-  competitiveVinnie,
-  admRafael,
-  FelipeNovaes,
-  marketingMilly,
+  // FelipeNovaes,
   techVitor,
   LuckasCaio,
-  FelipeAlves,
 
   // Cards - Social Media
   instagram,

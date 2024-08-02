@@ -1,11 +1,8 @@
 import {
   avaliandoPlayerBloodStrike,
   avaliandoPlayerCS2,
-  avaliandoPlayerValorant,
   avaliandoPlayerPUBGMobile,
   avaliandoPlayerWarzone,
-  copaDKHunts,
-  lupineLeague,
   recrutandoMulheresCompetitivoFPS,
   advogadaSorayaPerfil,
   developerVitorPerfil,
@@ -17,11 +14,8 @@ const importantAnnouncementsSlides: AnnouncementsCarouselProps["slides"] = [
   { img: developerVitorPerfil },
   { img: avaliandoPlayerBloodStrike },
   { img: avaliandoPlayerCS2 },
-  { img: avaliandoPlayerValorant },
   { img: avaliandoPlayerPUBGMobile },
   { img: avaliandoPlayerWarzone },
-  { img: copaDKHunts },
-  { img: lupineLeague },
   { img: recrutandoMulheresCompetitivoFPS },
 ];
 

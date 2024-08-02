@@ -144,7 +144,7 @@ const Footer = () => {
                 className="item-footer"
                 href="https://chat.whatsapp.com/K9Yd9UuCdi9LraCpCIvAzu"
               >
-                {translate("footer.contactUs.general")}
+                {translate("footer.contactUs.community")}
               </CustomLink>
             </Box>
             <Box>
@@ -207,7 +207,12 @@ const Footer = () => {
         >
           {translate("footer.textCopyright")}
         </Typography>
-        <Box mt={1} display={"flex"} className="social-container" gap={1}>
+        <Box
+          mt={{ xs: 1, lg: 0 }}
+          display={"flex"}
+          className="social-container"
+          gap={1}
+        >
           <CustomLink
             target={"_blank"}
             href="https://www.patreon.com/BloodHuntsGaming"
