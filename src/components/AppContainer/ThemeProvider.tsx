@@ -5,6 +5,17 @@ type ThemeProviderProps = {
   children: ReactNode;
 };
 
+declare module "@mui/material/styles" {
+  interface BreakpointOverrides {
+    xs: true;
+    sm: true;
+    md: true;
+    lg: true;
+    xl: true;
+    xxl: true;
+  }
+}
+
 const ThemeProvider = (props: ThemeProviderProps) => {
   const { children } = props;
 
@@ -16,7 +27,7 @@ const ThemeProvider = (props: ThemeProviderProps) => {
         md: 768,
         lg: 1024,
         xl: 1200,
-        xxl: 1400
+        xxl: 1400,
       },
     },
   });
