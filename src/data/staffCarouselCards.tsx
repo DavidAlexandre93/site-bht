@@ -1,13 +1,11 @@
 import {
   ceoDavid,
   managerYori,
-  coachLuke,
   admTata,
   advogadaSoraya,
-  // FelipeNovaes,
-  marketingMilly,
   techVitor,
   LuckasCaio,
+  psicologoDenner,
 } from "../assets/img";
 import TeamCarouselCard from "../components/TeamCarousel/Card";
 
@@ -24,38 +22,27 @@ const teamCarouselCards = [
   },
   {
     key: 2,
-    content: <TeamCarouselCard img={coachLuke} />,
-    url: "https://www.instagram.com/1lukecoach",
-  },
-  {
-    key: 3,
     content: <TeamCarouselCard img={admTata} />,
     url: "https://www.instagram.com/emilikarmaico",
   },
   {
-    key: 4,
+    key: 3,
     content: <TeamCarouselCard img={advogadaSoraya} />,
     url: "https://www.instagram.com/soraya.advgamer",
   },
-  // {
-  //   key: 5,
-  //   content: <TeamCarouselCard img={FelipeNovaes} />,
-  //   url: "https://www.instagram.com/fednovaes/",
-  // },
   {
-    key: 6,
-    content: <TeamCarouselCard img={marketingMilly} />,
-    url: "https://www.instagram.com/noze_codm/",
-  },
-  {
-    key: 7,
+    key: 4,
     content: <TeamCarouselCard img={techVitor} />,
     url: "https://www.instagram.com/vitordesenvolvedor/",
   },
   {
-    key: 8,
+    key: 5,
     content: <TeamCarouselCard img={LuckasCaio} />,
     url: "https://www.instagram.com/luckascaio7/",
+  },
+  {
+    key: 6,
+    content: <TeamCarouselCard img={psicologoDenner} />,
   },
 ];
 

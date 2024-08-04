@@ -40,7 +40,6 @@ import competitivoCoachLuke from "./carousels/lineup/codm/competitivoCoachLuke.w
 import competitivoOsijan from "./carousels/lineup/codm/competitivoOsijan.webp";
 import competitivoReazy from "./carousels/lineup/codm/competitivoReazy.webp";
 import competitivoSteve from "./carousels/lineup/codm/competitivoSteve.webp";
-import psicologoDenner from "./carousels/lineup/codm/psicologoDenner.webp";
 
 // Section Lineup - CODM Feminino
 import analistaCompetitivoGodan from "./carousels/lineup/codmFeminino/analistaCompetitivoGodan.webp";
@@ -53,9 +52,9 @@ import managerYori from "./carousels/staff/managerYori.webp";
 import coachLuke from "./carousels/staff/coachLuke.webp";
 import admTata from "./carousels/staff/admTata.webp";
 import advogadaSoraya from "./carousels/staff/advogadaSoraya.webp";
-// import FelipeNovaes from "./carousels/staff/managerFelipeNovaes.webp";
 import techVitor from "./carousels/staff/techVitor.webp";
 import LuckasCaio from "./carousels/staff/adminLuckasCaio.webp";
+import psicologoDenner from "./carousels/lineup/codm/psicologoDenner.webp";
 
 // Cards - Social Media
 import instagram from "./socialMedia/instagram.webp";
@@ -104,7 +103,6 @@ export {
   competitivoOsijan,
   competitivoReazy,
   competitivoSteve,
-  psicologoDenner,
 
   // Section Lineup CODM Feminino - Carousel
   analistaCompetitivoGodan,
@@ -127,6 +125,7 @@ export {
   // FelipeNovaes,
   techVitor,
   LuckasCaio,
+  psicologoDenner,
 
   // Cards - Social Media
   instagram,

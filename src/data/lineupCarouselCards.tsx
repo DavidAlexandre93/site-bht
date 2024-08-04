@@ -9,7 +9,6 @@ import {
   competitivoSteve,
   competitivoVinnie,
   marketingMilly,
-  psicologoDenner,
 } from "../assets/img";
 import TeamCarouselCard from "../components/TeamCarousel/Card";
 
@@ -44,10 +43,6 @@ const lineupCarouselCards = [
       {
         key: 6,
         content: <TeamCarouselCard img={competitivoSteve} />,
-      },
-      {
-        key: 7,
-        content: <TeamCarouselCard img={psicologoDenner} />,
       },
     ],
   },
