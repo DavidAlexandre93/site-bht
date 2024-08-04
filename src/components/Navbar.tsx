@@ -185,7 +185,7 @@ const Navbar = () => {
             {translate("header.store")}
           </CustomLink>
           <CustomLink
-            display={{ md: "none", xl: "initial" }}
+            display={{ md: "none", lg: "initial" }}
             style={changeColorWhenScrolling as CSSProperties}
             className="item-navbar"
             onClick={() => scrollToSection("lineup")}
@@ -366,6 +366,7 @@ const Navbar = () => {
               <img width={"100%"} src={codWarzoneIcon} alt="cod_warzone_icon" />
             </CustomLink>
             <CustomLink
+              display={{ xs: "none", xxl: "initial" }}
               mx={0.3}
               width={"110px"}
               target={"_blank"}
@@ -378,6 +379,7 @@ const Navbar = () => {
               />
             </CustomLink>
             <CustomLink
+              display={{ xs: "none", xxl: "initial" }}
               width={"35px"}
               target={"_blank"}
               href="https://www.honorofkings.com/"
@@ -385,6 +387,7 @@ const Navbar = () => {
               <img width={"100%"} src={hokIcon} alt="hok_icon" />
             </CustomLink>
             <CustomLink
+              display={{ xs: "none", xxl: "initial" }}
               width={"40px"}
               target={"_blank"}
               href="https://www.pubgmobile.com/pt/home.shtml"
@@ -392,6 +395,7 @@ const Navbar = () => {
               <img src={pubgMobileIcon} alt="pubg_icon" />
             </CustomLink>
             <CustomLink
+              display={{ xs: "none", xxl: "initial" }}
               width={"35px"}
               target={"_blank"}
               href="https://www.counter-strike.net/cs2"
