@@ -3,8 +3,8 @@ import { track } from '@vercel/analytics';
 
 function validateFields(field: string, value: string) {
 
-  reportValue('e-mail', false);
-  track('E-mail', {}, { flags: ['Inscrever-se e-mail'] });
+  reportValue('newsletter', false);
+  track('Newsletter', {}, { flags: ['newsletter'] });
 
   if (value === "") {
     return { existError: true, message: "Campo obrigatório" }
