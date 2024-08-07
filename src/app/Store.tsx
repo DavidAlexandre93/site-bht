@@ -1,6 +1,6 @@
 import "../styles/sections/Store.css";
 import "react-image-gallery/styles/css/image-gallery.css";
-
+import { track } from '@vercel/analytics';
 import { Box, Typography } from "@mui/material";
 import { useTranslation } from "react-i18next";
 import {
@@ -91,7 +91,11 @@ const Store = () => {
         className="claws-button"
         pulseAnimation={true}
         href="https://bloodhuntsgaming.mercadoshops.com.br"
+        onClick={() => {
+          track('Visite nossa loja');
+        }}
       >
+        
         {translate("store.btnText")}
       </ClawsButton>
     </Box>
