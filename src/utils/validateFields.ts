@@ -3,7 +3,7 @@ import { track } from '@vercel/analytics';
 
 function validateFields(field: string, value: string) {
 
-  reportValue('newsletter', false);
+  reportValue('newsletter', true);
   track('Newsletter', {}, { flags: ['newsletter'] });
 
   if (value === "") {
