@@ -112,6 +112,7 @@
       "title": "404",
       "subtitle": "A PÁGINA QUE VOCÊ TENTOU ACESSAR NÃO FOI ENCONTRADA"
     },
-    "backButton": "Voltar ao início"
+    "backButton": "Voltar ao início",
+    "backToTop": "Voltar ao topo"
   }
 }

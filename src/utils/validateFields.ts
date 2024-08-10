@@ -1,10 +1,7 @@
-import { reportValue } from '@vercel/flags';
 import { track } from '@vercel/analytics';
 
 function validateFields(field: string, value: string) {
-
-  reportValue('newsletter', false);
-  track('Newsletter', {}, { flags: ['newsletter'] });
+  track('Newsletter');
 
   if (value === "") {
     return { existError: true, message: "Campo obrigatório" }

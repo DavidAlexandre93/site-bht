@@ -53,7 +53,7 @@
       "btnText": "En savoir plus"
     },
     "newsletter": {
-      "title": "ABONNEZ-VOUS À LA NEWSLETTER",
+      "title": "Abonnez-vous à la newsletter",
       "subtitle": "Recevoir des informations",
       "description": "Entrez votre adresse e-mail pour recevoir des informations sur notre organisation et des notifications.",
       "btnText": "Abonnez-vous maintenant"
@@ -111,6 +111,7 @@
       "title": "404",
       "subtitle": "LA PAGE QUE VOUS AVEZ ESSAYÉ D'ACCÉDER N'A PAS ÉTÉ TROUVÉE"
     },
-    "backButton": "Retour à la page d'accueil"
+    "backButton": "Retour à la page d'accueil",
+    "backToTop": "Retour en haut"
   }
 }

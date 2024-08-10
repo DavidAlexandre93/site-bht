@@ -20,6 +20,7 @@ import {
 
 import { useTranslation } from "react-i18next";
 import BackButton from "../components/BackButton";
+import { track } from "@vercel/analytics";
 
 const ContactCompetitiveRecruitment = () => {
   const [openSocialMedia, setOpenSocialMedia] = useState(false);
@@ -34,6 +35,7 @@ const ContactCompetitiveRecruitment = () => {
     image: string;
   }) => {
     window.open(card.id);
+    track(`Carousel WhatsApp Recrutamento Competitivo - ${card.title}`);
   };
 
   const carouselData = socialMediaCarouselData();
@@ -69,11 +71,14 @@ const ContactCompetitiveRecruitment = () => {
           px={2}
           py={2}
           pulseAnimation={true}
-          onClick={() =>
+          onClick={() => {
             window.open(
               "https://api.whatsapp.com/send/?phone=%2B5521972772718&text=Olá%2C+Tudo+bem%3F+Eu+gostaria+de+realizar+o+teste+para+o+competitivo+e+quero+me+juntar+a+alcateia+BloodHunts+Gaming&type=phone_number&app_absent=0"
-            )
-          }
+            );
+            track(
+              "Tela Recrutamento Competitivo - Clique aqui para entrar em contato"
+            );
+          }}
         >
           {translate("contactCompetitiveRecruitment.contactButton")}
         </ClawsButton>
@@ -82,7 +87,12 @@ const ContactCompetitiveRecruitment = () => {
           fontSize={{ xs: "18px", md: "20px" }}
           px={2}
           py={2}
-          onClick={() => setOpenSocialMedia(true)}
+          onClick={() => {
+            setOpenSocialMedia(true);
+            track(
+              "Tela Recrutamento Competitivo - Visualizar outras redes sociais"
+            );
+          }}
         >
           {translate("contactCompetitiveRecruitment.viewSocialNetworksButton")}
         </ClawsButton>

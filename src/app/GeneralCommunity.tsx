@@ -20,6 +20,7 @@ import {
 
 import { useTranslation } from "react-i18next";
 import BackButton from "../components/BackButton";
+import { track } from "@vercel/analytics";
 
 const GeneralCommunity = () => {
   const [openSocialMedia, setOpenSocialMedia] = useState(false);
@@ -34,6 +35,7 @@ const GeneralCommunity = () => {
     image: string;
   }) => {
     window.open(card.id);
+    track(`Carousel WhatsApp Comunidade Geral - ${card.title}`);
   };
 
   const carouselData = socialMediaCarouselData();
@@ -69,9 +71,10 @@ const GeneralCommunity = () => {
           px={2}
           py={2}
           pulseAnimation={true}
-          onClick={() =>
-            window.open("https://chat.whatsapp.com/ElO1CZH7r4tFueKqj5fj1U")
-          }
+          onClick={() => {
+            window.open("https://chat.whatsapp.com/ElO1CZH7r4tFueKqj5fj1U");
+            track("Tela Comunidade Geral - Clique aqui para entrar em contato");
+          }}
         >
           {translate("generalCommunity.joinCommunityButton")}
         </ClawsButton>
@@ -80,7 +83,10 @@ const GeneralCommunity = () => {
           fontSize={{ xs: "18px", md: "20px" }}
           px={2}
           py={2}
-          onClick={() => setOpenSocialMedia(true)}
+          onClick={() => {
+            setOpenSocialMedia(true);
+            track("Tela Comunidade Geral - Visualizar outras redes sociais");
+          }}
         >
           {translate("generalCommunity.viewSocialNetworksButton")}
         </ClawsButton>

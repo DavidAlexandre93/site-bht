@@ -53,7 +53,7 @@
       "btnText": "Learn more"
     },
     "newsletter": {
-      "title": "SUBSCRIBE TO THE NEWSLETTER",
+      "title": "Subscribe to the newsletter",
       "subtitle": "Receive information",
       "description": "Enter your email to receive information about our organization and notifications.",
       "btnText": "Subscribe now"
@@ -111,6 +111,7 @@
       "title": "404",
       "subtitle": "THE PAGE YOU TRIED TO ACCESS WAS NOT FOUND"
     },
-    "backButton": "Back to homepage"
+    "backButton": "Back to homepage",
+    "backToTop": "Back to top"
   }
 }

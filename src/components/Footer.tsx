@@ -13,6 +13,7 @@ import {
 } from "react-icons/fa";
 import CustomLink from "./CustomLink";
 import scrollToSection from "../utils/scrollToSection";
+import { track } from "@vercel/analytics";
 
 const Footer = () => {
   const { t: translate } = useTranslation();
@@ -43,7 +44,10 @@ const Footer = () => {
             mr={{ xs: 0, lg: 12 }}
             textAlign={{ xs: "center", md: "initial" }}
             style={{ cursor: "pointer" }}
-            onClick={() => scrollToSection("begin")}
+            onClick={() => {
+              scrollToSection("begin");
+              track("Footer - Logo BHT");
+            }}
           >
             <img width={"100%"} src={logoBHT} alt="logo_bht" />
           </CustomLink>
@@ -68,7 +72,10 @@ const Footer = () => {
               <CustomLink
                 style={{ cursor: "pointer" }}
                 className="item-footer"
-                onClick={() => scrollToSection("begin")}
+                onClick={() => {
+                  scrollToSection("begin");
+                  track("Footer - Início");
+                }}
               >
                 {translate("footer.sitemap.begin")}
               </CustomLink>
@@ -77,7 +84,10 @@ const Footer = () => {
               <CustomLink
                 style={{ cursor: "pointer" }}
                 className="item-footer"
-                onClick={() => scrollToSection("our-story")}
+                onClick={() => {
+                  scrollToSection("our-story");
+                  track("Footer - Nossa história");
+                }}
               >
                 {translate("footer.sitemap.ourStory")}
               </CustomLink>
@@ -86,7 +96,10 @@ const Footer = () => {
               <CustomLink
                 style={{ cursor: "pointer" }}
                 className="item-footer"
-                onClick={() => scrollToSection("important-announcements")}
+                onClick={() => {
+                  scrollToSection("important-announcements");
+                  track("Footer - Anúncios");
+                }}
               >
                 {translate("footer.sitemap.importantAnnouncements")}
               </CustomLink>
@@ -95,7 +108,10 @@ const Footer = () => {
               <CustomLink
                 style={{ cursor: "pointer" }}
                 className="item-footer"
-                onClick={() => scrollToSection("store")}
+                onClick={() => {
+                  scrollToSection("store");
+                  track("Footer - Loja");
+                }}
               >
                 {translate("footer.sitemap.store")}
               </CustomLink>
@@ -104,7 +120,10 @@ const Footer = () => {
               <CustomLink
                 style={{ cursor: "pointer" }}
                 className="item-footer"
-                onClick={() => scrollToSection("lineup")}
+                onClick={() => {
+                  scrollToSection("lineup");
+                  track("Footer - Lineup");
+                }}
               >
                 {translate("footer.sitemap.lineup")}
               </CustomLink>
@@ -113,7 +132,10 @@ const Footer = () => {
               <CustomLink
                 style={{ cursor: "pointer" }}
                 className="item-footer"
-                onClick={() => scrollToSection("staff")}
+                onClick={() => {
+                  scrollToSection("staff");
+                  track("Footer - Staff");
+                }}
               >
                 {translate("footer.sitemap.staff")}
               </CustomLink>
@@ -122,7 +144,10 @@ const Footer = () => {
               <CustomLink
                 style={{ cursor: "pointer" }}
                 className="item-footer"
-                onClick={() => scrollToSection("blog")}
+                onClick={() => {
+                  scrollToSection("blog");
+                  track("Footer - Blog");
+                }}
               >
                 {translate("footer.sitemap.blog")}
               </CustomLink>
@@ -143,6 +168,7 @@ const Footer = () => {
                 style={{ cursor: "pointer" }}
                 className="item-footer"
                 href="https://chat.whatsapp.com/ElO1CZH7r4tFueKqj5fj1U"
+                onClick={() => track("Footer - Comunidade")}
               >
                 {translate("footer.contactUs.community")}
               </CustomLink>
@@ -153,6 +179,7 @@ const Footer = () => {
                 style={{ cursor: "pointer" }}
                 className="item-footer"
                 href="https://wa.me/+559191703941?text=Ol%C3%A1,%20Tudo%20bem?%20Eu%20gostaria%20de%20fazer%20parte%20da%20alcateia%20BloodHunts%20Gaming.%20"
+                onClick={() => track("Footer - Recrutamento casual")}
               >
                 {translate("footer.contactUs.casualRecruitment")}
               </CustomLink>
@@ -163,6 +190,7 @@ const Footer = () => {
                 style={{ cursor: "pointer" }}
                 className="item-footer"
                 href="https://wa.me/+5521972772718?text=Ol%C3%A1,%20Tudo%20bem?%20Eu%20gostaria%20de%20realizar%20o%20teste%20para%20o%20competitivo%20e%20quero%20me%20juntar%20a%20alcateia%20BloodHunts%20Gaming"
+                onClick={() => track("Footer - Recrutamento competitivo")}
               >
                 {translate("footer.contactUs.competitiveRecruitment")}
               </CustomLink>
@@ -183,6 +211,7 @@ const Footer = () => {
                 href="https://bloodhuntsgaming.mercadoshops.com.br/"
                 style={{ cursor: "pointer" }}
                 className="item-footer"
+                onClick={() => track("Footer - Visite nossa loja")}
               >
                 {translate("footer.store.visitOurStore")}
               </CustomLink>
@@ -217,6 +246,7 @@ const Footer = () => {
             target={"_blank"}
             href="https://www.patreon.com/BloodHuntsGaming"
             className="social-link"
+            onClick={() => track("Social Media Footer - Patreon")}
           >
             <FaPatreon className="social-link" />
           </CustomLink>
@@ -224,6 +254,7 @@ const Footer = () => {
             target={"_blank"}
             href="https://discord.gg/sjGQAHptjX"
             className="social-link"
+            onClick={() => track("Social Media Footer - Discord")}
           >
             <FaDiscord className="social-link" />
           </CustomLink>
@@ -231,6 +262,7 @@ const Footer = () => {
             target={"_blank"}
             href="https://www.tiktok.com/@bloodhunts_gaming"
             className="social-link"
+            onClick={() => track("Social Media Footer - TikTok")}
           >
             <FaTiktok className="social-link" />
           </CustomLink>
@@ -238,6 +270,7 @@ const Footer = () => {
             target={"_blank"}
             href="https://x.com/i/flow/login?redirect_after_login=%2Fbloodhuntsgg"
             className="social-link"
+            onClick={() => track("Social Media Footer - Twitter")}
           >
             <FaTwitter className="social-link" />
           </CustomLink>
@@ -245,6 +278,7 @@ const Footer = () => {
             target={"_blank"}
             href="https://www.instagram.com/bloodhunts_gaming"
             className="social-link"
+            onClick={() => track("Social Media Footer - Instagram")}
           >
             <FaInstagram className="social-link" />
           </CustomLink>
@@ -252,6 +286,7 @@ const Footer = () => {
             target={"_blank"}
             href="https://www.youtube.com/@BloodHuntsGaming"
             className="social-link"
+            onClick={() => track("Social Media Footer - YouTube")}
           >
             <FaYoutube className="social-link" />
           </CustomLink>
@@ -264,7 +299,11 @@ const Footer = () => {
           fontFamily={"var(--primary-font)"}
         >
           {translate("footer.textDevelopedBy")}{" "}
-          <CustomLink target={"_blank"} href="https://www.vitorbatista.dev">
+          <CustomLink
+            target={"_blank"}
+            href="https://www.vitorbatista.dev"
+            onClick={() => track("Desenvolvido por Vitor Batista")}
+          >
             <Typography
               variant="caption"
               fontSize={14}

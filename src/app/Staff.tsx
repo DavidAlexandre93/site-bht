@@ -1,5 +1,5 @@
 import "../styles/sections/Staff.css";
-import { track } from '@vercel/analytics';
+import { track } from "@vercel/analytics";
 import { Box } from "@mui/material";
 import TeamCarousel from "../components/TeamCarousel";
 import ClawsButton from "../components/ClawsButton";
@@ -56,7 +56,7 @@ const Staff = () => {
           height={"50px"}
           href="https://www.instagram.com/bloodhunts_gaming"
           onClick={() => {
-            track('Saiba mais STAFF');
+            track("Staff - Saiba mais");
           }}
         >
           {translate("staff.btnText")}

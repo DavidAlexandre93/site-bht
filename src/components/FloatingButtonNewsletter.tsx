@@ -5,8 +5,10 @@ import { FaEnvelopeOpenText } from "react-icons/fa";
 import scrollToSection from "../utils/scrollToSection";
 import useScrollPosition from "../hooks/useScrollPosition";
 import { IoMdArrowUp } from "react-icons/io";
+import { useTranslation } from "react-i18next";
 
 const FloatingButtonNewsletter = () => {
+  const { t: translate } = useTranslation();
   const scrollPosition = useScrollPosition();
   const newsletterOffsetTop =
     document.getElementById("newsletter")?.offsetTop || 0;
@@ -42,7 +44,7 @@ const FloatingButtonNewsletter = () => {
     <Box position={"fixed"} bottom={20} right={20} zIndex={2}>
       {newsletterSectionScrollPosition === -1 ||
       scrollPosition.y < newsletterSectionScrollPosition ? (
-        <Tooltip title="Inscreva-se na newsletter">
+        <Tooltip title={translate("newsletter.title")}>
           <Fab
             sx={fabNewsletterStyles}
             className="floating-button-newsletter"
@@ -53,7 +55,7 @@ const FloatingButtonNewsletter = () => {
           </Fab>
         </Tooltip>
       ) : (
-        <Tooltip title="Voltar ao topo">
+        <Tooltip title={translate('backToTop')}>
           <Fab sx={fabBeginStyles} onClick={() => scrollToSection("begin")}>
             <IoMdArrowUp color={"#000"} size={22} />{" "}
           </Fab>

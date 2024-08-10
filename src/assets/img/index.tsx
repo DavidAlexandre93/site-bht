@@ -37,12 +37,12 @@ import coachMight from "./carousels/lineup/codm/coachMight.webp";
 import competitivoAdmAlves from "./carousels/lineup/codm/competitivoAdmAlves.webp";
 import competitivoCaveira from "./carousels/lineup/codm/competitivoCaveira.webp";
 import competitivoCoachLuke from "./carousels/lineup/codm/competitivoCoachLuke.webp";
-import competitivoOsijan from "./carousels/lineup/codm/competitivoOsijan.webp";
+import competitivoOjisan from "./carousels/lineup/codm/competitivoOjisan.webp";
 import competitivoReazy from "./carousels/lineup/codm/competitivoReazy.webp";
 import competitivoSteve from "./carousels/lineup/codm/competitivoSteve.webp";
 
 // Section Lineup - CODM Feminino
-import analistaCompetitivoGodan from "./carousels/lineup/codmFeminino/analistaCompetitivoGodan.webp";
+import analistaCompetitivoGudan from "./carousels/lineup/codmFeminino/analistaCompetitivoGudan.webp";
 import marketingMilly from "./carousels/lineup/codmFeminino/marketingMilly.webp";
 import competitivoVinnie from "./carousels/lineup/codmFeminino/competitivoVinnie.webp";
 
@@ -100,12 +100,12 @@ export {
   competitivoAdmAlves,
   competitivoCaveira,
   competitivoCoachLuke,
-  competitivoOsijan,
+  competitivoOjisan,
   competitivoReazy,
   competitivoSteve,
 
   // Section Lineup CODM Feminino - Carousel
-  analistaCompetitivoGodan,
+  analistaCompetitivoGudan,
   marketingMilly,
   competitivoVinnie,
 

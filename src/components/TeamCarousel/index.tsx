@@ -3,12 +3,15 @@ import { useState, useEffect, CSSProperties } from "react";
 import { config } from "react-spring";
 import { Box } from "@mui/material";
 import { NextButton, PrevButton } from "../ArrowButtons";
+import { track } from "@vercel/analytics";
+import capitalizeFirstLetter from "../../utils/capitalizeFirstLetter";
 
 type TeamCarouselProps = CSSProperties & {
   cards: {
     key: number;
     content: JSX.Element;
-    game?: string;
+    type: string;
+    name?: string;
     url?: string;
   }[];
   offset: number;
@@ -21,6 +24,11 @@ const TeamCarousel = (props: TeamCarouselProps) => {
       ...element,
       onClick: () => {
         if (element.url) window.open(element.url);
+        track(
+          `${capitalizeFirstLetter(element.type)} Pessoa Selecionada - ${
+            element.name
+          })}`
+        );
         setGoToSlide(index);
       },
     };

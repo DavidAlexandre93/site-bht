@@ -12,6 +12,7 @@ import {
 } from "@mui/material";
 import { logoBHTWithBg, sigaNossoInstagram } from "../assets/img";
 import { IoCloseOutline } from "react-icons/io5";
+import { track } from "@vercel/analytics";
 
 const InstagramDialog = () => {
   const [visible, setVisible] = useState<boolean>(true);
@@ -28,6 +29,7 @@ const InstagramDialog = () => {
             <CustomLink
               target="_blank"
               href={"https://www.instagram.com/bloodhunts_gaming"}
+              onClick={() => track("Instagram Dialog - Avatar")}
             >
               <Avatar
                 sx={{ width: 32, height: 32 }}
@@ -43,6 +45,7 @@ const InstagramDialog = () => {
               color={"#000"}
               fontSize={14}
               fontWeight={600}
+              onClick={() => track("Instagram Dialog - Nome do Usuário")}
             >
               bloodhunts_gaming
             </CustomLink>
@@ -65,6 +68,7 @@ const InstagramDialog = () => {
           width={"100%"}
           target="_blank"
           href={"https://www.instagram.com/bloodhunts_gaming"}
+          onClick={() => track("Instagram Dialog - Post")}
         >
           <img
             src={sigaNossoInstagram}

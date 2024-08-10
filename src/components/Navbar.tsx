@@ -32,6 +32,7 @@ import { IoMdMenu } from "react-icons/io";
 import { TfiClose } from "react-icons/tfi";
 import scrollToSection from "../utils/scrollToSection";
 import { defaultLanguage } from "../lib/i18n";
+import { track } from "@vercel/analytics";
 
 const Navbar = () => {
   const options = useMemo(
@@ -150,7 +151,10 @@ const Navbar = () => {
       <Toolbar className="navbar">
         <CustomLink
           style={{ cursor: "pointer" }}
-          onClick={() => scrollToSection("begin")}
+          onClick={() => {
+            scrollToSection("begin");
+            track("Navbar - Logo BHT");
+          }}
         >
           <img width={56} height={56} src={logoBHT} alt="logo" />
         </CustomLink>
@@ -158,21 +162,30 @@ const Navbar = () => {
           <CustomLink
             style={changeColorWhenScrolling as CSSProperties}
             className="item-navbar"
-            onClick={() => scrollToSection("begin")}
+            onClick={() => {
+              scrollToSection("begin");
+              track("Navbar - Início");
+            }}
           >
             {translate("header.begin")}
           </CustomLink>
           <CustomLink
             style={changeColorWhenScrolling as CSSProperties}
             className="item-navbar"
-            onClick={() => scrollToSection("our-story")}
+            onClick={() => {
+              scrollToSection("our-story");
+              track("Navbar - Nossa História");
+            }}
           >
             {translate("header.ourStory")}
           </CustomLink>
           <CustomLink
             style={changeColorWhenScrolling as CSSProperties}
             className="item-navbar"
-            onClick={() => scrollToSection("important-announcements")}
+            onClick={() => {
+              scrollToSection("important-announcements");
+              track("Navbar - Anúncios Importantes");
+            }}
           >
             {translate("header.importantAnnouncements")}
           </CustomLink>
@@ -180,7 +193,10 @@ const Navbar = () => {
             display={{ md: "none", lg: "initial" }}
             style={changeColorWhenScrolling as CSSProperties}
             className="item-navbar"
-            onClick={() => scrollToSection("store")}
+            onClick={() => {
+              scrollToSection("store");
+              track("Navbar - Loja");
+            }}
           >
             {translate("header.store")}
           </CustomLink>
@@ -188,7 +204,10 @@ const Navbar = () => {
             display={{ md: "none", lg: "initial" }}
             style={changeColorWhenScrolling as CSSProperties}
             className="item-navbar"
-            onClick={() => scrollToSection("lineup")}
+            onClick={() => {
+              scrollToSection("lineup");
+              track("Navbar - Lineup");
+            }}
           >
             {translate("header.lineup")}
           </CustomLink>
@@ -196,7 +215,10 @@ const Navbar = () => {
             display={{ md: "none", lg: "initial" }}
             style={changeColorWhenScrolling as CSSProperties}
             className="item-navbar"
-            onClick={() => scrollToSection("staff")}
+            onClick={() => {
+              scrollToSection("staff");
+              track("Navbar - Staff");
+            }}
           >
             {translate("header.staff")}
           </CustomLink>
@@ -204,7 +226,10 @@ const Navbar = () => {
             display={{ md: "none", xl: "initial" }}
             style={changeColorWhenScrolling as CSSProperties}
             className="item-navbar"
-            onClick={() => scrollToSection("blog")}
+            onClick={() => {
+              scrollToSection("blog");
+              track("Navbar - Blog");
+            }}
           >
             {translate("header.blog")}
           </CustomLink>
@@ -356,12 +381,14 @@ const Navbar = () => {
               width={"45px"}
               target={"_blank"}
               href="https://www.callofduty.com/br/pt/mobile"
+              onClick={() => track("Logo - COD Mobile")}
             >
               <img width={"100%"} src={codMobileIcon} alt="cod_mobile_icon" />
             </CustomLink>
             <CustomLink
               target={"_blank"}
               href="https://www.callofduty.com/br/pt/warzone"
+              onClick={() => track("Logo - COD Warzone")}
             >
               <img width={"100%"} src={codWarzoneIcon} alt="cod_warzone_icon" />
             </CustomLink>
@@ -371,6 +398,7 @@ const Navbar = () => {
               width={"110px"}
               target={"_blank"}
               href="https://www.blood-strike.com/"
+              onClick={() => track("Logo - BloodStrike")}
             >
               <img
                 width={"100%"}
@@ -383,6 +411,7 @@ const Navbar = () => {
               width={"35px"}
               target={"_blank"}
               href="https://www.honorofkings.com/"
+              onClick={() => track("Logo - Honor of Kings")}
             >
               <img width={"100%"} src={hokIcon} alt="hok_icon" />
             </CustomLink>
@@ -391,6 +420,7 @@ const Navbar = () => {
               width={"40px"}
               target={"_blank"}
               href="https://www.pubgmobile.com/pt/home.shtml"
+              onClick={() => track("Logo - PUBG Mobile")}
             >
               <img src={pubgMobileIcon} alt="pubg_icon" />
             </CustomLink>
@@ -399,6 +429,7 @@ const Navbar = () => {
               width={"35px"}
               target={"_blank"}
               href="https://www.counter-strike.net/cs2"
+              onClick={() => track("Logo Counter Strike 2")}
             >
               <img src={cs2Icon} width={"100%"} alt="cs2_icon" />
             </CustomLink>
@@ -449,6 +480,7 @@ const MenuMobile = (props: MenuMobileProps) => {
             onClick={() => {
               scrollToSection("begin");
               onOpen(false);
+              track("Dialog - Início");
             }}
           >
             {translate("header.begin")}
@@ -458,6 +490,7 @@ const MenuMobile = (props: MenuMobileProps) => {
             onClick={() => {
               scrollToSection("our-story");
               onOpen(false);
+              track("Dialog - Nossa História");
             }}
           >
             {translate("header.ourStory")}
@@ -467,6 +500,7 @@ const MenuMobile = (props: MenuMobileProps) => {
             onClick={() => {
               scrollToSection("important-announcements");
               onOpen(false);
+              track("Dialog - Anúncios Importantes");
             }}
           >
             {translate("header.importantAnnouncements")}
@@ -476,6 +510,7 @@ const MenuMobile = (props: MenuMobileProps) => {
             onClick={() => {
               scrollToSection("store");
               onOpen(false);
+              track("Dialog - Loja");
             }}
           >
             {translate("header.store")}
@@ -485,6 +520,7 @@ const MenuMobile = (props: MenuMobileProps) => {
             onClick={() => {
               scrollToSection("lineup");
               onOpen(false);
+              track("Dialog - Lineup");
             }}
           >
             {translate("header.lineup")}
@@ -494,6 +530,7 @@ const MenuMobile = (props: MenuMobileProps) => {
             onClick={() => {
               scrollToSection("staff");
               onOpen(false);
+              track("Dialog - Staff");
             }}
           >
             {translate("header.staff")}
@@ -503,6 +540,7 @@ const MenuMobile = (props: MenuMobileProps) => {
             onClick={() => {
               scrollToSection("blog");
               onOpen(false);
+              track("Dialog - Blog");
             }}
           >
             {translate("header.blog")}

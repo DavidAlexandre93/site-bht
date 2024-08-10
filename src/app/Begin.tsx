@@ -20,6 +20,7 @@ import { useContext, useRef, useState } from "react";
 import { LoadingContext } from "../contexts/LoadingContext";
 import { IoCloseOutline } from "react-icons/io5";
 import beginCommunities from "../data/beginCommunities";
+import { track } from "@vercel/analytics";
 
 const Begin = () => {
   const { t: translate } = useTranslation();
@@ -35,6 +36,7 @@ const Begin = () => {
     image: string;
   }) => {
     window.open(card.id);
+    track(`Carousel WhatsApp Home - ${card.title}`);
   };
 
   const carouselData = beginCommunities;
@@ -124,6 +126,7 @@ const Begin = () => {
           <ClawsButton
             mt={4}
             href="https://drive.google.com/drive/folders/1wmi9aQg0p-ktqB-9UBMvosxQhKEK6moE?usp=sharing"
+            onClick={() => track("Download Wallpapers")}
           >
             {translate("begin.btnText")}
           </ClawsButton>
@@ -205,7 +208,10 @@ const SocialMedia = (props: SocialMediaProps) => {
         gap={2}
       >
         <CustomLink
-          onClick={() => openSocialMedia()}
+          onClick={() => {
+            openSocialMedia();
+            track("Social Media Home - WhatsApp");
+          }}
           className="social-media-container"
         >
           <FaWhatsapp className="social-media" color={"white"} />
@@ -214,6 +220,7 @@ const SocialMedia = (props: SocialMediaProps) => {
           target={"_blank"}
           href={"https://www.instagram.com/bloodhunts_gaming"}
           className="social-media-container"
+          onClick={() => track("Social Media Home - Instagram")}
         >
           <FaInstagram className="social-media" color={"white"} />
         </CustomLink>
@@ -221,6 +228,7 @@ const SocialMedia = (props: SocialMediaProps) => {
           target={"_blank"}
           href={"https://discord.gg/sjGQAHptjX"}
           className="social-media-container"
+          onClick={() => track("Social Media Home - Discord")}
         >
           <FaDiscord className="social-media" color={"white"} />
         </CustomLink>
@@ -228,6 +236,7 @@ const SocialMedia = (props: SocialMediaProps) => {
           target={"_blank"}
           href={"https://www.tiktok.com/@bloodhunts_gaming"}
           className="social-media-container"
+          onClick={() => track("Social Media Home - TikTok")}
         >
           <FaTiktok className="social-media" color={"white"} />
         </CustomLink>
@@ -237,15 +246,15 @@ const SocialMedia = (props: SocialMediaProps) => {
             "https://x.com/i/flow/login?redirect_after_login=%2Fbloodhuntsgg"
           }
           className="social-media-container"
+          onClick={() => track("Social Media Home - Twitter")}
         >
           <FaTwitter className="social-media" color={"white"} />
         </CustomLink>
         <CustomLink
           target={"_blank"}
-          href={
-            "https://www.youtube.com/@BloodHuntsGaming"
-          }
+          href={"https://www.youtube.com/@BloodHuntsGaming"}
           className="social-media-container"
+          onClick={() => track("Social Media Home - YouTube")}
         >
           <FaYoutube className="social-media" color={"white"} />
         </CustomLink>
@@ -258,6 +267,7 @@ const SocialMedia = (props: SocialMediaProps) => {
         mt={3.5}
         width={150}
         href={"https://www.patreon.com/BloodHuntsGaming"}
+        onClick={() => track("Social Media Home - Patreon")}
       >
         <img width={"100%"} src={logoPatreon} />
       </CustomLink>

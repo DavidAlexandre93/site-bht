@@ -7,6 +7,7 @@ import { FaInstagram } from "react-icons/fa";
 import ClawsButton from "../components/ClawsButton";
 
 import { useTranslation } from "react-i18next";
+import { track } from "@vercel/analytics";
 
 type InstagramDataProps = {
   id: string;
@@ -23,8 +24,10 @@ const Blog = () => {
     []
   );
 
-  const handleClickButton = () =>
+  const handleClickButton = () => {
     window.open("https://www.instagram.com/bloodhunts_gaming");
+    track("Blog - Ver mais");
+  };
 
   useEffect(() => {
     const fetchDataFromAPI = async (fields: string, limit: number) => {
@@ -95,6 +98,7 @@ const Blog = () => {
               border={"2px solid #fff"}
               borderRadius={5}
               overflow={"hidden"}
+              onClick={() => track("Blog - Instagram Post")}
             >
               <img width={"100%"} src={post.media_url} alt={"post_instagram"} />
               <Box

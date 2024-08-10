@@ -20,6 +20,7 @@ import useScreenWidthSize from "../hooks/useScreenWindowSize";
 import { Swiper, SwiperClass, SwiperSlide } from "swiper/react";
 import { EffectCreative } from "swiper/modules";
 import { MdOutlineKeyboardArrowDown } from "react-icons/md";
+import { track } from "@vercel/analytics";
 
 const Lineup = () => {
   const [selectedTeam, setSelectedTeam] = useState(cards[0].game);
@@ -29,7 +30,6 @@ const Lineup = () => {
   const windowWidth = useScreenWidthSize();
 
   const { t: translate } = useTranslation();
-
 
   const carouselResponsive =
     windowWidth <= 768
@@ -42,6 +42,7 @@ const Lineup = () => {
 
   const handleMenuItemClick = (index: number) => {
     setSelectedTeam(cards[index].game);
+    track(`Lineup Jogo Selecionado - ${cards[index].game}`);
 
     if (swiperRef.current) {
       swiperRef.current.slideTo(index);
@@ -157,7 +158,10 @@ const Lineup = () => {
         </Popper>
       </Box>
       <Swiper
-        style={{ width: "100%", height: windowWidth > 1024 ? "600px" : '500px' }}
+        style={{
+          width: "100%",
+          height: windowWidth > 1024 ? "600px" : "500px",
+        }}
         grabCursor={false}
         draggable={false}
         effect={"creative"}
@@ -188,7 +192,7 @@ const Lineup = () => {
               }`}
             >
               <TeamCarousel
-                cards={card.img}
+                cards={card.players}
                 height={windowWidth <= 1024 ? "360px" : "540px"}
                 margin="0 50"
                 width={"50%"}
