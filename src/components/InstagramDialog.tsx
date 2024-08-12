@@ -17,8 +17,13 @@ import { track } from "@vercel/analytics";
 const InstagramDialog = () => {
   const [visible, setVisible] = useState<boolean>(true);
 
+  const onClose = () => {
+    setVisible(false);
+    track("Instagram Dialog - Fechar");
+  };
+
   return (
-    <Dialog open={visible} onClose={() => setVisible(false)}>
+    <Dialog open={visible} onClose={onClose}>
       <DialogTitle style={{ padding: "0.25rem 0.3rem 0.25rem 0.5rem" }}>
         <Box
           display={"flex"}

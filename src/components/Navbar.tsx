@@ -381,14 +381,12 @@ const Navbar = () => {
               width={"45px"}
               target={"_blank"}
               href="https://www.callofduty.com/br/pt/mobile"
-              onClick={() => track("Logo - COD Mobile")}
             >
               <img width={"100%"} src={codMobileIcon} alt="cod_mobile_icon" />
             </CustomLink>
             <CustomLink
               target={"_blank"}
               href="https://www.callofduty.com/br/pt/warzone"
-              onClick={() => track("Logo - COD Warzone")}
             >
               <img width={"100%"} src={codWarzoneIcon} alt="cod_warzone_icon" />
             </CustomLink>
@@ -398,7 +396,6 @@ const Navbar = () => {
               width={"110px"}
               target={"_blank"}
               href="https://www.blood-strike.com/"
-              onClick={() => track("Logo - BloodStrike")}
             >
               <img
                 width={"100%"}
@@ -411,7 +408,6 @@ const Navbar = () => {
               width={"35px"}
               target={"_blank"}
               href="https://www.honorofkings.com/"
-              onClick={() => track("Logo - Honor of Kings")}
             >
               <img width={"100%"} src={hokIcon} alt="hok_icon" />
             </CustomLink>
@@ -420,7 +416,6 @@ const Navbar = () => {
               width={"40px"}
               target={"_blank"}
               href="https://www.pubgmobile.com/pt/home.shtml"
-              onClick={() => track("Logo - PUBG Mobile")}
             >
               <img src={pubgMobileIcon} alt="pubg_icon" />
             </CustomLink>
@@ -429,7 +424,6 @@ const Navbar = () => {
               width={"35px"}
               target={"_blank"}
               href="https://www.counter-strike.net/cs2"
-              onClick={() => track("Logo Counter Strike 2")}
             >
               <img src={cs2Icon} width={"100%"} alt="cs2_icon" />
             </CustomLink>

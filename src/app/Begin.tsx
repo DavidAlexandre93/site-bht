@@ -64,6 +64,7 @@ const Begin = () => {
           display={{ xs: "none", xl: "block" }}
           width={153}
           zIndex={1}
+          onClick={() => track("Social Media Home - Patreon (Desktop)")}
         >
           <img width={"100%"} src={logoPatreon} />
         </CustomLink>
@@ -267,7 +268,7 @@ const SocialMedia = (props: SocialMediaProps) => {
         mt={3.5}
         width={150}
         href={"https://www.patreon.com/BloodHuntsGaming"}
-        onClick={() => track("Social Media Home - Patreon")}
+        onClick={() => track("Social Media Home - Patreon (Mobile)")}
       >
         <img width={"100%"} src={logoPatreon} />
       </CustomLink>
