@@ -64,8 +64,8 @@ const teamCarouselCards = [
     key: 7,
     type: "staff",
     content: <TeamCarouselCard img={cooGudan} />,
-    name: "Psicólogo Denner Santos",
-    url: "https://www.instagram.com/denner.santoz",
+    name: "COO Gudan",
+    url: "https://www.instagram.com/gudan.txa",
   },
 ];
 
