@@ -19,11 +19,13 @@ import perfilParaRedesSociais from "./carousels/ourStory/perfilParaRedesSociais.
 // Section Important Announcements - Carousel
 import advogadaSorayaPerfil from "./carousels/importantAnnouncements/advogadaSorayaPerfil.webp";
 import developerVitorPerfil from "./carousels/importantAnnouncements/developerVitorPerfil.webp";
-import avaliandoPlayerBloodStrike from "./carousels/importantAnnouncements/avaliandoPlayerBloodStrike.webp";
 import avaliandoPlayerCS2 from "./carousels/importantAnnouncements/avaliandoPlayerCS2.webp";
 import avaliandoPlayerPUBGMobile from "./carousels/importantAnnouncements/avaliandoPlayerPUBGMobile.webp";
 import avaliandoPlayerWarzone from "./carousels/importantAnnouncements/avaliandoPlayerWarzone.webp";
 import recrutandoMulheresCompetitivoFPS from "./carousels/importantAnnouncements/recrutandoMulheresCompetitivoFPS.webp";
+import sejaPatrocinador from "./carousels/importantAnnouncements/sejaPatrocinador.webp";
+import recrutamentoHOK from "./carousels/importantAnnouncements/recrutamentoHOK.webp";
+import psicologoDennerPerfil from "./carousels/importantAnnouncements/psicologoDennerPerfil.webp";
 
 // Section Store - Carousel
 import frenteCostasManequim from "./carousels/store/frenteCostasManequim.webp";
@@ -40,11 +42,28 @@ import competitivoCoachLuke from "./carousels/lineup/codm/competitivoCoachLuke.w
 import competitivoOjisan from "./carousels/lineup/codm/competitivoOjisan.webp";
 import competitivoReazy from "./carousels/lineup/codm/competitivoReazy.webp";
 import competitivoSteve from "./carousels/lineup/codm/competitivoSteve.webp";
+import managerVinnie from "./carousels/lineup/codm/managerVinnie.webp";
 
 // Section Lineup - CODM Feminino
 import analistaCompetitivoGudan from "./carousels/lineup/codmFeminino/analistaCompetitivoGudan.webp";
 import marketingMilly from "./carousels/lineup/codmFeminino/marketingMilly.webp";
 import competitivoVinnie from "./carousels/lineup/codmFeminino/competitivoVinnie.webp";
+
+// Section Lineup - CS2
+import managerVinicius from "./carousels/lineup/cs2/managerVinicius.webp";
+import lineupCS2 from "./carousels/lineup/cs2/lineupCS2.webp";
+
+// Section Lineup - HOK
+import lineupHOK from "./carousels/lineup/hok/lineupHOK.webp";
+import managerKamilla from "./carousels/lineup/hok/managerKamilla.webp";
+import managerMiguel from "./carousels/lineup/hok/managerMiguel.webp";
+
+// Section Lineup - PUBG Mobile
+import lineupPubgMobile from "./carousels/lineup/pubgMobile/lineupPubgMobile.webp";
+
+// Section Lineup - Warzone
+import lineupWarzone from "./carousels/lineup/warzone/lineupWarzone.webp";
+import managerFortzx from "./carousels/lineup/warzone/managerFortzx.webp";
 
 // Section Staff - Carousel
 import ceoDavid from "./carousels/staff/ceoDavid.webp";
@@ -54,7 +73,8 @@ import admTata from "./carousels/staff/admTata.webp";
 import advogadaSoraya from "./carousels/staff/advogadaSoraya.webp";
 import techVitor from "./carousels/staff/techVitor.webp";
 import LuckasCaio from "./carousels/staff/adminLuckasCaio.webp";
-import psicologoDenner from "./carousels/lineup/codm/psicologoDenner.webp";
+import psicologoDenner from "./carousels/staff/psicologoDenner.webp";
+import cooGudan from "./carousels/staff/cooGudan.webp";
 
 // Cards - Social Media
 import instagram from "./socialMedia/instagram.webp";
@@ -89,11 +109,13 @@ export {
   // Section Important Announcements - Carousel
   advogadaSorayaPerfil,
   developerVitorPerfil,
-  avaliandoPlayerBloodStrike,
   avaliandoPlayerCS2,
   avaliandoPlayerPUBGMobile,
   avaliandoPlayerWarzone,
   recrutandoMulheresCompetitivoFPS,
+  sejaPatrocinador,
+  recrutamentoHOK,
+  psicologoDennerPerfil,
 
   // Section Lineup CODM - Carousel
   coachMight,
@@ -103,11 +125,28 @@ export {
   competitivoOjisan,
   competitivoReazy,
   competitivoSteve,
+  managerVinnie,
 
   // Section Lineup CODM Feminino - Carousel
   analistaCompetitivoGudan,
   marketingMilly,
   competitivoVinnie,
+
+  // Section Lineup CS2 - Carousel
+  managerVinicius,
+  lineupCS2,
+
+  // Section Lineup HOK - Carousel
+  managerKamilla,
+  managerMiguel,
+  lineupHOK,
+
+  // Section Lineup PUBG Mobile - Carousel
+  lineupPubgMobile,
+
+  // Section Lineup Warzone - Carousel
+  managerFortzx,
+  lineupWarzone,
 
   // Section Store - Carousel
   frenteCostasManequim,
@@ -126,6 +165,7 @@ export {
   techVitor,
   LuckasCaio,
   psicologoDenner,
+  cooGudan,
 
   // Cards - Social Media
   instagram,

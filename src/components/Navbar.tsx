@@ -23,7 +23,6 @@ import {
   cs2Icon,
   hokIcon,
   pubgMobileIcon,
-  bloodstrikeIcon,
 } from "../assets/img";
 import { MdOutlineKeyboardArrowDown } from "react-icons/md";
 import { useTranslation } from "react-i18next";
@@ -389,19 +388,6 @@ const Navbar = () => {
               href="https://www.callofduty.com/br/pt/warzone"
             >
               <img width={"100%"} src={codWarzoneIcon} alt="cod_warzone_icon" />
-            </CustomLink>
-            <CustomLink
-              display={{ xs: "none", xxl: "initial" }}
-              mx={0.3}
-              width={"110px"}
-              target={"_blank"}
-              href="https://www.blood-strike.com/"
-            >
-              <img
-                width={"100%"}
-                src={bloodstrikeIcon}
-                alt="bloodstrike_icon"
-              />
             </CustomLink>
             <CustomLink
               display={{ xs: "none", xxl: "initial" }}

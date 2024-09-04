@@ -49,6 +49,11 @@
   animation: opacityAnimation 0.3s ease-out forwards;
 }
 
+.lineup-swiper-slide > .swiper-slide-shadow,
+.lineup-swiper-slide > .swiper-slide-shadow-creative {
+  background: transparent;
+}
+
 @keyframes opacityAnimation {
   0% {
     filter: brightness(1);

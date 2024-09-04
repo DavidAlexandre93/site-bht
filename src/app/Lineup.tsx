@@ -180,7 +180,7 @@ const Lineup = () => {
         className="mySwiper"
       >
         {cards.map((card, index) => (
-          <SwiperSlide key={index}>
+          <SwiperSlide key={index} className="lineup-swiper-slide">
             <Box
               display={"flex"}
               justifyContent={"center"}

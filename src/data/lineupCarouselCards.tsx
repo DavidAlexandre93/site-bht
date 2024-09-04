@@ -1,5 +1,5 @@
 import {
-  analistaCompetitivoGudan,
+  // analistaCompetitivoGudan,
   coachMight,
   competitivoAdmAlves,
   competitivoCaveira,
@@ -7,8 +7,17 @@ import {
   competitivoOjisan,
   competitivoReazy,
   competitivoSteve,
-  competitivoVinnie,
-  marketingMilly,
+  lineupCS2,
+  lineupHOK,
+  lineupPubgMobile,
+  lineupWarzone,
+  managerFortzx,
+  managerKamilla,
+  managerMiguel,
+  managerVinicius,
+  managerVinnie,
+  // competitivoVinnie,
+  // marketingMilly,
 } from "../assets/img";
 import TeamCarouselCard from "../components/TeamCarousel/Card";
 
@@ -59,57 +68,86 @@ const lineupCarouselCards = [
         content: <TeamCarouselCard img={competitivoSteve} />,
         name: "COD MOBILE - Steve",
       },
+      {
+        key: 7,
+        type: "lineup",
+        content: <TeamCarouselCard img={managerVinnie} />,
+        name: "COD MOBILE - Manager Vinnie",
+      },
     ],
   },
   {
-    game: "COD MOBILE FEMININO",
+    game: "COD WARZONE",
     type: "lineup",
     players: [
       {
         key: 0,
         type: "lineup",
-        content: <TeamCarouselCard img={analistaCompetitivoGudan} />,
-        name: "COD MOBILE FEMININO - Gudan",
+        content: <TeamCarouselCard img={managerFortzx} />,
+        name: "COD WARZONE - Manager Fortzx",
       },
       {
         key: 1,
         type: "lineup",
-        content: <TeamCarouselCard img={marketingMilly} />,
-        name: "COD MOBILE FEMININO - Milly",
+        content: <TeamCarouselCard img={lineupWarzone} />,
+        name: "COD WARZONE - Lineup Warzone",
+      },
+    ],
+  },
+  {
+    game: "HONOR OF KINGS",
+    type: "lineup",
+    players: [
+      {
+        key: 0,
+        type: "lineup",
+        content: <TeamCarouselCard img={managerKamilla} />,
+        name: "HONOR OF KINGS - Manager Kamilla",
+      },
+      {
+        key: 1,
+        type: "lineup",
+        content: <TeamCarouselCard img={managerMiguel} />,
+        name: "HONOR OF KINGS - Manager Miguel",
       },
       {
         key: 2,
         type: "lineup",
-        content: <TeamCarouselCard img={competitivoVinnie} />,
-        name: "COD MOBILE FEMININO - Vinnie",
+        content: <TeamCarouselCard img={lineupHOK} />,
+        name: "HONOR OF KINGS - Lineup HOK",
       },
     ],
   },
-  // {
-  //   game: "COD WARZONE",
-  // type: 'lineup',
-  //   img: [{ key: 0, content: <TeamCarouselCard /> }],
-  // },
-  // {
-  //   game: "BLOODSTRIKE",
-  // type: 'lineup',
-  //   img: [{ key: 0, content: <TeamCarouselCard /> }],
-  // },
-  // {
-  //   game: "HOK",
-  // type: 'lineup',
-  //   img: [{ key: 0, content: <TeamCarouselCard /> }],
-  // },
-  // {
-  //   game: "PUBG MOBILE",
-  // type: 'lineup',
-  //   img: [{ key: 0, content: <TeamCarouselCard /> }],
-  // },
-  // {
-  //   game: "COUNTER STRIKE 2",
-  // type: 'lineup',
-  //   img: [{ key: 0, content: <TeamCarouselCard /> }],
-  // },
+  {
+    game: "PUBG MOBILE",
+    type: "lineup",
+    players: [
+      {
+        key: 0,
+        type: "lineup",
+        content: <TeamCarouselCard img={lineupPubgMobile} />,
+        name: "PUBG MOBILE - Lineup PUBG Mobile",
+      },
+    ],
+  },
+  {
+    game: "COUNTER STRIKE 2",
+    type: "lineup",
+    players: [
+      {
+        key: 0,
+        type: "lineup",
+        content: <TeamCarouselCard img={managerVinicius} />,
+        name: "COUNTER STRIKE 2 - Manager Vinicius",
+      },
+      {
+        key: 1,
+        type: "lineup",
+        content: <TeamCarouselCard img={lineupCS2} />,
+        name: "COUNTER STRIKE 2 - Lineup CS2",
+      },
+    ],
+  },
 ];
 
 export default lineupCarouselCards;

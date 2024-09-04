@@ -1,18 +1,22 @@
 import {
-  avaliandoPlayerBloodStrike,
   avaliandoPlayerCS2,
   avaliandoPlayerPUBGMobile,
   avaliandoPlayerWarzone,
   recrutandoMulheresCompetitivoFPS,
   advogadaSorayaPerfil,
   developerVitorPerfil,
+  sejaPatrocinador,
+  recrutamentoHOK,
+  psicologoDennerPerfil
 } from "../assets/img";
 import { AnnouncementsCarouselProps } from "../components/AnnouncementsCarousel";
 
 const importantAnnouncementsSlides: AnnouncementsCarouselProps["slides"] = [
+  { img: sejaPatrocinador },
+  { img: recrutamentoHOK },
+  { img: psicologoDennerPerfil },
   { img: advogadaSorayaPerfil },
   { img: developerVitorPerfil },
-  { img: avaliandoPlayerBloodStrike },
   { img: avaliandoPlayerCS2 },
   { img: avaliandoPlayerPUBGMobile },
   { img: avaliandoPlayerWarzone },
