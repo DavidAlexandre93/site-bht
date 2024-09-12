@@ -77,6 +77,7 @@ const SectionTitle = (props: SectionTitleProps) => {
             fontSize={{ xs: 18, md: 20 }}
             color={"#fff"}
             textAlign="justify"
+            style={{ whiteSpace: "preserve-spaces" }}
           >
             {description}
           </Typography>
