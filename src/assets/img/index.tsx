@@ -1,3 +1,4 @@
+/* eslint-disable react-refresh/only-export-components */
 // Icons
 import codMobileIcon from "./icons/codMobileIcon.svg";
 import codWarzoneIcon from "./icons/codWarzoneIcon.svg";
@@ -173,4 +174,5 @@ export {
   whatsCommunity,
   whatsWarzone,
   youtube,
+  
 };
