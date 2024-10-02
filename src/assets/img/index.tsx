@@ -35,12 +35,10 @@ import frenteCabide from "./carousels/store/frenteManequim.webp";
 import costasCabide from "./carousels/store/costasManequim.webp";
 
 // Section Lineup - CODM
-import coachMight from "./carousels/lineup/codm/coachMight.webp";
 import competitivoAdmAlves from "./carousels/lineup/codm/competitivoAdmAlves.webp";
 import competitivoCaveira from "./carousels/lineup/codm/competitivoCaveira.webp";
 import competitivoCoachLuke from "./carousels/lineup/codm/competitivoCoachLuke.webp";
 import competitivoOjisan from "./carousels/lineup/codm/competitivoOjisan.webp";
-import competitivoReazy from "./carousels/lineup/codm/competitivoReazy.webp";
 import competitivoSteve from "./carousels/lineup/codm/competitivoSteve.webp";
 import managerVinnie from "./carousels/lineup/codm/managerVinnie.webp";
 
@@ -118,12 +116,10 @@ export {
   psicologoDennerPerfil,
 
   // Section Lineup CODM - Carousel
-  coachMight,
   competitivoAdmAlves,
   competitivoCaveira,
   competitivoCoachLuke,
   competitivoOjisan,
-  competitivoReazy,
   competitivoSteve,
   managerVinnie,
 

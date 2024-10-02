@@ -1,11 +1,9 @@
 import {
   // analistaCompetitivoGudan,
-  coachMight,
   competitivoAdmAlves,
   competitivoCaveira,
   competitivoCoachLuke,
   competitivoOjisan,
-  competitivoReazy,
   competitivoSteve,
   lineupCS2,
   lineupHOK,
@@ -26,12 +24,6 @@ const lineupCarouselCards = [
     game: "COD MOBILE",
     type: "lineup",
     players: [
-      {
-        key: 0,
-        type: "lineup",
-        content: <TeamCarouselCard img={coachMight} />,
-        name: "COD MOBILE - Coach Might",
-      },
       {
         key: 1,
         type: "lineup",
@@ -55,12 +47,6 @@ const lineupCarouselCards = [
         type: "lineup",
         content: <TeamCarouselCard img={competitivoOjisan} />,
         name: "COD MOBILE - Ojisan",
-      },
-      {
-        key: 5,
-        type: "lineup",
-        content: <TeamCarouselCard img={competitivoReazy} />,
-        name: "COD MOBILE - Reazy",
       },
       {
         key: 6,
