@@ -1,5 +1,4 @@
 import {
-  // analistaCompetitivoGudan,
   competitivoAdmAlves,
   competitivoCaveira,
   competitivoCoachLuke,
@@ -8,14 +7,14 @@ import {
   lineupCS2,
   lineupHOK,
   lineupPubgMobile,
+  managerKira,
   lineupWarzone,
   managerFortzx,
   managerKamilla,
   managerMiguel,
   managerVinicius,
   managerVinnie,
-  // competitivoVinnie,
-  // marketingMilly,
+  analistaCompetitivoGudan
 } from "../assets/img";
 import TeamCarouselCard from "../components/TeamCarousel/Card";
 
@@ -25,11 +24,18 @@ const lineupCarouselCards = [
     type: "lineup",
     players: [
       {
+        key: 0,
+        type: "lineup",
+        content: <TeamCarouselCard img={managerVinnie} />,
+        name: "COD MOBILE - Manager Vinnie",
+      },
+      {
         key: 1,
         type: "lineup",
-        content: <TeamCarouselCard img={competitivoAdmAlves} />,
-        name: "COD MOBILE - Adm Alves",
+        content: <TeamCarouselCard img={analistaCompetitivoGudan} />,
+        name: "COD MOBILE - Analista Gudan",
       },
+  
       {
         key: 2,
         type: "lineup",
@@ -49,17 +55,18 @@ const lineupCarouselCards = [
         name: "COD MOBILE - Ojisan",
       },
       {
-        key: 6,
+        key: 5,
         type: "lineup",
         content: <TeamCarouselCard img={competitivoSteve} />,
         name: "COD MOBILE - Steve",
       },
       {
-        key: 7,
+        key: 6,
         type: "lineup",
-        content: <TeamCarouselCard img={managerVinnie} />,
-        name: "COD MOBILE - Manager Vinnie",
-      },
+        content: <TeamCarouselCard img={competitivoAdmAlves} />,
+        name: "COD MOBILE - Adm Alves",
+      }
+  
     ],
   },
   {
@@ -69,15 +76,16 @@ const lineupCarouselCards = [
       {
         key: 0,
         type: "lineup",
-        content: <TeamCarouselCard img={managerFortzx} />,
-        name: "COD WARZONE - Manager Fortzx",
+        content: <TeamCarouselCard img={lineupWarzone} />,
+        name: "COD WARZONE - Lineup Warzone",
       },
       {
         key: 1,
         type: "lineup",
-        content: <TeamCarouselCard img={lineupWarzone} />,
-        name: "COD WARZONE - Lineup Warzone",
+        content: <TeamCarouselCard img={managerFortzx} />,
+        name: "COD WARZONE - Manager Fortzx",
       },
+      
     ],
   },
   {
@@ -87,21 +95,22 @@ const lineupCarouselCards = [
       {
         key: 0,
         type: "lineup",
-        content: <TeamCarouselCard img={managerKamilla} />,
-        name: "HONOR OF KINGS - Manager Kamilla",
+        content: <TeamCarouselCard img={lineupHOK} />,
+        name: "HONOR OF KINGS - Lineup HOK",
       },
       {
         key: 1,
         type: "lineup",
-        content: <TeamCarouselCard img={managerMiguel} />,
-        name: "HONOR OF KINGS - Manager Miguel",
+        content: <TeamCarouselCard img={managerKamilla} />,
+        name: "HONOR OF KINGS - Manager Kamilla",
       },
       {
         key: 2,
         type: "lineup",
-        content: <TeamCarouselCard img={lineupHOK} />,
-        name: "HONOR OF KINGS - Lineup HOK",
+        content: <TeamCarouselCard img={managerMiguel} />,
+        name: "HONOR OF KINGS - Manager Kamilla",
       },
+    
     ],
   },
   {
@@ -114,6 +123,13 @@ const lineupCarouselCards = [
         content: <TeamCarouselCard img={lineupPubgMobile} />,
         name: "PUBG MOBILE - Lineup PUBG Mobile",
       },
+      {
+        key: 1,
+        type: "lineup",
+        content: <TeamCarouselCard img={managerKira} />,
+        name: "PUBG MOBILE - Manager Kira",
+      },
+
     ],
   },
   {
@@ -123,15 +139,16 @@ const lineupCarouselCards = [
       {
         key: 0,
         type: "lineup",
-        content: <TeamCarouselCard img={managerVinicius} />,
-        name: "COUNTER STRIKE 2 - Manager Vinicius",
+        content: <TeamCarouselCard img={lineupCS2} />,
+        name: "COUNTER STRIKE 2 - Lineup CS2",
       },
       {
         key: 1,
         type: "lineup",
-        content: <TeamCarouselCard img={lineupCS2} />,
-        name: "COUNTER STRIKE 2 - Lineup CS2",
+        content: <TeamCarouselCard img={managerVinicius} />,
+        name: "COUNTER STRIKE 2 - Manager Vinicius",
       },
+      
     ],
   },
 ];

@@ -42,11 +42,7 @@ import competitivoCoachLuke from "./carousels/lineup/codm/competitivoCoachLuke.w
 import competitivoOjisan from "./carousels/lineup/codm/competitivoOjisan.webp";
 import competitivoSteve from "./carousels/lineup/codm/competitivoSteve.webp";
 import managerVinnie from "./carousels/lineup/codm/managerVinnie.webp";
-
-// Section Lineup - CODM Feminino
-import analistaCompetitivoGudan from "./carousels/lineup/codmFeminino/analistaCompetitivoGudan.webp";
-import marketingMilly from "./carousels/lineup/codmFeminino/marketingMilly.webp";
-import competitivoVinnie from "./carousels/lineup/codmFeminino/competitivoVinnie.webp";
+import analistaCompetitivoGudan from "./carousels/lineup/codm/analistaCompetitivoGudan.webp";
 
 // Section Lineup - CS2
 import managerVinicius from "./carousels/lineup/cs2/managerVinicius.webp";
@@ -59,6 +55,7 @@ import managerMiguel from "./carousels/lineup/hok/managerMiguel.webp";
 
 // Section Lineup - PUBG Mobile
 import lineupPubgMobile from "./carousels/lineup/pubgMobile/lineupPubgMobile.webp";
+import managerKira from "./carousels/lineup/pubgMobile/managerKira.webp";
 
 // Section Lineup - Warzone
 import lineupWarzone from "./carousels/lineup/warzone/lineupWarzone.webp";
@@ -123,11 +120,7 @@ export {
   competitivoOjisan,
   competitivoSteve,
   managerVinnie,
-
-  // Section Lineup CODM Feminino - Carousel
   analistaCompetitivoGudan,
-  marketingMilly,
-  competitivoVinnie,
 
   // Section Lineup CS2 - Carousel
   managerVinicius,
@@ -140,6 +133,7 @@ export {
 
   // Section Lineup PUBG Mobile - Carousel
   lineupPubgMobile,
+  managerKira,
 
   // Section Lineup Warzone - Carousel
   managerFortzx,
