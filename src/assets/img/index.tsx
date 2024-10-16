@@ -51,7 +51,7 @@ import lineupCS2 from "./carousels/lineup/cs2/lineupCS2.webp";
 // Section Lineup - HOK
 import lineupHOK from "./carousels/lineup/hok/lineupHOK.webp";
 import managerKamilla from "./carousels/lineup/hok/managerKamilla.webp";
-import managerMiguel from "./carousels/lineup/hok/managerMiguel.webp";
+import managerSoul from "./carousels/lineup/hok/managerSoul.webp";
 
 // Section Lineup - PUBG Mobile
 import lineupPubgMobile from "./carousels/lineup/pubgMobile/lineupPubgMobile.webp";
@@ -128,7 +128,7 @@ export {
 
   // Section Lineup HOK - Carousel
   managerKamilla,
-  managerMiguel,
+  managerSoul,
   lineupHOK,
 
   // Section Lineup PUBG Mobile - Carousel

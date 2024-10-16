@@ -11,7 +11,7 @@ import {
   lineupWarzone,
   managerFortzx,
   managerKamilla,
-  managerMiguel,
+  managerSoul,
   managerVinicius,
   managerVinnie,
   analistaCompetitivoGudan
@@ -107,7 +107,7 @@ const lineupCarouselCards = [
       {
         key: 2,
         type: "lineup",
-        content: <TeamCarouselCard img={managerMiguel} />,
+        content: <TeamCarouselCard img={managerSoul} />,
         name: "HONOR OF KINGS - Manager Kamilla",
       },
     
