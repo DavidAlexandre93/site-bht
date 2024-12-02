@@ -199,7 +199,7 @@ const Navbar = () => {
           >
             {translate("header.store")}
           </CustomLink>
-          <CustomLink
+          {/* <CustomLink
             display={{ md: "none", lg: "initial" }}
             style={changeColorWhenScrolling as CSSProperties}
             className="item-navbar"
@@ -209,7 +209,7 @@ const Navbar = () => {
             }}
           >
             {translate("header.lineup")}
-          </CustomLink>
+          </CustomLink> */}
           <CustomLink
             display={{ md: "none", lg: "initial" }}
             style={changeColorWhenScrolling as CSSProperties}
@@ -495,7 +495,7 @@ const MenuMobile = (props: MenuMobileProps) => {
           >
             {translate("header.store")}
           </CustomLink>
-          <CustomLink
+          {/* <CustomLink
             className="item-menu-mobile"
             onClick={() => {
               scrollToSection("lineup");
@@ -504,7 +504,7 @@ const MenuMobile = (props: MenuMobileProps) => {
             }}
           >
             {translate("header.lineup")}
-          </CustomLink>
+          </CustomLink> */}
           <CustomLink
             className="item-menu-mobile"
             onClick={() => {

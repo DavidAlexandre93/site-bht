@@ -6,7 +6,7 @@ import Begin from "./app/Begin";
 import OurStory from "./app/OurStory";
 import ImportantAnnouncements from "./app/ImportantAnnouncements";
 import Store from "./app/Store";
-import Lineup from "./app/Lineup";
+// import Lineup from "./app/Lineup";
 import Staff from "./app/Staff";
 import Newsletter from "./app/Newsletter";
 import Blog from "./app/Blog";
@@ -21,7 +21,7 @@ const Home = () => {
       <OurStory />
       <ImportantAnnouncements />
       <Store />
-      <Lineup />
+      {/* <Lineup /> */}
       <Staff />
       <Newsletter />
       <Blog />
