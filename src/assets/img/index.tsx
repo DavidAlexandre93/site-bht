@@ -32,8 +32,8 @@ import psicologoDennerPerfil from "./carousels/importantAnnouncements/psicologoD
 import frenteCostasManequim from "./carousels/store/frenteCostasManequim.webp";
 import frenteManequim from "./carousels/store/frenteManequim.webp";
 import costasManequim from "./carousels/store/costasManequim.webp";
-import frenteCabide from "./carousels/store/frenteManequim.webp";
-import costasCabide from "./carousels/store/costasManequim.webp";
+import frenteCabide from "./carousels/store/frenteCabide.webp";
+import costasCabide from "./carousels/store/costasCabide.webp";
 
 // Section Lineup - CODM
 import competitivoAdmAlves from "./carousels/lineup/codm/competitivoAdmAlves.webp";
