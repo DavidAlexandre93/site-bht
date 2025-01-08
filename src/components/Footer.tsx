@@ -301,7 +301,7 @@ const Footer = () => {
           {translate("footer.textDevelopedBy")}{" "}
           <CustomLink
             target={"_blank"}
-            href="https://www.vitorbatista.dev"
+            href="https://www.vitordesenvolvedor.com.br"
             onClick={() => track("Desenvolvido por Vitor Batista")}
           >
             <Typography
