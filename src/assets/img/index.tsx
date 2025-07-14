@@ -63,6 +63,7 @@ import managerFortzx from "./carousels/lineup/warzone/managerFortzx.webp";
 
 // Section Staff - Carousel
 import ceoDavid from "./carousels/staff/ceoDavid.webp";
+import ceoAlves from "./carousels/staff/ceoAlves.webp";
 import managerYori from "./carousels/staff/managerYori.webp";
 import coachLuke from "./carousels/staff/coachLuke.webp";
 import admTata from "./carousels/staff/admTata.webp";
@@ -148,6 +149,7 @@ export {
 
   // Section Staff - Carousel
   ceoDavid,
+  ceoAlves,
   managerYori,
   coachLuke,
   admTata,
