@@ -2,7 +2,6 @@ import {
   ceoDavid,
   admTata,
   ceoAlves,
-  techVitor,
 } from "../assets/img";
 import TeamCarouselCard from "../components/TeamCarousel/Card";
 
@@ -28,13 +27,13 @@ const teamCarouselCards = [
     name: "CEO Alves",
     url: "https://www.instagram.com/ifelipe_alvess/",
   },
-  {
-    key: 3,
-    type: "staff",
-    content: <TeamCarouselCard img={techVitor} />,
-    name: "Tech Vitor Batista",
-    url: "https://www.instagram.com/vitordesenvolvedor",
-  },
+  // {
+  //   key: 3,
+  //   type: "staff",
+  //   content: <TeamCarouselCard img={techVitor} />,
+  //   name: "Tech Vitor Batista",
+  //   url: "https://www.instagram.com/vitordesenvolvedor",
+  // },
   // {
   //   key: 4,
   //   type: "staff",
