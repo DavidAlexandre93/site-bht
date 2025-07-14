@@ -208,7 +208,7 @@ const Footer = () => {
             <Box>
               <CustomLink
                 target="_blank"
-                href="https://bloodhuntsgaming.mercadoshops.com.br/"
+                href="https://produto.mercadolivre.com.br/MLB-5495196464-camiseta-gaming-_JM"
                 style={{ cursor: "pointer" }}
                 className="item-footer"
                 onClick={() => track("Footer - Visite nossa loja")}

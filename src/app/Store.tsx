@@ -90,7 +90,7 @@ const Store = () => {
         height={"56px"}
         className="claws-button"
         pulseAnimation={true}
-        href="https://bloodhuntsgaming.mercadoshops.com.br"
+        href="https://produto.mercadolivre.com.br/MLB-5495196464-camiseta-gaming-_JM"
         onClick={() => track("Visite nossa loja")}
       >
         {translate("store.btnText")}
