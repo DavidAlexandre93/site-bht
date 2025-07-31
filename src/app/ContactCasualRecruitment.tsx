@@ -160,7 +160,7 @@ const socialMediaCarouselData = () => [
     description: "",
   },
   {
-    id: "https://api.whatsapp.com/send/?phone=%2B5521972772718&text=Olá%2C+Tudo+bem%3F+Eu+gostaria+de+realizar+o+teste+para+o+competitivo+e+quero+me+juntar+a+alcateia+BloodHunts+Gaming&type=phone_number&app_absent=0",
+    id: "https://api.whatsapp.com/send/?phone=%2B5511911660059&text=Olá%2C+Tudo+bem%3F+Eu+gostaria+de+realizar+o+teste+para+o+competitivo+e+quero+me+juntar+a+alcateia+BloodHunts+Gaming&type=phone_number&app_absent=0",
     title: "Contato Competitivo",
     image: whatsCODMobile,
     description: "",

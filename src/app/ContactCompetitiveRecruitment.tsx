@@ -73,7 +73,7 @@ const ContactCompetitiveRecruitment = () => {
           pulseAnimation={true}
           onClick={() => {
             window.open(
-              "https://api.whatsapp.com/send/?phone=%2B5521972772718&text=Olá%2C+Tudo+bem%3F+Eu+gostaria+de+realizar+o+teste+para+o+competitivo+e+quero+me+juntar+a+alcateia+BloodHunts+Gaming&type=phone_number&app_absent=0"
+              "https://api.whatsapp.com/send/?phone=%2B5511911660059&text=Olá%2C+Tudo+bem%3F+Eu+gostaria+de+realizar+o+teste+para+o+competitivo+e+quero+me+juntar+a+alcateia+BloodHunts+Gaming&type=phone_number&app_absent=0"
             );
             track(
               "Tela Recrutamento Competitivo - Clique aqui para entrar em contato"
