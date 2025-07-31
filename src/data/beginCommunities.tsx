@@ -14,7 +14,7 @@ const beginCommunities = [
     description: "",
   },
   {
-    id: "https://wa.me/+5521972772718?text=Ol%C3%A1,%20Tudo%20bem?%20Eu%20gostaria%20de%20realizar%20o%20teste%20para%20o%20competitivo%20e%20quero%20me%20juntar%20a%20alcateia%20BloodHunts%20Gaming",
+    id: "https://wa.me/+5511911660059?text=Ol%C3%A1,%20Tudo%20bem?%20Eu%20gostaria%20de%20realizar%20o%20teste%20para%20o%20competitivo%20e%20quero%20me%20juntar%20a%20alcateia%20BloodHunts%20Gaming",
     title: "Contato Competitivo",
     image: whatsCommunity,
     description: "",
